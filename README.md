@@ -1,2 +1,2 @@
-# Shop-pin-Uni-App
-Uni-app 前端
+# Shop-pin-Frontend
+Uni-app和Vue 前端
