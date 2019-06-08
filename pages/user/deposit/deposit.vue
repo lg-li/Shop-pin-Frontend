@@ -1,12 +1,12 @@
 <template>
 	<view>
-		<view class="block">
+		<view class="block pin-bg-primary">
 			<view class="title">
 				我的账户
 			</view>
 			<view class="content">
 				<view class="my">
-					我的账户余额：0 元
+					￥ 0
 				</view>
 			</view>
 		</view>
@@ -17,7 +17,7 @@
 			<view class="content">
 				<view class="amount">
 					<view class="list">
-						<view class="box" v-for="(amount,index) in amountList" :key="index" @tap="select(amount)" :class="{'on':amount == inputAmount}">
+						<view class="box pin-shadow" v-for="(amount,index) in amountList" :key="index" @tap="select(amount)" :class="{'on':amount == inputAmount}">
 							{{amount}}元
 						</view>
 					</view>
@@ -46,7 +46,7 @@
 								支付宝支付
 							</view>
 							<view class="right">
-								<radio :checked="paytype=='alipay'" color="#f06c7a" />
+								<radio :checked="paytype=='alipay'" color="$pin-color-primary" />
 							</view>
 					</view>
 					<view class="row" @tap="paytype='wxpay'">
@@ -57,14 +57,14 @@
 								微信支付
 							</view>
 							<view class="right">
-								<radio :checked="paytype=='wxpay'" color="#f06c7a" />
+								<radio :checked="paytype=='wxpay'" color="$pin-color-primary" />
 							</view>
 					</view>
 				</view>
 			</view>
 		</view>
 		<view class="pay">
-			<view class="btn" @tap="doDeposit">立即充值</view>
+			<view class="pin-button lg margin" @tap="doDeposit">立即充值</view>
 			<view class="tis">
 				点击立即充值，即代表您同意<view class="terms">
 					《条款协议》
@@ -133,6 +133,7 @@
 		}
 		.content{
 			.my{
+				float: right;
 				width: 100%;
 				height: 120upx;
 				display: flex;
@@ -142,7 +143,6 @@
 			}
 			.amount{
 				width: 100%;
-				
 				.list{
 					display: flex;
 					justify-content: space-between;
@@ -159,8 +159,10 @@
 						background-color: #f1f1f1;
 						color: 333;
 						&.on{
-							background-color: #f06c7a;
-							color: #fff;
+							background-color: $pin-color-primary;
+							color: $pin-color-foreground;
+							transition: all 0.5s;
+							box-shadow: 0upx 5upx 20upx rgba(0,0,0,0.2);
 						}
 					}
 				}
@@ -183,7 +185,7 @@
 							margin: 0 20upx;
 							height: 60upx;
 							font-size: 30upx;
-							color: #f06c7a;
+							color: $pin-color-primary;
 							justify-content: flex-end;
 							align-items: center;
 						}
@@ -228,17 +230,7 @@
 		display: flex;
 		justify-content: center;
 		flex-wrap: wrap;
-		.btn{
-			width: 70%;
-			height: 80upx;
-			border-radius: 80upx;
-			display: flex;
-			justify-content: center;
-			align-items: center;
-			color: #fff;
-			background-color: #f06c7a;
-			box-shadow: 0upx 5upx 10upx rgba(0,0,0,0.2);
-		}
+		
 		.tis{
 			margin-top: 10upx;
 			width: 100%;

@@ -1,0 +1,8 @@
+{
+  "usingComponents": {},
+  "navigationBarTitleText": "商品浏览",
+  "navigationBarBackgroundColor": "#ffc107",
+  "onReachBottomDistance": 50,
+  "titleNView": false,
+  "bounce": "none"
+}

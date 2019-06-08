@@ -1,0 +1,76 @@
+{
+  "pages": [
+    "pages/splash-screen/splash-screen",
+    "pages/tab-bar/home",
+    "pages/tab-bar/category",
+    "pages/tab-bar/cart",
+    "pages/tab-bar/user",
+    "pages/product/product-list",
+    "pages/product/product-detail",
+    "pages/login/sign-in",
+    "pages/login/sign-up",
+    "pages/login/reset-password",
+    "pages/order/confirmation",
+    "pages/user/order-list/order-list",
+    "pages/user/setting/setting",
+    "pages/user/activity/check-in",
+    "pages/user/my-qr-code/my-qr-code",
+    "pages/message/messages",
+    "pages/message/chat/chat",
+    "pages/user/coupon/coupon",
+    "pages/user/collection/collection",
+    "pages/user/address/address",
+    "pages/user/address/edit/edit",
+    "pages/user/deposit/deposit",
+    "pages/pay/payment/payment",
+    "pages/pay/success/success"
+  ],
+  "subPackages": [],
+  "window": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "Pin 团",
+    "navigationBarBackgroundColor": "#ffc107",
+    "backgroundColor": "#eaeaea",
+    "backgroundColorTop": "#ffc107",
+    "backgroundColorBottom": "#eaeaea"
+  },
+  "usingComponents": {},
+  "tabBar": {
+    "color": "#525252",
+    "selectedColor": "#212121",
+    "borderStyle": "white",
+    "backgroundColor": "#ffffff",
+    "list": [
+      {
+        "pagePath": "pages/tab-bar/home",
+        "iconPath": "static/img/tab-bar/home.png",
+        "selectedIconPath": "static/img/tab-bar/home-on.png",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/tab-bar/category",
+        "iconPath": "static/img/tab-bar/category.png",
+        "selectedIconPath": "static/img/tab-bar/category-on.png",
+        "text": "分类"
+      },
+      {
+        "pagePath": "pages/tab-bar/cart",
+        "iconPath": "static/img/tab-bar/cart.png",
+        "selectedIconPath": "static/img/tab-bar/cart-on.png",
+        "text": "购物车"
+      },
+      {
+        "pagePath": "pages/tab-bar/user",
+        "iconPath": "static/img/tab-bar/user.png",
+        "selectedIconPath": "static/img/tab-bar/user-on.png",
+        "text": "我的"
+      }
+    ]
+  },
+  "permission": {
+    "scope.userLocation": {
+      "desc": "获取用户位置信息以推荐商家"
+    }
+  },
+  "sitemapLocation": "sitemap.json"
+}

@@ -1,0 +1,59 @@
+page {
+	background: $pin-color-primary;
+	height: 100%;
+}
+
+.logo {
+	width: 100%;
+	height: 25vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	.img {
+		width: 20vh;
+		height: 20vh;
+		image {
+			width: 100%;
+			border-radius: 100%;
+		}
+	}
+}
+
+.form {
+	width: 86%;
+	padding: 0 7%;
+	font-size: 30upx;
+	.username,
+	.password,
+	.code{
+		width: calc(100% - 90upx);
+		height: 90upx;
+		display: flex;
+		align-items: center;
+		border-radius: 45upx;
+		background-color: $pin-color-light;
+		padding: 0 45upx;
+		margin-bottom: 26upx;
+		input {
+			width: 100%;
+			height: 50upx;
+			color: $pin-color-light-foreground;
+			font-weight: 200;
+		}
+	}
+
+	.btn {
+		color: $pin-color-primary;
+		width: 100%;
+		height: 90upx;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		border-radius: 45upx;
+		background-color: $pin-color-foreground;
+		// border: solid 1upx #fffefe;
+		// box-shadow: 0 0 2upx rgba(0, 0, 0, .5);
+		font-size: 40upx;
+
+	}
+}

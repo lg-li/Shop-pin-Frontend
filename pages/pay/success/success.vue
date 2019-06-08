@@ -7,10 +7,10 @@
 			订单支付成功
 		</view>
 		<view class="pay-amount">
-			支付金额:{{amount}}元
+			支付金额: {{amount}}元
 		</view>
 		<view class="back">
-			<view class="btn" @tap="toUser">个人中心</view>
+			<view class="pin-button lg" @tap="toUser">返回个人中心</view>
 		</view>
 	</view>
 </template>
@@ -28,7 +28,7 @@
 		methods: {
 			toUser() {
 				uni.switchTab({
-					url: '/pages/tabBar/user'
+					url: '/pages/tab-bar/user'
 				});
 			}
 		},
@@ -64,13 +64,15 @@
 	width: 100%;
 	bottom: 80upx;
 	.btn{
-		padding: 0 50upx;
-		height: 70upx;
-		border: solid 2upx #f06c7a;
-		color: #f06c7a;
+		width: 70%;
+		height: 80upx;
+		border-radius: 80upx;
+		display: flex;
+		justify-content: center;
 		align-items: center;
-		border-radius: 10upx;
-		font-size: 34upx;
+		color: $pin-color-foreground;
+		background-color: $pin-color-primary;
+		box-shadow: 0upx 5upx 10upx rgba(0,0,0,0.2);
 	}
 }
 </style>

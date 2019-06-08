@@ -1,0 +1,6 @@
+<import src="/components/full-page-empty-state.vue.wxml" />
+<import src="/components/header-bar.vue.wxml" />
+<import src="/components/card-title.vue.wxml" />
+<import src="/components/pageable-product-list.vue.wxml" />
+<import src="/components/mpvue-citypicker/mpvueCityPicker.vue.wxml" />
+

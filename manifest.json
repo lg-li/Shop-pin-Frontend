@@ -1,11 +1,12 @@
 {
-    "name" : "HM-mall",
-    "appid" : "",
-    "description" : "",
+    "name" : "Pin!",
+    "appid" : "__UNI__0030810",
+    "description" : "智能拼团购电商",
     "versionName" : "1.0.5",
     "versionCode" : "100",
     "transformPx" : false,
     "app-plus" : {
+		"usingComponents": true,
         /* 5+App特有相关 */
         "splashscreen" : {
             "alwaysShowBeforeRender" : true,
@@ -50,7 +51,41 @@
             },
             "ios" : {},
             /* ios打包配置 */
-            "sdkConfigs" : {}
+            "sdkConfigs" : {},
+            "icons" : {
+                "ios" : {
+                    "appstore" : "C:/Development/NodeJS/Shop-pin-Frontend/VI/Pin-logo.png",
+                    "ipad" : {
+                        "app" : "unpackage/res/icons/76x76.png",
+                        "app@2x" : "unpackage/res/icons/152x152.png",
+                        "notification" : "unpackage/res/icons/20x20.png",
+                        "notification@2x" : "unpackage/res/icons/40x40.png",
+                        "proapp@2x" : "unpackage/res/icons/167x167.png",
+                        "settings" : "unpackage/res/icons/29x29.png",
+                        "settings@2x" : "unpackage/res/icons/58x58.png",
+                        "spotlight" : "unpackage/res/icons/40x40.png",
+                        "spotlight@2x" : "unpackage/res/icons/80x80.png"
+                    },
+                    "iphone" : {
+                        "app@2x" : "unpackage/res/icons/120x120.png",
+                        "app@3x" : "unpackage/res/icons/180x180.png",
+                        "notification@2x" : "unpackage/res/icons/40x40.png",
+                        "notification@3x" : "unpackage/res/icons/60x60.png",
+                        "settings@2x" : "unpackage/res/icons/58x58.png",
+                        "settings@3x" : "unpackage/res/icons/87x87.png",
+                        "spotlight@2x" : "unpackage/res/icons/80x80.png",
+                        "spotlight@3x" : "unpackage/res/icons/120x120.png"
+                    }
+                },
+                "android" : {
+                    "hdpi" : "unpackage/res/icons/72x72.png",
+                    "ldpi" : "unpackage/res/icons/48x48.png",
+                    "mdpi" : "unpackage/res/icons/48x48.png",
+                    "xhdpi" : "unpackage/res/icons/96x96.png",
+                    "xxhdpi" : "unpackage/res/icons/144x144.png",
+                    "xxxhdpi" : "unpackage/res/icons/192x192.png"
+                }
+            }
         }
     },
     /* SDK配置 */
@@ -58,10 +93,20 @@
     /* 快应用特有相关 */
     "mp-weixin" : {
         /* 小程序特有相关 */
-        "appid" : "",
+        "appid" : "wx2c6c6a9247cd39b0",
         "setting" : {
             "urlCheck" : true
         },
-        "permission" : {}
+        "permission" : {
+            "scope.userLocation" : {
+                "desc" : "获取用户位置信息以推荐商家"
+            }
+        }
+    },
+    "h5" : {
+        "title" : "Pin!",
+        "router" : {
+            "mode" : "history"
+        }
     }
 }

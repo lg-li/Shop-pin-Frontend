@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+    <head>
+        <meta charset="UTF-8" />
+        <script>
+            var coverSupport = 'CSS' in window && typeof CSS.supports === 'function' && (CSS.supports('top: env(a)') ||
+                CSS.supports('top: constant(a)'))
+            document.write(
+                '<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0' +
+                (coverSupport ? ', viewport-fit=cover' : '') + '" />')
+        </script>
+        <title>View</title>
+        <style>
+            * {
+                -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+                -webkit-tap-highlight-color: transparent;
+            }
+
+            input[type="search"i]::-webkit-search-cancel-button {
+                display: none;
+            }
+        </style>
+        <script>
+            var __wxConfig = {"debug":false,"appname":"Pin!","entryPagePath":"pages/tab-bar/home.html","page":{"pages/tab-bar/home.html":{"window":{"usingComponents":{},"enablePullDownRefresh":true,"onReachBottomDistance":50,"animationType":"fade-in","animationDuration":300}},"pages/tab-bar/category.html":{"window":{"usingComponents":{},"navigationBarTextStyle":"black","navigationBarTitleText":"分类检索","animationType":"fade-in","animationDuration":300,"bounce":"none"}},"pages/tab-bar/cart.html":{"window":{"usingComponents":{},"navigationBarTitleText":"我的购物车","enablePullDownRefresh":true,"navigationBarTextStyle":"black","animationType":"fade-in","animationDuration":300,"softinputNavBar":"none"}},"pages/tab-bar/user.html":{"window":{"usingComponents":{},"navigationBarTitleText":"我的 Pin","enablePullDownRefresh":true,"navigationBarBackgroundColor":"#ffc107","backgroundColorTop":"#ffc107","navigationBarTextStyle":"black","animationType":"fade-in","animationDuration":300}},"pages/product/product-list.html":{"window":{"usingComponents":{},"navigationBarTitleText":"商品列表","enablePullDownRefresh":true}},"pages/product/product-detail.html":{"window":{"usingComponents":{},"navigationBarTitleText":"商品浏览","navigationBarBackgroundColor":"#ffc107","onReachBottomDistance":50,"titleNView":false,"bounce":"none"}},"pages/login/sign-in.html":{"window":{"usingComponents":{},"navigationBarTitleText":"登录","navigationBarBackgroundColor":"#ffc107","navigationBarTextStyle":"black","animationType":"fade-in","animationDuration":300,"softinputNavBar":"none"}},"pages/login/sign-up.html":{"window":{"usingComponents":{},"navigationBarTitleText":"注册账号","navigationBarBackgroundColor":"#ffc107","navigationBarTextStyle":"black","bounce":"none","softinputNavBar":"none"}},"pages/login/reset-password.html":{"window":{"usingComponents":{},"navigationBarTitleText":"重置密码","navigationBarBackgroundColor":"#ffc107","navigationBarTextStyle":"black","bounce":"none","softinputNavBar":"none"}},"pages/order/confirmation.html":{"window":{"usingComponents":{},"navigationBarTitleText":"确认订单","softinputNavBar":"none"}},"pages/user/order-list/order-list.html":{"window":{"usingComponents":{},"navigationBarTitleText":"我的订单","navigationBarBackgroundColor":"#ffc107","backgroundColorTop":"#f3f3f3","backgroundColorBottom":"#ffffff"}},"pages/user/setting/setting.html":{"window":{"usingComponents":{},"navigationBarBackgroundColor":"#ffc107","navigationBarTitleText":"我的设置","backgroundColorTop":"#ffffff","backgroundColorBottom":"#f3f3f3"}},"pages/user/my-qr-code/my-qr-code.html":{"window":{"usingComponents":{},"navigationBarTitleText":"我的二维码","bounce":"none"}},"pages/message/messages.html":{"window":{"usingComponents":{},"enablePullDownRefresh":true,"navigationBarTitleText":"消息列表","navigationBarBackgroundColor":"#ffc107","navigationBarTextStyle":"black"}},"pages/message/chat/chat.html":{"window":{"usingComponents":{},"navigationBarBackgroundColor":"#ffc107","navigationBarTextStyle":"black","backgroundColorTop":"#e5e5e5","backgroundColorBottom":"#e5e5e5","softinputNavBar":"none","bounce":"none"}},"pages/user/coupon/coupon.html":{"window":{"usingComponents":{},"navigationBarTitleText":"优惠券","navigationBarBackgroundColor":"#ffc107","navigationBarTextStyle":"black","bounce":"none"}},"pages/user/collection/collection.html":{"window":{"usingComponents":{},"navigationBarTitleText":"我的收藏","navigationBarBackgroundColor":"#ffc107","navigationBarTextStyle":"black","bounce":"none"}},"pages/user/address/address.html":{"window":{"usingComponents":{},"navigationBarBackgroundColor":"#ffc107","navigationBarTextStyle":"black","navigationBarTitleText":"地址管理"}},"pages/user/address/edit/edit.html":{"window":{"usingComponents":{},"navigationBarBackgroundColor":"#ffc107","navigationBarTitleText":"编辑收件人地址"}},"pages/user/deposit/deposit.html":{"window":{"usingComponents":{},"navigationBarBackgroundColor":"#ffc107","navigationBarTitleText":"充值"}},"pages/pay/payment/payment.html":{"window":{"usingComponents":{},"navigationBarBackgroundColor":"#ffc107","navigationBarTitleText":"订单支付"}},"pages/pay/success/success.html":{"window":{"usingComponents":{},"navigationBarBackgroundColor":"#ffc107","navigationBarTitleText":"支付成功"}}},"global":{"window":{"navigationBarTextStyle":"black","navigationBarTitleText":"Let's \"Pin\"!","navigationBarBackgroundColor":"#ffc107","backgroundColor":"#fafafa","backgroundColorTop":"#ffffff","backgroundColorBottom":"#ffffff"}},"tabBar":{"color":"#525252","selectedColor":"#212121","backgroundColor":"#fafafa","borderStyle":"white","list":[{"pagePath":"pages/tab-bar/home.html","iconPath":"static/img/tab-bar/home.png","selectedIconPath":"static/img/tab-bar/home-on.png","text":"首页"},{"pagePath":"pages/tab-bar/category.html","iconPath":"static/img/tab-bar/category.png","selectedIconPath":"static/img/tab-bar/category-on.png","text":"分类"},{"pagePath":"pages/tab-bar/cart.html","iconPath":"static/img/tab-bar/cart.png","selectedIconPath":"static/img/tab-bar/cart-on.png","text":"购物车"},{"pagePath":"pages/tab-bar/user.html","iconPath":"static/img/tab-bar/user.png","selectedIconPath":"static/img/tab-bar/user-on.png","text":"我的"}],"position":"bottom"},"networkTimeout":{"request":60000,"connectSocket":60000,"uploadFile":60000,"downloadFile":60000},"platform":"devtools","pages":["pages/tab-bar/home","pages/tab-bar/category","pages/tab-bar/cart","pages/tab-bar/user","pages/product/product-list","pages/product/product-detail","pages/login/sign-in","pages/login/sign-up","pages/login/reset-password","pages/order/confirmation","pages/user/order-list/order-list","pages/user/setting/setting","pages/user/my-qr-code/my-qr-code","pages/message/messages","pages/message/chat/chat","pages/user/coupon/coupon","pages/user/collection/collection","pages/user/address/address","pages/user/address/edit/edit","pages/user/deposit/deposit","pages/pay/payment/payment","pages/pay/success/success"],"subPackages":[],"usingComponents":{},"splashscreen":{"alwaysShowBeforeRender":true,"autoclose":false},"compilerVersion":"1.9.9"}
+        </script>
+        <script>
+            var __id__ = '';
+            window.__dispatchGenerateFunc__ = function(page) {
+                __id__ = page;
+                document.title = page;
+                // window.history.pushState('', '', page);
+                var wxss = page.replace('.html', '.wxss')
+                if (
+                    typeof __wxAppCode__ !== 'undefined' &&
+                    __wxAppCode__.hasOwnProperty(wxss)
+                ) {
+                    var setCssToHead = __wxAppCode__[wxss]
+                    typeof setCssToHead === 'function' && setCssToHead()
+                    document.dispatchEvent(new CustomEvent("generateFuncReady", {
+                        detail: {
+                            generateFunc: $gwx(page.replace('.html', '.wxml'))
+                        }
+                    }));
+                } else {
+                    plus.webview.currentWebview().setJsFile('_www/' + page.replace('.html', '.js'));
+                }
+            };
+        </script>
+        <script src="__uniappes6.js"></script>
+        <script src="uniapp://ready"></script>
+    </head>
+
+    <body>
+        <div></div>
+    </body>
+
+</html>

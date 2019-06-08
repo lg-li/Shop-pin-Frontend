@@ -1,0 +1,7 @@
+{
+  "usingComponents": {},
+  "enablePullDownRefresh": true,
+  "onReachBottomDistance": 50,
+  "animationType": "fade-in",
+  "animationDuration": 300
+}

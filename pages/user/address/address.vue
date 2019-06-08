@@ -1,191 +1,154 @@
 <template>
 	<view>
+		<full-page-empty-state v-if="addressList.length == 0" title="没有收货地址" description="点击下方创建一个吧" icon="location_on" />
 		<view class="content">
 			<view class="list">
-				<view class="row" v-for="(row,index) in addressList" :key="index" @tap="select(row)">
+				<view class="row pin-card" v-for="(row,index) in addressList" :key="index" @tap="select(row)">
 					<view class="left">
 						<view class="head">
-							{{row.head}}
+							{{row.realName[0]}}
 						</view>
 					</view>
 					<view class="center">
 						<view class="name-tel">
-							<view class="name">{{row.name}}</view>
-							<view class="tel">{{row.tel}}</view>
+							<view class="name">{{row.realName}}</view>
+							<view class="tel">{{row.phone}}</view>
 							<view class="default" v-if="row.isDefault">
 								默认
 							</view>
 						</view>
 						<view class="address">
-							{{row.address.region.label}} {{row.address.detailed}}
+							{{row.province}} {{row.city}} {{row.district}} {{row.detail}}
 						</view>
 					</view>
 					<view class="right">
-						<view class="icon bianji" @tap.stop="edit(row)">
-							
+						<view class="icon pin-icon" @tap.stop="edit(row)">
+							edit
 						</view>
 					</view>
 				</view>
 			</view>
 		</view>
 		<view class="add">
-			<view class="btn" @tap="add">
-				<view class="icon tianjia"></view>新增地址
+			<view class="pin-button pin-bg-primary long-width" @tap="add">
+				<i class="pin-icon">add</i> 新增地址
 			</view>
 		</view>
 	</view>
 </template>
 <script>
+	import FullPageEmptyState from '../../../components/full-page-empty-state.vue'
 	export default {
+		components: {
+			"full-page-empty-state": FullPageEmptyState
+		},
 		data() {
 			return {
-				isSelect:false,
-				addressList:[
-					{id:1,name:"大黑哥",head:"大",tel:"18816881688",address:{region:{"label":"广东省-深圳市-福田区","value":[18,2,1],"cityCode":"440304"},detailed:'深南大道1111号无名摩登大厦6楼A2'},isDefault:true},
-					{id:2,name:"大黑哥",head:"大",tel:"15812341234",address:{region:{"label":"广东省-深圳市-福田区","value":[18,2,1],"cityCode":"440304"},detailed:'深北小道2222号有名公寓502'},isDefault:false},
-					{id:3,name:"老大哥",head:"老",tel:"18155467897",address:{region:{"label":"广东省-深圳市-福田区","value":[18,2,1],"cityCode":"440304"},detailed:'深南大道1111号无名摩登大厦6楼A2'},isDefault:false},
-					{id:4,name:"王小妹",head:"王",tel:"13425654895",address:{region:{"label":"广东省-深圳市-福田区","value":[18,2,1],"cityCode":"440304"},detailed:'深南大道1111号无名摩登大厦6楼A2'},isDefault:false},
-				]
+				isSelect: false,
+				addressList: []
 			};
 		},
 		onShow() {
-			
-			uni.getStorage({
-				key:'delAddress',
-				success: (e) => {
-					let len = this.addressList.length;
-					if(e.data.hasOwnProperty('id')){
-						for(let i=0;i<len;i++){
-							if(this.addressList[i].id==e.data.id){
-								this.addressList.splice(i,1);
-								break;
-							}
-						}
-					}
-					uni.removeStorage({
-						key:'delAddress'
-					})
-				}
-			})
-			uni.getStorage({
-				key:'saveAddress',
-				success: (e) => {
-					let len = this.addressList.length;
-					if(e.data.hasOwnProperty('id')){
-						for(let i=0;i<len;i++){
-							if(this.addressList[i].id==e.data.id){
-								this.addressList.splice(i,1,e.data);
-								break;
-							}
-						}
-					}else{
-						let lastid = this.addressList[len-1];
-						lastid++;
-						e.data.id = lastid;
-						this.addressList.push(e.data);
-					}
-					uni.removeStorage({
-						key:'saveAddress'
-					})
-				}
-			})
+			this.loadMyAddress()
 		},
 		onLoad(e) {
-			if(e.type=='select'){
+			if (e.type == 'select') {
 				this.isSelect = true;
 			}
 		},
-		methods:{
-			edit(row){
+		methods: {
+			edit(row) {
 				uni.setStorage({
-					key:'address',
-					data:row,
+					key: 'address',
+					data: row,
 					success() {
 						uni.navigateTo({
-							url:"edit/edit?type=edit"
+							url: "edit/edit?type=edit"
 						})
 					}
 				});
-				
+
 			},
-			add(){
+			add() {
 				uni.navigateTo({
-					url:"edit/edit?type=add"
+					url: "edit/edit?type=add"
 				})
 			},
-			select(row){
+			select(address) {
 				//是否需要返回地址(从订单确认页跳过来选收货地址)
-				if(!this.isSelect){
-					return ;
+				if (!this.isSelect) {
+					return;
 				}
 				uni.setStorage({
-					key:'selectAddress',
-					data:row,
+					key: 'selectedAddress',
+					data: address,
 					success() {
 						uni.navigateBack();
 					}
 				})
+			},
+			loadMyAddress() {
+				let that = this
+				this.$pin.request('GET', '/commons/user/address', null,
+					successData => {
+						console.log(successData)
+						that.addressList = successData.data.list
+					},
+					failData => {
+						console.log(failData)
+						uni.showToast({
+							icon: 'none',
+							title: '加载地址列表出错'
+						})
+					}
+				)
 			}
 		}
 	}
 </script>
 
 <style lang="scss">
-view{
-	display: flex;
-}
-@font-face {font-family:"HMfont-home";src:url('data:application/x-font-woff2;charset=utf-8;base64,d09GMgABAAAAAAMIAAsAAAAABvwAAAK8AAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHEIGVgCDBgqBSIFAATYCJAMMCwgABCAFhG0HVBskBsiusClj9ljNiEIaBdizs389YOCARVDt99mzu+8dMMpzQEn5KEAZRez+yRDbSDIixkYo1tF/+vv5OxYJFk2VghXWbbzzPn8D/OMG3vvXGTU90ZFhOrNJROZwCRGjj/Iry36wAbfSxBsuNGggeG9sMbJKDd7xg8vpr4ACmWdZLnMtGxMwwUD3wCiywi3oDWMXuITzBNpNc4BP3j5/Q1thTQvE1SQiaOd8isKSrUJds7aIVyqt6XECAF6Gj49/sBcUSZVZc09duQng/CfPcXTVrIs+gj+fBWwTGZsghbhcGzurJhgZ1S6rt2fXipDmCv5PyNMltf2HRxJEzSrsBKtIk9wU32WS+E1w14UZ1HFiG+QkJg3ODWmyn5/20eOvTz5LnR6l8aWDT5Sn3wLtYlfNe7RIik/fN961C3Vftf6YZLr5ZMcjU/LExqD9u3LzvKE8KQtBGAp9ilm1XbAK2m83TdlozEvQ0Zbrh8HBMrKDB03MjRwHaJKP2f5jf+NfDvML4f+tHQX8+EJvkwL1z9Mqwfi/kd+zq+hCS5+LynN5piObGRlNaNedmrJc/R7jVUO3agmtOT7zJy32WkjWahGihbQJlQ5bklpT7ENotyG3ucOAjpoobVi3BxB6HSDp9h2yXne0kDSoDPtBrTdQaHc61D07LEezm1Im4wBLc2z6UoaO0bpR8SdHLifNCkPKL+s4CaLX5Skm77hknWNBdxLt9SzEmkqBWXAZ57lgSyVl37YaZqMzt7tWd6OtshTQdYJixLAAKplDTT5RCv3Bplu6/ycWcXJEW+pqrL+YGkuGR14unh7onazsVXcv13RNRPb0mBCqUaKAssDCcjsmUKt+VIr5zJbGiMjIGTfqV+sr21pfUXxALmvCmpMjRY5i9G5CZepynIyYZOr+sksyR2W0UHLiChIrRmXfA0E') format('woff2');}
 	.icon {
-		font-family:"HMfont-home" !important;
-		font-size:60upx;
-		font-style:normal;
-		color:#000000;
-		&.bianji {
-			&:before{content:"\e61b";}
-		}
-		&.tianjia {
-			&:before{content:"\e81a";}
-		}
+		font-size: 60upx;
+		font-style: normal;
+		color: #000000;
 	}
-	.add{
+
+	.content {
+		display: flex;
+	}
+
+	.add {
+		display: flex;
 		position: fixed;
 		bottom: 0;
 		width: 100%;
 		height: 120upx;
 		justify-content: center;
 		align-items: center;
-		.btn{
-			box-shadow: 0upx 5upx 10upx rgba(0,0,0,0.4);
-			width: 70%;
-			height: 80upx;
-			border-radius: 80upx;
-			background-color: #f06c7a;
-			color: #fff;
-			justify-content: center;
-			align-items: center;
-			.icon{
-				height: 80upx;
-				color: #fff;
-				font-size: 30upx;
-				justify-content: center;
-				align-items: center;
-			}
-			font-size: 30upx;
-		}
 	}
-	.list{
+
+	.list {
+		width: 100%;
+		display: flex;
 		flex-wrap: wrap;
-		.row{
+
+		.row {
+			display: flex;
 			width: 96%;
 			padding: 20upx 2%;
-			.left{
+
+			.left {
+				display: flex;
 				width: 90upx;
 				flex-shrink: 0;
 				align-items: center;
-				.head{
+
+				.head {
+					display: flex;
 					width: 70upx;
 					height: 70upx;
-					background:linear-gradient(to right,#ccc,#aaa);
+					background: linear-gradient(to right, #ccc, #aaa);
 					color: #fff;
 					justify-content: center;
 					align-items: center;
@@ -193,50 +156,59 @@ view{
 					font-size: 35upx;
 				}
 			}
-			.center{
+
+			.center {
+				display: flex;
 				width: 100%;
 				flex-wrap: wrap;
-				.name-tel{
+
+				.name-tel {
+					display: flex;
 					width: 100%;
 					align-items: baseline;
-					.name{
+
+					.name {
 						font-size: 34upx;
 					}
-					.tel{
+
+					.tel {
 						margin-left: 30upx;
 						font-size: 24upx;
 						color: #777;
 					}
-					.default{
 
+					.default {
 						font-size: 22upx;
-						
-						background-color: #f06c7a;
-						color: #fff;
+						background-color: $pin-color-primary;
+						color: $pin-color-foreground;
 						padding: 0 18upx;
 						border-radius: 24upx;
 						margin-left: 20upx;
 					}
 				}
-				.address{
+
+				.address {
 					width: 100%;
 					font-size: 24upx;
 					align-items: baseline;
 					color: #777;
 				}
 			}
-			.right{
+
+			.right {
+				display: flex;
 				flex-shrink: 0;
 				align-items: center;
 				margin-left: 20upx;
-				.icon{
+
+				.icon {
+					display: flex;
 					justify-content: center;
 					align-items: center;
 					width: 80upx;
 					height: 60upx;
-					border-left: solid 1upx #aaa;
 					font-size: 40upx;
-					color: #777;
+					color: $pin-color-light-foreground;
 				}
 			}
 		}

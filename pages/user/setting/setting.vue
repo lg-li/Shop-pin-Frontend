@@ -65,7 +65,11 @@
 	export default {
 		data() {
 			return {
-				
+				userInfo: {
+					nickname: '',
+					avatarUrl: '',
+					
+				}
 			};
 		},
 		methods: {
@@ -79,7 +83,7 @@
 
 <style lang="scss">
 page{
-	background-color: #f3f3f3;	
+	background-color: #fafafa;	
 }
 @font-face {
 	font-family: 'HMfont-home';

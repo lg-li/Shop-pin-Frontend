@@ -1,0 +1,10 @@
+{
+  "usingComponents": {},
+  "navigationBarTitleText": "我的 Pin",
+  "enablePullDownRefresh": true,
+  "navigationBarBackgroundColor": "#ffc107",
+  "backgroundColorTop": "#ffc107",
+  "navigationBarTextStyle": "black",
+  "animationType": "fade-in",
+  "animationDuration": 300
+}
