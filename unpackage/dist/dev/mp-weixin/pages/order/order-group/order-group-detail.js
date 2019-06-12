@@ -130,13 +130,16 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
 var _default =
 {
   data: function data() {
     return {
       groupLimit: 8,
       userId: null,
-      orderGroupId: 1,
+      orderGroupId: null,
       intervalId: null, // 定时器函数ID
       ownerUser: {
         nickname: '--' },
@@ -150,11 +153,12 @@ var _default =
 
 
 
-      tickString: '--:--' };
+      tickString: '--:--',
+      groupCloseTime: '' };
 
   },
   onLoad: function onLoad(option) {
-    if (option.orderIndividualId != null) {
+    if (option.orderGroupId != null) {
       this.orderGroupId = option.orderGroupId;
     }
     this.userId = this.$pin.data.pinUser.id;
@@ -173,6 +177,15 @@ var _default =
   onHide: function onHide() {
     clearInterval(this.intervalId);
     this.intervalId = null;
+  },
+  onShareAppMessage: function onShareAppMessage(res) {
+    if (res.from === 'button') {// 来自页面内分享按钮
+      console.log(res.target);
+    }
+    return {
+      title: '快来Pin团享受拼团返现!',
+      path: 'pages/splash-screen/splash-screen' };
+
   },
   stompClient: null,
   methods: {
@@ -230,6 +243,7 @@ var _default =
 
     },
     parseOrderGroup: function parseOrderGroup(orderGroup) {
+      this.groupCloseTime = new Date(orderGroup.closeTime).toDateString();
       var orderIndividuals = orderGroup.orderIndividuals;
       var ownerUserId = orderGroup.ownerUserId;
       // 提取团长信息

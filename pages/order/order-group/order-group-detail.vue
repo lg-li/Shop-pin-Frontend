@@ -3,19 +3,21 @@
 		<view class="pin-top-padding"></view>
 		<view class="pin-card pin-padding">
 
-			<view class="pin-card-title"> <i class="pin-icon">store</i> {{ownerUser.nickname}} 的团</view>
-			<view class="pin-margin pin-text-sm"> <i class="pin-icon">info</i> 减免规则：===。</view>
-			<view class="pin-margin pin-text-sm"> <i class="pin-icon">info</i> 收团时间： </view>
+			<view class="pin-card-title"> <i class="pin-icon">group</i> {{ownerUser.nickname}} 的团</view>
+			<view class="pin-margin pin-text-sm"> <i class="pin-icon">info</i> 减免规则：根据每日发货截止时期收团,最后确认收货后按照比例返现. </view>
+			<view class="pin-margin pin-text-sm"> <i class="pin-icon">info</i> 收团时间：{{ groupCloseTime }}</view>
 
 			<view class="pin-flex pin-flex-wrap pin-item-start">
-				<view class="pin-flex-sub pin-margin" v-for="index in groupLimit" :key="index" style="max-width: calc(10vw+20upx);">
+				<view class="pin-flex-sub pin-margin pin-text-center" v-for="index in groupLimit" :key="index" style="max-width: calc(10vw+20upx);">
 					<template v-if="orderGroup.orderIndividuals[index] == null">
 						<view class="pin-avatar pin-text-center pin-text-xxxl" style="display: table-cell; vertical-align: center;">
-							<i class="pin-icon">help</i>
+							<view style="padding-top: 30rpx; color: #888888;"><i class="pin-icon">person_add</i></view>
 						</view>
+						<view class="pin-text-sm"> 待加入</view>
 					</template>
 					<template v-else>
 						<image class="pin-avatar" :src="orderGroup.orderIndividuals[index].user.avatarUrl" />
+						<view class="pin-text-sm"> 团长</view>
 					</template>
 				</view>
 			</view>
@@ -34,14 +36,15 @@
 					</view>
 					<view class="pin-text-md">距离收团还有</view>
 				</view>
-
 			</view>
 
-			<view class="pin-margin">
+			<view class="pin-margin pin-text-sm" v-if="amIOwner"> <i class="pin-icon">info</i> 您是本团团长,邀请更多人加入您的团单可为您和团内其他人带来满减返现</view>
+
+			<view class="pin-margin" v-if="!amIOwner">
 				<view class="pin-button pin-bg-accent lg" @click="exitGroup()"><i class="pin-icon">exit_to_app</i> 退出此团</view>
 			</view>
 			<view class="pin-margin">
-				<view class="pin-button pin-bg-primary lg" @click="share()"><i class="pin-icon">share</i> 邀请他人参团</view>
+				<button class="pin-button pin-bg-primary lg" open-type="share"><i class="pin-icon">share</i> 邀请他人参团</button>
 			</view>
 
 		</view>
@@ -54,7 +57,7 @@
 			return {
 				groupLimit: 8,
 				userId: null,
-				orderGroupId: 1,
+				orderGroupId: null,
 				intervalId: null, // 定时器函数ID
 				ownerUser: {
 					nickname: '--'
@@ -68,11 +71,12 @@
 						}
 					}]
 				},
-				tickString: '--:--'
+				tickString: '--:--',
+				groupCloseTime: ''
 			}
 		},
 		onLoad(option) {
-			if (option.orderIndividualId != null) {
+			if (option.orderGroupId != null) {
 				this.orderGroupId = option.orderGroupId
 			}
 			this.userId = this.$pin.data.pinUser.id
@@ -92,6 +96,15 @@
 			clearInterval(this.intervalId)
 			this.intervalId = null
 		},
+		onShareAppMessage(res) {
+			if (res.from === 'button') { // 来自页面内分享按钮
+				console.log(res.target)
+			}
+			return {
+				title: '快来Pin团享受拼团返现!',
+				path: 'pages/splash-screen/splash-screen'
+			}
+		},
 		stompClient: null,
 		methods: {
 			tick() {
@@ -106,7 +119,7 @@
 				}
 				let nowTime = new Date().getTime()
 				let diff = closeTime - nowTime
-				
+
 				let countTime = (diff / 1000).toFixed(0)
 				if (countTime <= 0) {
 					// 重定向到订单页面
@@ -148,6 +161,7 @@
 				}));
 			},
 			parseOrderGroup(orderGroup) {
+				this.groupCloseTime = new Date(orderGroup.closeTime).toDateString()
 				let orderIndividuals = orderGroup.orderIndividuals
 				let ownerUserId = orderGroup.ownerUserId
 				// 提取团长信息
