@@ -11,21 +11,33 @@
     "pages/login/sign-up",
     "pages/login/reset-password",
     "pages/order/confirmation",
-    "pages/user/order-list/order-list",
+    "pages/pay/payment/payment",
+    "pages/pay/success/success",
+    "pages/store/store-index/store-index",
+    "pages/store/store-group-playground/store-group-playground",
+    "pages/order/order-group/order-group-detail",
+    "pages/user/order/comment-on-order",
+    "pages/user/order/order-list",
     "pages/user/setting/setting",
     "pages/user/activity/check-in",
     "pages/user/my-qr-code/my-qr-code",
-    "pages/message/messages",
-    "pages/message/chat/chat",
     "pages/user/coupon/coupon",
     "pages/user/collection/collection",
     "pages/user/address/address",
     "pages/user/address/edit/edit",
     "pages/user/deposit/deposit",
-    "pages/pay/payment/payment",
-    "pages/pay/success/success"
+    "pages/user/order/individual-order-detail",
+    "pages/product/product-comments"
   ],
-  "subPackages": [],
+  "subPackages": [
+    {
+      "root": "pages/message",
+      "pages": [
+        "messages",
+        "chat/chat"
+      ]
+    }
+  ],
   "window": {
     "navigationBarTextStyle": "black",
     "navigationBarTitleText": "Pin 团",
@@ -34,7 +46,6 @@
     "backgroundColorTop": "#ffc107",
     "backgroundColorBottom": "#eaeaea"
   },
-  "usingComponents": {},
   "tabBar": {
     "color": "#525252",
     "selectedColor": "#212121",
@@ -71,5 +82,6 @@
     "scope.userLocation": {
       "desc": "获取用户位置信息以推荐商家"
     }
-  }
+  },
+  "usingComponents": {}
 }

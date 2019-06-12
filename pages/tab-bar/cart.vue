@@ -1,65 +1,70 @@
 <template>
 	<view>
 		<view v-if="orderItemList == null || orderItemList.length==0">
-			<full-page-empty-state title="购物车为空" description="到处逛逛并把他们加入购物车吧" icon="shopping_cart"/>
+			<full-page-empty-state title="购物车为空" description="到处逛逛并把他们加入购物车吧" icon="shopping_cart" />
 		</view>
 		<!-- 商品列表 -->
-		<view class="goods-list" v-else>
-			<view class="pin-card" v-for="itemsInStore in orderItemMapByStore" :key="itemsInStore">
-				<view class="pin-card-title">
-					<view class="checkbox-box" @tap="allSelectByStore(itemsInStore.storeId)">
-						<view class="checkbox">
-							<view :class="[selectedStoreIdMap[itemsInStore.storeId]?'on':'']"></view>
-						</view>
-						<view class="text"><i class="pin-icon">store</i> {{itemsInStore.storeName}}</view>
-					</view>
-
-				</view>
-				<view class="row" v-for="(orderItem,index) in itemsInStore.items" :key="orderItem">
-					<!-- 删除按钮 -->
-					<view class="menu" @tap.stop="deleteGoods(orderItem.id)">
-						<view class="icon pin-icon">delete</view>
-					</view>
-					<!-- 商品 -->
-					<view class="carrier" :class="[theIndex==index?'open':oldIndex==index?'close':'']" @touchstart="touchStart(index,$event)"
-					 @touchmove="touchMove(index,$event)" @touchend="touchEnd(index,$event)">
-						<!-- checkbox -->
-						<view class="checkbox-box" @tap="selected(orderItem)">
+		<view v-else>
+			<view class="pin-top-padding"></view>
+			<view class="goods-list">
+				<view class="pin-card" v-for="itemsInStore in orderItemMapByStore" :key="itemsInStore">
+					<view class="pin-card-title">
+						<view class="checkbox-box" @tap="allSelectByStore(itemsInStore.storeId)">
 							<view class="checkbox">
-								<view :class="[selectedOrderItemIdMap[orderItem.id] == true?'on':'']"></view>
+								<view :class="[selectedStoreIdMap[itemsInStore.storeId]?'on':'']"></view>
 							</view>
+							<view class="text"><i class="pin-icon">store</i> {{itemsInStore.storeName}}</view>
 						</view>
-						<!-- 商品信息 -->
-						<view class="goods-info" @tap="toProduct(orderItem.product.id)">
-							<view class="img">
-								<image mode="aspectFill" :src="orderItem.product.imageUrls"></image>
+
+					</view>
+					<view class="row" v-for="(orderItem,index) in itemsInStore.items" :key="orderItem">
+						<!-- 删除按钮 -->
+						<view class="menu" @tap.stop="deleteGoods(orderItem.id)">
+							<view class="icon pin-icon">delete</view>
+						</view>
+						<!-- 商品 -->
+						<view class="carrier" :class="[theIndex==index?'open':oldIndex==index?'close':'']" @touchstart="touchStart(index,$event)"
+						 @touchmove="touchMove(index,$event)" @touchend="touchEnd(index,$event)">
+							<!-- checkbox -->
+							<view class="checkbox-box" @tap="selected(orderItem)">
+								<view class="checkbox">
+									<view :class="[selectedOrderItemIdMap[orderItem.id] == true?'on':'']"></view>
+								</view>
 							</view>
-							<view class="info">
-								<view class="title">{{orderItem.product.name}}</view>
-								<view class="spec">{{orderItem.productAttributeValue.sku}}</view>
-								<view class="price-number">
-									<view class="price">
-										<text class="pin-primary pin-text-lg">￥{{orderItem.totalPrice}}</text>
-										<text class="pin-accent pin-text-xs"> (单价 ￥{{orderItem.product.price}})</text>
-									</view>
-									<view class="number">
-										<view class="sub" @tap.stop="sub(index)">
-											<view class="icon pin-icon">remove</view>
+							<!-- 商品信息 -->
+							<view class="goods-info" @tap="toProduct(orderItem.product.id)">
+								<view class="img">
+									<image mode="aspectFill" :src="orderItem.product.imageUrls"></image>
+								</view>
+								<view class="info">
+									<view class="title">{{orderItem.product.name}}</view>
+									<view class="spec">{{orderItem.productAttributeValue.sku}}</view>
+									<view class="price-number">
+										<view class="price">
+											<text class="pin-primary pin-text-lg">￥{{orderItem.totalPrice}}</text>
+											<text class="pin-accent pin-text-xs"> (单价 ￥{{orderItem.product.price}})</text>
 										</view>
-										<view class="input" @tap.stop="discard">
-											<input type="number" v-model="orderItem.amount" @input="sum($event,index)" />
-										</view>
-										<view class="add" @tap.stop="add(index)">
-											<view class="icon pin-icon">add</view>
+										<view class="number">
+											<view class="sub" @tap.stop="changeAmountOfOrderItem(orderItem.id, orderItem.amount-1)">
+												<view class="icon pin-icon">remove</view>
+											</view>
+											<view class="input" @tap.stop="discard">
+												<input type="number" v-model="orderItem.amount" @input="sum($event,index)" />
+											</view>
+											<view class="add" @tap.stop="changeAmountOfOrderItem(orderItem.id, orderItem.amount+1)">
+												<view class="icon pin-icon">add</view>
+											</view>
 										</view>
 									</view>
 								</view>
 							</view>
 						</view>
 					</view>
+
 				</view>
 
 			</view>
+
 		</view>
 		<!-- 脚部菜单 -->
 		<view class="footer" :style="{bottom:footerbottom}">
@@ -126,6 +131,35 @@
 			this.loadMyCartItems()
 		},
 		methods: {
+			changeAmountOfOrderItem(orderItemId, amountChanged) {
+				let that = this
+				uni.showLoading({
+					title: '调整中...',
+					mask: true
+				})
+				this.$pin.request('POST', '/commons/order/order-item/change-amount', {
+						orderItemId: orderItemId,
+						amount: amountChanged
+					},
+					successData => {
+						uni.hideLoading()
+						if (successData.code == that.$pin.code.success) {
+							that.loadMyCartItems()
+						} else {
+							uni.showToast({
+								title: '调整购物车数量失败，' + successData.message,
+								icon: 'none'
+							})
+						}
+					},
+					failData => {
+						uni.hideLoading()
+						uni.showToast({
+							title: '调整购物车数量失败，请重试',
+							icon: 'none'
+						})
+					})
+			},
 			//加入商品 参数 goods:商品数据
 			joinGoods(goods) {
 				/*
@@ -367,20 +401,28 @@
 			},
 			loadMyCartItems() {
 				let that = this
+				uni.showLoading({
+					title: '加载购物车',
+					mask: true
+				})
 				this.$pin.request('GET', '/commons/order/order-items', null,
 					successData => {
+						uni.hideLoading()
 						if (successData.code == that.$pin.code.success) {
 							that.orderItemList = successData.data.orderItems
 							that.parseOrderItemsByStore(successData.data.orderItems)
 						} else {
 							uni.showToast({
-								title: '加载购物车内容失败。'
+								title: '加载购物车内容失败。',
+								icon: 'none'
 							})
 						}
 					},
 					failData => {
+						uni.hideLoading()
 						uni.showToast({
-							title: '加载购物车内容失败，请重试。'
+							title: '加载购物车内容失败，请重试。',
+							icon: 'none'
 						})
 					},
 					() => {

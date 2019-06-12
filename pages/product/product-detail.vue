@@ -10,7 +10,7 @@
 				<view class="middle"></view>
 				<view class="icon-btn">
 					<view class="icon pin-icon" @tap="toMsg">notifications</view>
-					<view class="icon pin-icon" @tap="joinCart">shopping_cart</view>
+					<view class="icon pin-icon" @tap="toCart">shopping_cart</view>
 				</view>
 			</view>
 			<!-- 头部-滚动渐变显示 -->
@@ -23,7 +23,7 @@
 				</view>
 				<view class="icon-btn">
 					<view class="icon pin-icon" @tap="toMsg">notifications</view>
-					<view class="icon pin-icon" @tap="joinCart">shopping_cart</view>
+					<view class="icon pin-icon" @tap="toCart">shopping_cart</view>
 				</view>
 			</view>
 		</view>
@@ -108,18 +108,35 @@
 			<view class="layer" @tap.stop="discard">
 				<view class="content">
 					<!--规格选择模态弹框-->
-					<view v-for="(productAttribute,index) in productAttributes" :key="productAttribute.attributeName  + index">
+					<view class="pin-list-item">
+						<view class="list-left">
+							<image class="pin-avatar" :src="productAttributeValuesMap[selectedResult.skuString] == null?productDetail.immageUrls:productAttributeValuesMap[selectedResult.skuString].imageUrl"></image>
+						</view>
+						<view class="list-right">
+							<view class="list-header">
+								<view class="list-title">
+									{{productDetail.name}}
+								</view>
+							</view>
+							<view class="list-detail">
+								{{productAttributeValuesMap[selectedResult.skuString] == null?'请选择规格':'库存' + productAttributeValuesMap[selectedResult.skuString].stock}}
+							</view>
+						</view>
+					</view>
+					
+					<view v-for="(productAttribute) in productAttributes" :key="productAttribute">
 						<view class="title">{{productAttribute.attributeName}}</view>
 						<view class="attrubite-chip-list">
-							<view v-for="(item,index2) in productAttribute.attributeValues" class="attrubite-chip" :class="[(attributeSelectMap[productAttribute.attributeName]==item)?'on':'']"
-							 @tap="setSelectAttribute(productAttribute.attributeName, item)" :key="item + index2">
+							<view v-for="(item) in productAttribute.attributeValues" class="attrubite-chip" :class="[(attributeSelectMap[productAttribute.attributeName]==item)?'on':'']"
+							 @tap="setSelectAttribute(productAttribute.attributeName, item)" :key="item">
 								{{item}}
 							</view>
 						</view>
 					</view>
 
 					<view class="length" v-if="selectedResult.sku!=null">
-						<view class="text">数量 ({{productDetail.unitName}})</view>
+						
+						<view class="text">{{productAttributeValuesMap[selectedResult.skuString].stock == 0?'此规格库存不足':''}} | 数量 ({{productDetail.unitName}})</view>
 						<view class="number">
 							<view class="sub" @tap.stop="sub">
 								<view class="icon pin-icon">remove</view>
@@ -134,7 +151,7 @@
 					</view>
 				</view>
 				<view class="btn" v-show="productAttributeValuesMap[selectedResult.skuString] != null && productAttributeValuesMap[selectedResult.skuString].stock >0">
-					<view class="button" @tap="hideSpec">完成</view>
+					<view class="button" @tap="hideSpec">加入购物车</view>
 				</view>
 			</view>
 		</view>
@@ -142,75 +159,122 @@
 		<view class="swiper-box">
 			<swiper circular="true" autoplay="true" @change="swiperChange">
 				<swiper-item v-for="swiper in swiperList" :key="swiper.id">
-					<image :src="swiper.img" @tap="toSwiper(swiper)"></image>
+					<image :src="swiper.img" @tap="toSwiper(swiper)" mode="widthFix"></image>
 				</swiper-item>
 			</swiper>
 			<view class="indicator">{{currentSwiper+1}}/{{swiperList.length}}</view>
 		</view>
-		<!-- 标题 价格 -->
-		<view class="info-box product-info">
-			<view class="price">￥{{productDetail.price}}</view>
-			<view class="title">
-				{{productDetail.name}}
-			</view>
-		</view>
-		<!-- 服务-规则选择 -->
-		<view class="info-box spec">
-			<view class="row" @tap="showService">
-				<view class="text">服务</view>
-				<view class="content">
-					<view class="serviceitem" v-for="(item,index) in productData.service" :key="index">{{item.name}}</view>
+
+		<view :style="{'transform': 'translateY(-'+ afterHeaderOpacity*200 + 'px)', zIndex: beforeHeaderzIndex }">
+			<view class="pin-card">
+				<!-- 标题 价格 -->
+				<view class="info-box product-info">
+					<view class="price">￥{{productDetail.price}}</view>
+					<view class="title">
+						{{productDetail.name}}
+					</view>
 				</view>
-				<view class="arrow">
-					<view class="icon pin-icon">keyboard_arrow_right</view>
+				<!-- 服务-规则选择 -->
+				<view class="info-box spec">
+					<view class="row" @tap="showService">
+						<view class="text">服务</view>
+						<view class="content">
+							<view class="serviceitem" v-for="(item,index) in productServices" :key="index">{{item.name}}</view>
+						</view>
+						<view class="arrow">
+							<view class="icon pin-icon">keyboard_arrow_right</view>
+						</view>
+					</view>
+					<view class="row" @tap="showSpec(false)">
+						<view class="text">规格</view>
+						<view class="content">
+							<view>{{selectedResult.sku==null?'未选择':selectedResult.skuString}}
+								({{selectedResult.amount==0?'':selectedResult.amount+productDetail.unitName}})</view>
+						</view>
+						<view class="arrow">
+							<view class="icon pin-icon">keyboard_arrow_right</view>
+						</view>
+					</view>
 				</view>
-			</view>
-			<view class="row" @tap="showSpec(false)">
-				<view class="text">选择</view>
-				<view class="content">
-					<view>选择规格：{{selectedResult.sku==null?'未选择':selectedResult.skuString}}
-						{{selectedResult.amount==0?'':selectedResult.amount+productDetail.unitName}}</view>
-				</view>
-				<view class="arrow">
-					<view class="icon pin-icon">keyboard_arrow_right</view>
-				</view>
-			</view>
-		</view>
-		<!-- 评价 -->
-		<view class="info-box comments" id="comments">
-			<view class="row">
-				<view class="text">商品评价</view>
-				<view class="arrow">
-					<view class="show" @tap="showComments(productDetail.id)">
-						查看全部
-						<view class="icon pin-icon">keyboard_arrow_right</view>
+
+				<!--店铺首页-->
+				<view class="info-box comments pin-solid-top" id="comments">
+					<view class="row">
+						<view class="text">店铺</view>
+						<view class="arrow">
+							<view class="show" @tap="toStore(productDetail.storeId)">
+								更多本店商品
+								<view class="icon pin-icon">keyboard_arrow_right</view>
+							</view>
+						</view>
 					</view>
 				</view>
 			</view>
-			<view class="comment">
-				<view class="user-info">
-					<view class="face">
-						<image :src="productData.comment.userface"></image>
+
+			<view style="position: relative;">
+				<view class="pin-card" style="position: absolute; width: 92%;">
+					<!-- 评价 -->
+					<view class="info-box comments" id="comments">
+						<view class="row">
+							<view class="text">商品评价</view>
+							<view class="arrow" v-if="selectedComment != null">
+								<view class="show" @tap="toComments(productDetail.id)">
+									查看全部
+									<view class="icon pin-icon">keyboard_arrow_right</view>
+								</view>
+							</view>
+							<view class="arrow" v-else>
+								<view class="show">
+									暂无评论
+									<view class="icon pin-icon">keyboard_arrow_right</view>
+								</view>
+							</view>
+						</view>
+						<view class="comment" v-if="selectedComment != null">
+							<view class="user-info">
+								<view class="face">
+									<image :src="selectedComment.avatarUrl"></image>
+								</view>
+								<view class="username">{{selectedComment.nickname}}</view>
+							</view>
+							<view class="content">
+								{{selectedComment.content}}
+							</view>
+						</view>
+						<view class="comment" v-else>
+							<view class="content">
+								暂时没有用户评论此商品。
+							</view>
+						</view>
 					</view>
-					<view class="username">{{productData.comment.username}}</view>
 				</view>
+			</view>
+		</view>
+
+		<view>
+			<card-title icon="toys" text="图文详情" sub-text="Detail" />
+			<view class="pin-card pin-padding" v-show="productDetail.description!=''">
+				<view class="pin-margin pin-text-md">
+					<text>{{productDetail.description}}</text>
+				</view>
+			</view>
+			<!-- 详情 -->
+			<view class="description">
 				<view class="content">
-					{{productData.comment.content}}
+					<rich-text :nodes="descriptionStr"></rich-text>
 				</view>
 			</view>
 		</view>
-		<!-- 详情 -->
-		<view class="description">
-			<view class="title">———— 商品详情 ————</view>
-			<view class="content">
-				<rich-text :nodes="descriptionStr"></rich-text>
-			</view>
-		</view>
+
 	</view>
 </template>
 
 <script>
+	import CardTitle from '../../components/card-title.vue'
 	export default {
+		components: {
+			"card-title": CardTitle
+		},
 		data() {
 			return {
 				//控制渐变标题栏的参数
@@ -236,33 +300,26 @@
 				productAttributeValuesMap: {},
 				productSKUStockCache: {},
 				productDetail: {},
+				productServices: [{
+						name: "正品保证",
+						description: "此商品官方保证为正品"
+					},
+					{
+						name: "极速退款",
+						description: "此商品享受退货极速退款服务"
+					},
+					{
+						name: "7天退换",
+						description: "此商品享受7天无理由退换服务"
+					}
+				],
 				selectedResult: {
 					sku: null,
 					amount: 1,
 					skuString: ''
 				},
+				selectedComment: null,
 				attributeSelectMap: {},
-				productData: {
-					service: [{
-							name: "正品保证",
-							description: "此商品官方保证为正品"
-						},
-						{
-							name: "极速退款",
-							description: "此商品享受退货极速退款服务"
-						},
-						{
-							name: "7天退换",
-							description: "此商品享受7天无理由退换服务"
-						}
-					],
-					comment: {
-						number: 102,
-						userface: '../../static/img/face.jpg',
-						username: '大黑哥',
-						content: '很不错，之前买了很多次了，很好看，能放很久，和图片色差不大，值得购买！'
-					}
-				},
 				selectSpec: null, //选中规格
 				isKeep: false, //收藏 商品描述html
 				descriptionStr: '<div style="text-align:center;"><img width="100%" src="https://s2.ax1x.com/2019/03/28/AdOogx.jpg"/><img width="100%" src="https://s2.ax1x.com/2019/03/28/AdOHKK.jpg"/><img width="100%" src="https://s2.ax1x.com/2019/03/28/AdOTv6.jpg"/></div>'
@@ -274,7 +331,8 @@
 			this.showBack = false;
 			// #endif
 			//option为object类型，会序列化上个页面传递的参数
-			console.log(option.productId); //打印出上个页面传递的参数。
+			console.log(option.productId); //打印出上个页面传递的参数
+			this.productId = option.productId
 			this.loadProductDetail(option.productId)
 		},
 		onReady() {
@@ -291,6 +349,7 @@
 			//切换层级
 			this.beforeHeaderzIndex = e.scrollTop > 0 ? 10 : 11;
 			this.afterHeaderzIndex = e.scrollTop > 0 ? 11 : 10;
+			this.$forceUpdate()
 		},
 		//上拉加载，需要自己在page.json文件中配置"onReachBottomDistance"
 		onReachBottom() {
@@ -303,22 +362,28 @@
 				let that = this
 				this.$pin.request('GET', '/commons/product/' + productId, null,
 					successData => {
-						console.log(successData)
-						that.productDetail = successData.data
-						uni.setNavigationBarTitle({
-							title: that.productDetail.name
-						});
-						that.swiperList.push({
-							id: 1,
-							img: that.productDetail.imageUrls
-						})
-						that.parseProductAttributes(successData.data.productAttributeDefinitions, successData.data.productAttributeValues)
+						if (successData.code == that.$pin.code.success) {
+							that.productDetail = successData.data.product
+							that.selectedComment = successData.data.comment
+							uni.setNavigationBarTitle({
+								title: that.productDetail.name
+							});
+							that.swiperList.push({
+								id: 1,
+								img: that.productDetail.imageUrls
+							})
+							that.parseProductAttributes(successData.data.product.productAttributeDefinitions, successData.data.product.productAttributeValues)
+						} else {
+							uni.showToast({
+								title: '加载商品出错，' + successData.message,
+								icon: 'none'
+							})
+						}
 					},
 					failData => {
-						console.log(failData)
 						uni.showToast({
-							icon: 'none',
-							title: '加载商品出错'
+							title: '加载商品出错，请重试',
+							icon: 'none'
 						})
 					}
 				)
@@ -356,6 +421,11 @@
 					url: "../message/chat/chat?name=客服008"
 				})
 			},
+			toStore(storeId) {
+				uni.navigateTo({
+					url: "../store/store-index/store-index?storeId=" + storeId
+				})
+			},
 			// 分享
 			share() {
 				this.shareClass = 'show';
@@ -369,6 +439,11 @@
 			//收藏
 			keep() {
 				this.isKeep = this.isKeep ? false : true;
+			},
+			toCart() {
+				uni.switchTab({
+					url: "../tab-bar/cart"
+				})
 			},
 			// 加入购物车
 			joinCart() {
@@ -437,8 +512,10 @@
 				})
 			},
 			//跳转评论列表
-			showComments(productid) {
-
+			toComments(productId) {
+				uni.navigateTo({
+					url: "./product-comments?productId=" + productId
+				})
 			},
 			//选择规格
 			setSelectAttribute(attributeName, selectedAttributeValue) {
@@ -569,7 +646,6 @@
 			},
 			//规格弹窗
 			showSpec(fun) {
-				console.log('show');
 				this.attributeModalClass = 'show';
 				this.specCallback = fun;
 			},
@@ -579,9 +655,10 @@
 			//关闭规格弹窗
 			hideSpec() {
 				this.attributeModalClass = 'hide';
+				this.joinCart()
 				//回调
-				this.selectSpec && this.specCallback && this.specCallback();
-				this.specCallback = false;
+				// this.selectSpec && this.specCallback && this.specCallback();
+				// this.specCallback = false;
 				setTimeout(() => {
 					this.attributeModalClass = 'none';
 				}, 200);
@@ -822,7 +899,6 @@
 	.info-box {
 		width: 92%;
 		padding: 20upx 4%;
-		background-color: #fff;
 		margin-bottom: 20upx;
 	}
 
@@ -878,7 +954,7 @@
 			height: 40upx;
 			display: flex;
 			align-items: center;
-			margin: 0 0 30upx 0;
+			margin: 10upx;
 
 			.text {
 				font-size: 30upx;
@@ -936,6 +1012,8 @@
 	}
 
 	.description {
+		margin-top: 20upx;
+
 		.title {
 			width: 100%;
 			height: 80upx;
@@ -1131,10 +1209,10 @@
 				flex-wrap: wrap;
 
 				.attrubite-chip {
-					font-size: 28upx;
-					padding: 20upx 30upx;
+					font-size: 24upx;
+					padding: 10upx 15upx;
 					border-radius: 8upx;
-					margin: 0 30upx 20upx 0;
+					margin: 0 20upx 10upx 0;
 					box-shadow: 0upx 0upx 8upx rgba(0, 0, 0, 0.2);
 
 					&.on {

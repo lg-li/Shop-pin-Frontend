@@ -1,20 +1,5 @@
 (global["webpackJsonp"] = global["webpackJsonp"] || []).push([["pages/user/address/address"],{
 
-/***/ "../../../../Development/NodeJS/Shop-pin-Frontend/Shop-pin-Frontend/main.js?{\"page\":\"pages%2Fuser%2Faddress%2Faddress\"}":
-/*!*********************************************************************************************************************!*\
-  !*** C:/Development/NodeJS/Shop-pin-Frontend/Shop-pin-Frontend/main.js?{"page":"pages%2Fuser%2Faddress%2Faddress"} ***!
-  \*********************************************************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-__webpack_require__(/*! uni-pages */ "../../../../Development/NodeJS/Shop-pin-Frontend/Shop-pin-Frontend/pages.json");
-var _mpvuePageFactory = _interopRequireDefault(__webpack_require__(/*! mpvue-page-factory */ "./node_modules/@dcloudio/vue-cli-plugin-uni/packages/mpvue-page-factory/index.js"));
-var _address = _interopRequireDefault(__webpack_require__(/*! ./pages/user/address/address.vue */ "../../../../Development/NodeJS/Shop-pin-Frontend/Shop-pin-Frontend/pages/user/address/address.vue"));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}
-Page((0, _mpvuePageFactory.default)(_address.default));
-
-/***/ }),
-
 /***/ "../../../../Development/NodeJS/Shop-pin-Frontend/Shop-pin-Frontend/pages/user/address/address.vue":
 /*!************************************************************************************************!*\
   !*** C:/Development/NodeJS/Shop-pin-Frontend/Shop-pin-Frontend/pages/user/address/address.vue ***!
@@ -64,10 +49,10 @@ component.options.__file = "Development/NodeJS/Shop-pin-Frontend/Shop-pin-Fronte
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _Standalone_HBuilderX_plugins_uniapp_cli_node_modules_babel_loader_lib_index_js_Standalone_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_preprocess_loader_index_js_ref_12_1_Standalone_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_preprocess_loader_index_js_ref_18_0_Standalone_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_webpack_uni_mp_loader_lib_script_js_Standalone_HBuilderX_plugins_uniapp_cli_node_modules_vue_loader_lib_index_js_vue_loader_options_address_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../../../Standalone/HBuilderX/plugins/uniapp-cli/node_modules/babel-loader/lib!../../../../../../../Standalone/HBuilderX/plugins/uniapp-cli/node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader??ref--12-1!../../../../../../../Standalone/HBuilderX/plugins/uniapp-cli/node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader??ref--18-0!../../../../../../../Standalone/HBuilderX/plugins/uniapp-cli/node_modules/@dcloudio/webpack-uni-mp-loader/lib/script.js!../../../../../../../Standalone/HBuilderX/plugins/uniapp-cli/node_modules/vue-loader/lib??vue-loader-options!./address.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader/index.js?!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader/index.js?!./node_modules/@dcloudio/webpack-uni-mp-loader/lib/script.js!./node_modules/vue-loader/lib/index.js?!../../../../Development/NodeJS/Shop-pin-Frontend/Shop-pin-Frontend/pages/user/address/address.vue?vue&type=script&lang=js&");
-/* harmony import */ var _Standalone_HBuilderX_plugins_uniapp_cli_node_modules_babel_loader_lib_index_js_Standalone_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_preprocess_loader_index_js_ref_12_1_Standalone_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_preprocess_loader_index_js_ref_18_0_Standalone_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_webpack_uni_mp_loader_lib_script_js_Standalone_HBuilderX_plugins_uniapp_cli_node_modules_vue_loader_lib_index_js_vue_loader_options_address_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_Standalone_HBuilderX_plugins_uniapp_cli_node_modules_babel_loader_lib_index_js_Standalone_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_preprocess_loader_index_js_ref_12_1_Standalone_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_preprocess_loader_index_js_ref_18_0_Standalone_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_webpack_uni_mp_loader_lib_script_js_Standalone_HBuilderX_plugins_uniapp_cli_node_modules_vue_loader_lib_index_js_vue_loader_options_address_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__);
-/* harmony reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in _Standalone_HBuilderX_plugins_uniapp_cli_node_modules_babel_loader_lib_index_js_Standalone_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_preprocess_loader_index_js_ref_12_1_Standalone_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_preprocess_loader_index_js_ref_18_0_Standalone_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_webpack_uni_mp_loader_lib_script_js_Standalone_HBuilderX_plugins_uniapp_cli_node_modules_vue_loader_lib_index_js_vue_loader_options_address_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__) if(__WEBPACK_IMPORT_KEY__ !== 'default') (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return _Standalone_HBuilderX_plugins_uniapp_cli_node_modules_babel_loader_lib_index_js_Standalone_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_preprocess_loader_index_js_ref_12_1_Standalone_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_preprocess_loader_index_js_ref_18_0_Standalone_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_webpack_uni_mp_loader_lib_script_js_Standalone_HBuilderX_plugins_uniapp_cli_node_modules_vue_loader_lib_index_js_vue_loader_options_address_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__[key]; }) }(__WEBPACK_IMPORT_KEY__));
- /* harmony default export */ __webpack_exports__["default"] = (_Standalone_HBuilderX_plugins_uniapp_cli_node_modules_babel_loader_lib_index_js_Standalone_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_preprocess_loader_index_js_ref_12_1_Standalone_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_preprocess_loader_index_js_ref_18_0_Standalone_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_webpack_uni_mp_loader_lib_script_js_Standalone_HBuilderX_plugins_uniapp_cli_node_modules_vue_loader_lib_index_js_vue_loader_options_address_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0___default.a); 
+/* harmony import */ var _Standalone_HBuilderX_plugins_uniapp_cli_node_modules_babel_loader_lib_index_js_Standalone_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_preprocess_loader_index_js_ref_12_1_Standalone_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_webpack_uni_mp_loader_lib_script_js_Standalone_HBuilderX_plugins_uniapp_cli_node_modules_vue_loader_lib_index_js_vue_loader_options_address_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../../../Standalone/HBuilderX/plugins/uniapp-cli/node_modules/babel-loader/lib!../../../../../../../Standalone/HBuilderX/plugins/uniapp-cli/node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader??ref--12-1!../../../../../../../Standalone/HBuilderX/plugins/uniapp-cli/node_modules/@dcloudio/webpack-uni-mp-loader/lib/script.js!../../../../../../../Standalone/HBuilderX/plugins/uniapp-cli/node_modules/vue-loader/lib??vue-loader-options!./address.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader/index.js?!./node_modules/@dcloudio/webpack-uni-mp-loader/lib/script.js!./node_modules/vue-loader/lib/index.js?!../../../../Development/NodeJS/Shop-pin-Frontend/Shop-pin-Frontend/pages/user/address/address.vue?vue&type=script&lang=js&");
+/* harmony import */ var _Standalone_HBuilderX_plugins_uniapp_cli_node_modules_babel_loader_lib_index_js_Standalone_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_preprocess_loader_index_js_ref_12_1_Standalone_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_webpack_uni_mp_loader_lib_script_js_Standalone_HBuilderX_plugins_uniapp_cli_node_modules_vue_loader_lib_index_js_vue_loader_options_address_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_Standalone_HBuilderX_plugins_uniapp_cli_node_modules_babel_loader_lib_index_js_Standalone_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_preprocess_loader_index_js_ref_12_1_Standalone_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_webpack_uni_mp_loader_lib_script_js_Standalone_HBuilderX_plugins_uniapp_cli_node_modules_vue_loader_lib_index_js_vue_loader_options_address_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__);
+/* harmony reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in _Standalone_HBuilderX_plugins_uniapp_cli_node_modules_babel_loader_lib_index_js_Standalone_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_preprocess_loader_index_js_ref_12_1_Standalone_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_webpack_uni_mp_loader_lib_script_js_Standalone_HBuilderX_plugins_uniapp_cli_node_modules_vue_loader_lib_index_js_vue_loader_options_address_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__) if(__WEBPACK_IMPORT_KEY__ !== 'default') (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return _Standalone_HBuilderX_plugins_uniapp_cli_node_modules_babel_loader_lib_index_js_Standalone_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_preprocess_loader_index_js_ref_12_1_Standalone_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_webpack_uni_mp_loader_lib_script_js_Standalone_HBuilderX_plugins_uniapp_cli_node_modules_vue_loader_lib_index_js_vue_loader_options_address_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__[key]; }) }(__WEBPACK_IMPORT_KEY__));
+ /* harmony default export */ __webpack_exports__["default"] = (_Standalone_HBuilderX_plugins_uniapp_cli_node_modules_babel_loader_lib_index_js_Standalone_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_preprocess_loader_index_js_ref_12_1_Standalone_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_webpack_uni_mp_loader_lib_script_js_Standalone_HBuilderX_plugins_uniapp_cli_node_modules_vue_loader_lib_index_js_vue_loader_options_address_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0___default.a); 
 
 /***/ }),
 
@@ -105,15 +90,15 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ "./node_modules/babel-loader/lib/index.js!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader/index.js?!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader/index.js?!./node_modules/@dcloudio/webpack-uni-mp-loader/lib/script.js!./node_modules/vue-loader/lib/index.js?!../../../../Development/NodeJS/Shop-pin-Frontend/Shop-pin-Frontend/pages/user/address/address.vue?vue&type=script&lang=js&":
-/*!************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/babel-loader/lib!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader??ref--12-1!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader??ref--18-0!./node_modules/@dcloudio/webpack-uni-mp-loader/lib/script.js!./node_modules/vue-loader/lib??vue-loader-options!C:/Development/NodeJS/Shop-pin-Frontend/Shop-pin-Frontend/pages/user/address/address.vue?vue&type=script&lang=js& ***!
-  \************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+/***/ "./node_modules/babel-loader/lib/index.js!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader/index.js?!./node_modules/@dcloudio/webpack-uni-mp-loader/lib/script.js!./node_modules/vue-loader/lib/index.js?!../../../../Development/NodeJS/Shop-pin-Frontend/Shop-pin-Frontend/pages/user/address/address.vue?vue&type=script&lang=js&":
+/*!******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader??ref--12-1!./node_modules/@dcloudio/webpack-uni-mp-loader/lib/script.js!./node_modules/vue-loader/lib??vue-loader-options!C:/Development/NodeJS/Shop-pin-Frontend/Shop-pin-Frontend/pages/user/address/address.vue?vue&type=script&lang=js& ***!
+  \******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;
+/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var FullPageEmptyState = function FullPageEmptyState() {return __webpack_require__.e(/*! import() | components/full-page-empty-state */ "components/full-page-empty-state").then(__webpack_require__.bind(null, /*! ../../../components/full-page-empty-state.vue */ "../../../../Development/NodeJS/Shop-pin-Frontend/Shop-pin-Frontend/components/full-page-empty-state.vue"));};var _default =
 
 
 
@@ -152,10 +137,9 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-var _fullPageEmptyState = _interopRequireDefault(__webpack_require__(/*! ../../../components/full-page-empty-state.vue */ "../../../../Development/NodeJS/Shop-pin-Frontend/Shop-pin-Frontend/components/full-page-empty-state.vue"));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}var _default =
 {
   components: {
-    "full-page-empty-state": _fullPageEmptyState.default },
+    "full-page-empty-state": FullPageEmptyState },
 
   data: function data() {
     return {
@@ -248,105 +232,6 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c(
-    "view",
-    [
-      _vm.addressList.length == 0
-        ? _c("full-page-empty-state", {
-            attrs: {
-              title: "没有收货地址",
-              description: "点击下方创建一个吧",
-              icon: "location_on",
-              mpcomid: "f0eae384-0"
-            }
-          })
-        : _vm._e(),
-      _c("view", { staticClass: "content" }, [
-        _c(
-          "view",
-          { staticClass: "list" },
-          _vm._l(_vm.addressList, function(row, index) {
-            return _c(
-              "view",
-              {
-                key: index,
-                staticClass: "row pin-card",
-                attrs: { eventid: "f0eae384-1-" + index },
-                on: {
-                  tap: function($event) {
-                    _vm.select(row)
-                  }
-                }
-              },
-              [
-                _c("view", { staticClass: "left" }, [
-                  _c("view", { staticClass: "head" }, [
-                    _vm._v(_vm._s(row.realName[0]))
-                  ])
-                ]),
-                _c("view", { staticClass: "center" }, [
-                  _c("view", { staticClass: "name-tel" }, [
-                    _c("view", { staticClass: "name" }, [
-                      _vm._v(_vm._s(row.realName))
-                    ]),
-                    _c("view", { staticClass: "tel" }, [
-                      _vm._v(_vm._s(row.phone))
-                    ]),
-                    row.isDefault
-                      ? _c("view", { staticClass: "default" }, [_vm._v("默认")])
-                      : _vm._e()
-                  ]),
-                  _c("view", { staticClass: "address" }, [
-                    _vm._v(
-                      _vm._s(row.province) +
-                        " " +
-                        _vm._s(row.city) +
-                        " " +
-                        _vm._s(row.district) +
-                        " " +
-                        _vm._s(row.detail)
-                    )
-                  ])
-                ]),
-                _c("view", { staticClass: "right" }, [
-                  _c(
-                    "view",
-                    {
-                      staticClass: "icon pin-icon",
-                      attrs: { eventid: "f0eae384-0-" + index },
-                      on: {
-                        tap: function($event) {
-                          $event.stopPropagation()
-                          _vm.edit(row)
-                        }
-                      }
-                    },
-                    [_vm._v("edit")]
-                  )
-                ])
-              ]
-            )
-          })
-        )
-      ]),
-      _c("view", { staticClass: "add" }, [
-        _c(
-          "view",
-          {
-            staticClass: "pin-button pin-bg-primary long-width",
-            attrs: { eventid: "f0eae384-2" },
-            on: { tap: _vm.add }
-          },
-          [
-            _c("i", { staticClass: "pin-icon" }, [_vm._v("add")]),
-            _vm._v("新增地址")
-          ],
-          1
-        )
-      ])
-    ],
-    1
-  )
 }
 var staticRenderFns = []
 render._withStripped = true

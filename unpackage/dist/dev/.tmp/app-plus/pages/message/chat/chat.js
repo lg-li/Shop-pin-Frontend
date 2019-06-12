@@ -1,17 +1,5 @@
 (global["webpackJsonp"] = global["webpackJsonp"] || []).push([["pages/message/chat/chat"],{
 
-/***/ "../../../../Development/NodeJS/Shop-pin-Frontend/Shop-pin-Frontend/main.js?{\"page\":\"pages%2Fmessage%2Fchat%2Fchat\"}":
-/*!******************************************************************************************************************!*\
-  !*** C:/Development/NodeJS/Shop-pin-Frontend/Shop-pin-Frontend/main.js?{"page":"pages%2Fmessage%2Fchat%2Fchat"} ***!
-  \******************************************************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-eval("__webpack_require__(/*! uni-pages */ \"../../../../Development/NodeJS/Shop-pin-Frontend/Shop-pin-Frontend/pages.json\");\nvar _mpvuePageFactory = _interopRequireDefault(__webpack_require__(/*! mpvue-page-factory */ \"./node_modules/@dcloudio/vue-cli-plugin-uni/packages/mpvue-page-factory/index.js\"));\nvar _chat = _interopRequireDefault(__webpack_require__(/*! ./pages/message/chat/chat.vue */ \"../../../../Development/NodeJS/Shop-pin-Frontend/Shop-pin-Frontend/pages/message/chat/chat.vue\"));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}\nPage((0, _mpvuePageFactory.default)(_chat.default));\n\n//# sourceURL=C:/Development/NodeJS/Shop-pin-Frontend/Shop-pin-Frontend/main.js?%7B%22page%22:%22pages%252Fmessage%252Fchat%252Fchat%22%7D");
-
-/***/ }),
-
 /***/ "../../../../Development/NodeJS/Shop-pin-Frontend/Shop-pin-Frontend/pages/message/chat/chat.vue":
 /*!*********************************************************************************************!*\
   !*** C:/Development/NodeJS/Shop-pin-Frontend/Shop-pin-Frontend/pages/message/chat/chat.vue ***!
@@ -20,7 +8,35 @@ eval("__webpack_require__(/*! uni-pages */ \"../../../../Development/NodeJS/Shop
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _chat_vue_vue_type_template_id_86236f44___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./chat.vue?vue&type=template&id=86236f44& */ \"../../../../Development/NodeJS/Shop-pin-Frontend/Shop-pin-Frontend/pages/message/chat/chat.vue?vue&type=template&id=86236f44&\");\n/* harmony import */ var _chat_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./chat.vue?vue&type=script&lang=js& */ \"../../../../Development/NodeJS/Shop-pin-Frontend/Shop-pin-Frontend/pages/message/chat/chat.vue?vue&type=script&lang=js&\");\n/* harmony reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in _chat_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__) if(__WEBPACK_IMPORT_KEY__ !== 'default') (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return _chat_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__[key]; }) }(__WEBPACK_IMPORT_KEY__));\n/* harmony import */ var _chat_vue_vue_type_style_index_0_lang_scss___WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./chat.vue?vue&type=style&index=0&lang=scss& */ \"../../../../Development/NodeJS/Shop-pin-Frontend/Shop-pin-Frontend/pages/message/chat/chat.vue?vue&type=style&index=0&lang=scss&\");\n/* harmony import */ var _Standalone_HBuilderX_plugins_uniapp_cli_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../../../../../../Standalone/HBuilderX/plugins/uniapp-cli/node_modules/vue-loader/lib/runtime/componentNormalizer.js */ \"./node_modules/vue-loader/lib/runtime/componentNormalizer.js\");\n\n\n\n\n\n\n/* normalize component */\n\nvar component = Object(_Standalone_HBuilderX_plugins_uniapp_cli_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_3__[\"default\"])(\n  _chat_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__[\"default\"],\n  _chat_vue_vue_type_template_id_86236f44___WEBPACK_IMPORTED_MODULE_0__[\"render\"],\n  _chat_vue_vue_type_template_id_86236f44___WEBPACK_IMPORTED_MODULE_0__[\"staticRenderFns\"],\n  false,\n  null,\n  null,\n  null\n  \n)\n\n/* hot reload */\nif (false) { var api; }\ncomponent.options.__file = \"Development/NodeJS/Shop-pin-Frontend/Shop-pin-Frontend/pages/message/chat/chat.vue\"\n/* harmony default export */ __webpack_exports__[\"default\"] = (component.exports);\n\n//# sourceURL=C:/Development/NodeJS/Shop-pin-Frontend/Shop-pin-Frontend/pages/message/chat/chat.vue");
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _chat_vue_vue_type_template_id_86236f44___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./chat.vue?vue&type=template&id=86236f44& */ "../../../../Development/NodeJS/Shop-pin-Frontend/Shop-pin-Frontend/pages/message/chat/chat.vue?vue&type=template&id=86236f44&");
+/* harmony import */ var _chat_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./chat.vue?vue&type=script&lang=js& */ "../../../../Development/NodeJS/Shop-pin-Frontend/Shop-pin-Frontend/pages/message/chat/chat.vue?vue&type=script&lang=js&");
+/* harmony reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in _chat_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__) if(__WEBPACK_IMPORT_KEY__ !== 'default') (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return _chat_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__[key]; }) }(__WEBPACK_IMPORT_KEY__));
+/* harmony import */ var _chat_vue_vue_type_style_index_0_lang_scss___WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./chat.vue?vue&type=style&index=0&lang=scss& */ "../../../../Development/NodeJS/Shop-pin-Frontend/Shop-pin-Frontend/pages/message/chat/chat.vue?vue&type=style&index=0&lang=scss&");
+/* harmony import */ var _Standalone_HBuilderX_plugins_uniapp_cli_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../../../../../../Standalone/HBuilderX/plugins/uniapp-cli/node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+
+
+
+
+
+
+/* normalize component */
+
+var component = Object(_Standalone_HBuilderX_plugins_uniapp_cli_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_3__["default"])(
+  _chat_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
+  _chat_vue_vue_type_template_id_86236f44___WEBPACK_IMPORTED_MODULE_0__["render"],
+  _chat_vue_vue_type_template_id_86236f44___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
+  false,
+  null,
+  null,
+  null
+  
+)
+
+/* hot reload */
+if (false) { var api; }
+component.options.__file = "Development/NodeJS/Shop-pin-Frontend/Shop-pin-Frontend/pages/message/chat/chat.vue"
+/* harmony default export */ __webpack_exports__["default"] = (component.exports);
 
 /***/ }),
 
@@ -32,7 +48,11 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _cha
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _Standalone_HBuilderX_plugins_uniapp_cli_node_modules_babel_loader_lib_index_js_Standalone_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_preprocess_loader_index_js_ref_12_1_Standalone_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_preprocess_loader_index_js_ref_18_0_Standalone_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_webpack_uni_mp_loader_lib_script_js_Standalone_HBuilderX_plugins_uniapp_cli_node_modules_vue_loader_lib_index_js_vue_loader_options_chat_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../../../Standalone/HBuilderX/plugins/uniapp-cli/node_modules/babel-loader/lib!../../../../../../../Standalone/HBuilderX/plugins/uniapp-cli/node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader??ref--12-1!../../../../../../../Standalone/HBuilderX/plugins/uniapp-cli/node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader??ref--18-0!../../../../../../../Standalone/HBuilderX/plugins/uniapp-cli/node_modules/@dcloudio/webpack-uni-mp-loader/lib/script.js!../../../../../../../Standalone/HBuilderX/plugins/uniapp-cli/node_modules/vue-loader/lib??vue-loader-options!./chat.vue?vue&type=script&lang=js& */ \"./node_modules/babel-loader/lib/index.js!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader/index.js?!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader/index.js?!./node_modules/@dcloudio/webpack-uni-mp-loader/lib/script.js!./node_modules/vue-loader/lib/index.js?!../../../../Development/NodeJS/Shop-pin-Frontend/Shop-pin-Frontend/pages/message/chat/chat.vue?vue&type=script&lang=js&\");\n/* harmony import */ var _Standalone_HBuilderX_plugins_uniapp_cli_node_modules_babel_loader_lib_index_js_Standalone_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_preprocess_loader_index_js_ref_12_1_Standalone_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_preprocess_loader_index_js_ref_18_0_Standalone_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_webpack_uni_mp_loader_lib_script_js_Standalone_HBuilderX_plugins_uniapp_cli_node_modules_vue_loader_lib_index_js_vue_loader_options_chat_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_Standalone_HBuilderX_plugins_uniapp_cli_node_modules_babel_loader_lib_index_js_Standalone_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_preprocess_loader_index_js_ref_12_1_Standalone_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_preprocess_loader_index_js_ref_18_0_Standalone_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_webpack_uni_mp_loader_lib_script_js_Standalone_HBuilderX_plugins_uniapp_cli_node_modules_vue_loader_lib_index_js_vue_loader_options_chat_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__);\n/* harmony reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in _Standalone_HBuilderX_plugins_uniapp_cli_node_modules_babel_loader_lib_index_js_Standalone_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_preprocess_loader_index_js_ref_12_1_Standalone_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_preprocess_loader_index_js_ref_18_0_Standalone_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_webpack_uni_mp_loader_lib_script_js_Standalone_HBuilderX_plugins_uniapp_cli_node_modules_vue_loader_lib_index_js_vue_loader_options_chat_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__) if(__WEBPACK_IMPORT_KEY__ !== 'default') (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return _Standalone_HBuilderX_plugins_uniapp_cli_node_modules_babel_loader_lib_index_js_Standalone_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_preprocess_loader_index_js_ref_12_1_Standalone_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_preprocess_loader_index_js_ref_18_0_Standalone_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_webpack_uni_mp_loader_lib_script_js_Standalone_HBuilderX_plugins_uniapp_cli_node_modules_vue_loader_lib_index_js_vue_loader_options_chat_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__[key]; }) }(__WEBPACK_IMPORT_KEY__));\n /* harmony default export */ __webpack_exports__[\"default\"] = (_Standalone_HBuilderX_plugins_uniapp_cli_node_modules_babel_loader_lib_index_js_Standalone_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_preprocess_loader_index_js_ref_12_1_Standalone_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_preprocess_loader_index_js_ref_18_0_Standalone_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_webpack_uni_mp_loader_lib_script_js_Standalone_HBuilderX_plugins_uniapp_cli_node_modules_vue_loader_lib_index_js_vue_loader_options_chat_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0___default.a); \n\n//# sourceURL=uni-app:///pages/message/chat/chat.vue?vue&type=script&lang=js&?0b0d");
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _Standalone_HBuilderX_plugins_uniapp_cli_node_modules_babel_loader_lib_index_js_Standalone_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_preprocess_loader_index_js_ref_12_1_Standalone_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_webpack_uni_mp_loader_lib_script_js_Standalone_HBuilderX_plugins_uniapp_cli_node_modules_vue_loader_lib_index_js_vue_loader_options_chat_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../../../Standalone/HBuilderX/plugins/uniapp-cli/node_modules/babel-loader/lib!../../../../../../../Standalone/HBuilderX/plugins/uniapp-cli/node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader??ref--12-1!../../../../../../../Standalone/HBuilderX/plugins/uniapp-cli/node_modules/@dcloudio/webpack-uni-mp-loader/lib/script.js!../../../../../../../Standalone/HBuilderX/plugins/uniapp-cli/node_modules/vue-loader/lib??vue-loader-options!./chat.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader/index.js?!./node_modules/@dcloudio/webpack-uni-mp-loader/lib/script.js!./node_modules/vue-loader/lib/index.js?!../../../../Development/NodeJS/Shop-pin-Frontend/Shop-pin-Frontend/pages/message/chat/chat.vue?vue&type=script&lang=js&");
+/* harmony import */ var _Standalone_HBuilderX_plugins_uniapp_cli_node_modules_babel_loader_lib_index_js_Standalone_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_preprocess_loader_index_js_ref_12_1_Standalone_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_webpack_uni_mp_loader_lib_script_js_Standalone_HBuilderX_plugins_uniapp_cli_node_modules_vue_loader_lib_index_js_vue_loader_options_chat_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_Standalone_HBuilderX_plugins_uniapp_cli_node_modules_babel_loader_lib_index_js_Standalone_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_preprocess_loader_index_js_ref_12_1_Standalone_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_webpack_uni_mp_loader_lib_script_js_Standalone_HBuilderX_plugins_uniapp_cli_node_modules_vue_loader_lib_index_js_vue_loader_options_chat_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__);
+/* harmony reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in _Standalone_HBuilderX_plugins_uniapp_cli_node_modules_babel_loader_lib_index_js_Standalone_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_preprocess_loader_index_js_ref_12_1_Standalone_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_webpack_uni_mp_loader_lib_script_js_Standalone_HBuilderX_plugins_uniapp_cli_node_modules_vue_loader_lib_index_js_vue_loader_options_chat_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__) if(__WEBPACK_IMPORT_KEY__ !== 'default') (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return _Standalone_HBuilderX_plugins_uniapp_cli_node_modules_babel_loader_lib_index_js_Standalone_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_preprocess_loader_index_js_ref_12_1_Standalone_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_webpack_uni_mp_loader_lib_script_js_Standalone_HBuilderX_plugins_uniapp_cli_node_modules_vue_loader_lib_index_js_vue_loader_options_chat_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__[key]; }) }(__WEBPACK_IMPORT_KEY__));
+ /* harmony default export */ __webpack_exports__["default"] = (_Standalone_HBuilderX_plugins_uniapp_cli_node_modules_babel_loader_lib_index_js_Standalone_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_preprocess_loader_index_js_ref_12_1_Standalone_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_webpack_uni_mp_loader_lib_script_js_Standalone_HBuilderX_plugins_uniapp_cli_node_modules_vue_loader_lib_index_js_vue_loader_options_chat_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0___default.a); 
 
 /***/ }),
 
@@ -44,7 +64,11 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _Sta
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _Standalone_HBuilderX_plugins_uniapp_cli_node_modules_mini_css_extract_plugin_dist_loader_js_ref_8_oneOf_1_0_Standalone_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_preprocess_loader_index_js_ref_8_oneOf_1_1_Standalone_HBuilderX_plugins_uniapp_cli_node_modules_css_loader_index_js_ref_8_oneOf_1_2_Standalone_HBuilderX_plugins_uniapp_cli_node_modules_vue_loader_lib_loaders_stylePostLoader_js_Standalone_HBuilderX_plugins_uniapp_cli_node_modules_postcss_loader_src_index_js_ref_8_oneOf_1_3_Standalone_HBuilderX_plugins_uniapp_cli_node_modules_sass_loader_lib_loader_js_ref_8_oneOf_1_4_Standalone_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_preprocess_loader_index_js_ref_8_oneOf_1_5_Standalone_HBuilderX_plugins_uniapp_cli_node_modules_vue_loader_lib_index_js_vue_loader_options_chat_vue_vue_type_style_index_0_lang_scss___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../../../Standalone/HBuilderX/plugins/uniapp-cli/node_modules/mini-css-extract-plugin/dist/loader.js??ref--8-oneOf-1-0!../../../../../../../Standalone/HBuilderX/plugins/uniapp-cli/node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader??ref--8-oneOf-1-1!../../../../../../../Standalone/HBuilderX/plugins/uniapp-cli/node_modules/css-loader??ref--8-oneOf-1-2!../../../../../../../Standalone/HBuilderX/plugins/uniapp-cli/node_modules/vue-loader/lib/loaders/stylePostLoader.js!../../../../../../../Standalone/HBuilderX/plugins/uniapp-cli/node_modules/postcss-loader/src??ref--8-oneOf-1-3!../../../../../../../Standalone/HBuilderX/plugins/uniapp-cli/node_modules/sass-loader/lib/loader.js??ref--8-oneOf-1-4!../../../../../../../Standalone/HBuilderX/plugins/uniapp-cli/node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader??ref--8-oneOf-1-5!../../../../../../../Standalone/HBuilderX/plugins/uniapp-cli/node_modules/vue-loader/lib??vue-loader-options!./chat.vue?vue&type=style&index=0&lang=scss& */ \"./node_modules/mini-css-extract-plugin/dist/loader.js?!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader/index.js?!./node_modules/css-loader/index.js?!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/lib/loader.js?!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader/index.js?!./node_modules/vue-loader/lib/index.js?!../../../../Development/NodeJS/Shop-pin-Frontend/Shop-pin-Frontend/pages/message/chat/chat.vue?vue&type=style&index=0&lang=scss&\");\n/* harmony import */ var _Standalone_HBuilderX_plugins_uniapp_cli_node_modules_mini_css_extract_plugin_dist_loader_js_ref_8_oneOf_1_0_Standalone_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_preprocess_loader_index_js_ref_8_oneOf_1_1_Standalone_HBuilderX_plugins_uniapp_cli_node_modules_css_loader_index_js_ref_8_oneOf_1_2_Standalone_HBuilderX_plugins_uniapp_cli_node_modules_vue_loader_lib_loaders_stylePostLoader_js_Standalone_HBuilderX_plugins_uniapp_cli_node_modules_postcss_loader_src_index_js_ref_8_oneOf_1_3_Standalone_HBuilderX_plugins_uniapp_cli_node_modules_sass_loader_lib_loader_js_ref_8_oneOf_1_4_Standalone_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_preprocess_loader_index_js_ref_8_oneOf_1_5_Standalone_HBuilderX_plugins_uniapp_cli_node_modules_vue_loader_lib_index_js_vue_loader_options_chat_vue_vue_type_style_index_0_lang_scss___WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_Standalone_HBuilderX_plugins_uniapp_cli_node_modules_mini_css_extract_plugin_dist_loader_js_ref_8_oneOf_1_0_Standalone_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_preprocess_loader_index_js_ref_8_oneOf_1_1_Standalone_HBuilderX_plugins_uniapp_cli_node_modules_css_loader_index_js_ref_8_oneOf_1_2_Standalone_HBuilderX_plugins_uniapp_cli_node_modules_vue_loader_lib_loaders_stylePostLoader_js_Standalone_HBuilderX_plugins_uniapp_cli_node_modules_postcss_loader_src_index_js_ref_8_oneOf_1_3_Standalone_HBuilderX_plugins_uniapp_cli_node_modules_sass_loader_lib_loader_js_ref_8_oneOf_1_4_Standalone_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_preprocess_loader_index_js_ref_8_oneOf_1_5_Standalone_HBuilderX_plugins_uniapp_cli_node_modules_vue_loader_lib_index_js_vue_loader_options_chat_vue_vue_type_style_index_0_lang_scss___WEBPACK_IMPORTED_MODULE_0__);\n/* harmony reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in _Standalone_HBuilderX_plugins_uniapp_cli_node_modules_mini_css_extract_plugin_dist_loader_js_ref_8_oneOf_1_0_Standalone_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_preprocess_loader_index_js_ref_8_oneOf_1_1_Standalone_HBuilderX_plugins_uniapp_cli_node_modules_css_loader_index_js_ref_8_oneOf_1_2_Standalone_HBuilderX_plugins_uniapp_cli_node_modules_vue_loader_lib_loaders_stylePostLoader_js_Standalone_HBuilderX_plugins_uniapp_cli_node_modules_postcss_loader_src_index_js_ref_8_oneOf_1_3_Standalone_HBuilderX_plugins_uniapp_cli_node_modules_sass_loader_lib_loader_js_ref_8_oneOf_1_4_Standalone_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_preprocess_loader_index_js_ref_8_oneOf_1_5_Standalone_HBuilderX_plugins_uniapp_cli_node_modules_vue_loader_lib_index_js_vue_loader_options_chat_vue_vue_type_style_index_0_lang_scss___WEBPACK_IMPORTED_MODULE_0__) if(__WEBPACK_IMPORT_KEY__ !== 'default') (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return _Standalone_HBuilderX_plugins_uniapp_cli_node_modules_mini_css_extract_plugin_dist_loader_js_ref_8_oneOf_1_0_Standalone_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_preprocess_loader_index_js_ref_8_oneOf_1_1_Standalone_HBuilderX_plugins_uniapp_cli_node_modules_css_loader_index_js_ref_8_oneOf_1_2_Standalone_HBuilderX_plugins_uniapp_cli_node_modules_vue_loader_lib_loaders_stylePostLoader_js_Standalone_HBuilderX_plugins_uniapp_cli_node_modules_postcss_loader_src_index_js_ref_8_oneOf_1_3_Standalone_HBuilderX_plugins_uniapp_cli_node_modules_sass_loader_lib_loader_js_ref_8_oneOf_1_4_Standalone_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_preprocess_loader_index_js_ref_8_oneOf_1_5_Standalone_HBuilderX_plugins_uniapp_cli_node_modules_vue_loader_lib_index_js_vue_loader_options_chat_vue_vue_type_style_index_0_lang_scss___WEBPACK_IMPORTED_MODULE_0__[key]; }) }(__WEBPACK_IMPORT_KEY__));\n /* harmony default export */ __webpack_exports__[\"default\"] = (_Standalone_HBuilderX_plugins_uniapp_cli_node_modules_mini_css_extract_plugin_dist_loader_js_ref_8_oneOf_1_0_Standalone_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_preprocess_loader_index_js_ref_8_oneOf_1_1_Standalone_HBuilderX_plugins_uniapp_cli_node_modules_css_loader_index_js_ref_8_oneOf_1_2_Standalone_HBuilderX_plugins_uniapp_cli_node_modules_vue_loader_lib_loaders_stylePostLoader_js_Standalone_HBuilderX_plugins_uniapp_cli_node_modules_postcss_loader_src_index_js_ref_8_oneOf_1_3_Standalone_HBuilderX_plugins_uniapp_cli_node_modules_sass_loader_lib_loader_js_ref_8_oneOf_1_4_Standalone_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_preprocess_loader_index_js_ref_8_oneOf_1_5_Standalone_HBuilderX_plugins_uniapp_cli_node_modules_vue_loader_lib_index_js_vue_loader_options_chat_vue_vue_type_style_index_0_lang_scss___WEBPACK_IMPORTED_MODULE_0___default.a); \n\n//# sourceURL=C:/Development/NodeJS/Shop-pin-Frontend/Shop-pin-Frontend/pages/message/chat/chat.vue?vue&type=style&index=0&lang=scss&");
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _Standalone_HBuilderX_plugins_uniapp_cli_node_modules_mini_css_extract_plugin_dist_loader_js_ref_8_oneOf_1_0_Standalone_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_preprocess_loader_index_js_ref_8_oneOf_1_1_Standalone_HBuilderX_plugins_uniapp_cli_node_modules_css_loader_index_js_ref_8_oneOf_1_2_Standalone_HBuilderX_plugins_uniapp_cli_node_modules_vue_loader_lib_loaders_stylePostLoader_js_Standalone_HBuilderX_plugins_uniapp_cli_node_modules_postcss_loader_src_index_js_ref_8_oneOf_1_3_Standalone_HBuilderX_plugins_uniapp_cli_node_modules_sass_loader_lib_loader_js_ref_8_oneOf_1_4_Standalone_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_preprocess_loader_index_js_ref_8_oneOf_1_5_Standalone_HBuilderX_plugins_uniapp_cli_node_modules_vue_loader_lib_index_js_vue_loader_options_chat_vue_vue_type_style_index_0_lang_scss___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../../../Standalone/HBuilderX/plugins/uniapp-cli/node_modules/mini-css-extract-plugin/dist/loader.js??ref--8-oneOf-1-0!../../../../../../../Standalone/HBuilderX/plugins/uniapp-cli/node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader??ref--8-oneOf-1-1!../../../../../../../Standalone/HBuilderX/plugins/uniapp-cli/node_modules/css-loader??ref--8-oneOf-1-2!../../../../../../../Standalone/HBuilderX/plugins/uniapp-cli/node_modules/vue-loader/lib/loaders/stylePostLoader.js!../../../../../../../Standalone/HBuilderX/plugins/uniapp-cli/node_modules/postcss-loader/src??ref--8-oneOf-1-3!../../../../../../../Standalone/HBuilderX/plugins/uniapp-cli/node_modules/sass-loader/lib/loader.js??ref--8-oneOf-1-4!../../../../../../../Standalone/HBuilderX/plugins/uniapp-cli/node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader??ref--8-oneOf-1-5!../../../../../../../Standalone/HBuilderX/plugins/uniapp-cli/node_modules/vue-loader/lib??vue-loader-options!./chat.vue?vue&type=style&index=0&lang=scss& */ "./node_modules/mini-css-extract-plugin/dist/loader.js?!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader/index.js?!./node_modules/css-loader/index.js?!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/lib/loader.js?!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader/index.js?!./node_modules/vue-loader/lib/index.js?!../../../../Development/NodeJS/Shop-pin-Frontend/Shop-pin-Frontend/pages/message/chat/chat.vue?vue&type=style&index=0&lang=scss&");
+/* harmony import */ var _Standalone_HBuilderX_plugins_uniapp_cli_node_modules_mini_css_extract_plugin_dist_loader_js_ref_8_oneOf_1_0_Standalone_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_preprocess_loader_index_js_ref_8_oneOf_1_1_Standalone_HBuilderX_plugins_uniapp_cli_node_modules_css_loader_index_js_ref_8_oneOf_1_2_Standalone_HBuilderX_plugins_uniapp_cli_node_modules_vue_loader_lib_loaders_stylePostLoader_js_Standalone_HBuilderX_plugins_uniapp_cli_node_modules_postcss_loader_src_index_js_ref_8_oneOf_1_3_Standalone_HBuilderX_plugins_uniapp_cli_node_modules_sass_loader_lib_loader_js_ref_8_oneOf_1_4_Standalone_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_preprocess_loader_index_js_ref_8_oneOf_1_5_Standalone_HBuilderX_plugins_uniapp_cli_node_modules_vue_loader_lib_index_js_vue_loader_options_chat_vue_vue_type_style_index_0_lang_scss___WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_Standalone_HBuilderX_plugins_uniapp_cli_node_modules_mini_css_extract_plugin_dist_loader_js_ref_8_oneOf_1_0_Standalone_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_preprocess_loader_index_js_ref_8_oneOf_1_1_Standalone_HBuilderX_plugins_uniapp_cli_node_modules_css_loader_index_js_ref_8_oneOf_1_2_Standalone_HBuilderX_plugins_uniapp_cli_node_modules_vue_loader_lib_loaders_stylePostLoader_js_Standalone_HBuilderX_plugins_uniapp_cli_node_modules_postcss_loader_src_index_js_ref_8_oneOf_1_3_Standalone_HBuilderX_plugins_uniapp_cli_node_modules_sass_loader_lib_loader_js_ref_8_oneOf_1_4_Standalone_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_preprocess_loader_index_js_ref_8_oneOf_1_5_Standalone_HBuilderX_plugins_uniapp_cli_node_modules_vue_loader_lib_index_js_vue_loader_options_chat_vue_vue_type_style_index_0_lang_scss___WEBPACK_IMPORTED_MODULE_0__);
+/* harmony reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in _Standalone_HBuilderX_plugins_uniapp_cli_node_modules_mini_css_extract_plugin_dist_loader_js_ref_8_oneOf_1_0_Standalone_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_preprocess_loader_index_js_ref_8_oneOf_1_1_Standalone_HBuilderX_plugins_uniapp_cli_node_modules_css_loader_index_js_ref_8_oneOf_1_2_Standalone_HBuilderX_plugins_uniapp_cli_node_modules_vue_loader_lib_loaders_stylePostLoader_js_Standalone_HBuilderX_plugins_uniapp_cli_node_modules_postcss_loader_src_index_js_ref_8_oneOf_1_3_Standalone_HBuilderX_plugins_uniapp_cli_node_modules_sass_loader_lib_loader_js_ref_8_oneOf_1_4_Standalone_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_preprocess_loader_index_js_ref_8_oneOf_1_5_Standalone_HBuilderX_plugins_uniapp_cli_node_modules_vue_loader_lib_index_js_vue_loader_options_chat_vue_vue_type_style_index_0_lang_scss___WEBPACK_IMPORTED_MODULE_0__) if(__WEBPACK_IMPORT_KEY__ !== 'default') (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return _Standalone_HBuilderX_plugins_uniapp_cli_node_modules_mini_css_extract_plugin_dist_loader_js_ref_8_oneOf_1_0_Standalone_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_preprocess_loader_index_js_ref_8_oneOf_1_1_Standalone_HBuilderX_plugins_uniapp_cli_node_modules_css_loader_index_js_ref_8_oneOf_1_2_Standalone_HBuilderX_plugins_uniapp_cli_node_modules_vue_loader_lib_loaders_stylePostLoader_js_Standalone_HBuilderX_plugins_uniapp_cli_node_modules_postcss_loader_src_index_js_ref_8_oneOf_1_3_Standalone_HBuilderX_plugins_uniapp_cli_node_modules_sass_loader_lib_loader_js_ref_8_oneOf_1_4_Standalone_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_preprocess_loader_index_js_ref_8_oneOf_1_5_Standalone_HBuilderX_plugins_uniapp_cli_node_modules_vue_loader_lib_index_js_vue_loader_options_chat_vue_vue_type_style_index_0_lang_scss___WEBPACK_IMPORTED_MODULE_0__[key]; }) }(__WEBPACK_IMPORT_KEY__));
+ /* harmony default export */ __webpack_exports__["default"] = (_Standalone_HBuilderX_plugins_uniapp_cli_node_modules_mini_css_extract_plugin_dist_loader_js_ref_8_oneOf_1_0_Standalone_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_preprocess_loader_index_js_ref_8_oneOf_1_1_Standalone_HBuilderX_plugins_uniapp_cli_node_modules_css_loader_index_js_ref_8_oneOf_1_2_Standalone_HBuilderX_plugins_uniapp_cli_node_modules_vue_loader_lib_loaders_stylePostLoader_js_Standalone_HBuilderX_plugins_uniapp_cli_node_modules_postcss_loader_src_index_js_ref_8_oneOf_1_3_Standalone_HBuilderX_plugins_uniapp_cli_node_modules_sass_loader_lib_loader_js_ref_8_oneOf_1_4_Standalone_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_preprocess_loader_index_js_ref_8_oneOf_1_5_Standalone_HBuilderX_plugins_uniapp_cli_node_modules_vue_loader_lib_index_js_vue_loader_options_chat_vue_vue_type_style_index_0_lang_scss___WEBPACK_IMPORTED_MODULE_0___default.a); 
 
 /***/ }),
 
@@ -56,19 +80,439 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _Sta
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _Standalone_HBuilderX_plugins_uniapp_cli_node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_Standalone_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_preprocess_loader_index_js_ref_17_0_Standalone_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_webpack_uni_mp_loader_lib_template_js_Standalone_HBuilderX_plugins_uniapp_cli_node_modules_vue_loader_lib_index_js_vue_loader_options_chat_vue_vue_type_template_id_86236f44___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../../../Standalone/HBuilderX/plugins/uniapp-cli/node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../../../../../Standalone/HBuilderX/plugins/uniapp-cli/node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader??ref--17-0!../../../../../../../Standalone/HBuilderX/plugins/uniapp-cli/node_modules/@dcloudio/webpack-uni-mp-loader/lib/template.js!../../../../../../../Standalone/HBuilderX/plugins/uniapp-cli/node_modules/vue-loader/lib??vue-loader-options!./chat.vue?vue&type=template&id=86236f44& */ \"./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader/index.js?!./node_modules/@dcloudio/webpack-uni-mp-loader/lib/template.js!./node_modules/vue-loader/lib/index.js?!../../../../Development/NodeJS/Shop-pin-Frontend/Shop-pin-Frontend/pages/message/chat/chat.vue?vue&type=template&id=86236f44&\");\n/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, \"render\", function() { return _Standalone_HBuilderX_plugins_uniapp_cli_node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_Standalone_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_preprocess_loader_index_js_ref_17_0_Standalone_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_webpack_uni_mp_loader_lib_template_js_Standalone_HBuilderX_plugins_uniapp_cli_node_modules_vue_loader_lib_index_js_vue_loader_options_chat_vue_vue_type_template_id_86236f44___WEBPACK_IMPORTED_MODULE_0__[\"render\"]; });\n\n/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, \"staticRenderFns\", function() { return _Standalone_HBuilderX_plugins_uniapp_cli_node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_Standalone_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_preprocess_loader_index_js_ref_17_0_Standalone_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_webpack_uni_mp_loader_lib_template_js_Standalone_HBuilderX_plugins_uniapp_cli_node_modules_vue_loader_lib_index_js_vue_loader_options_chat_vue_vue_type_template_id_86236f44___WEBPACK_IMPORTED_MODULE_0__[\"staticRenderFns\"]; });\n\n\n\n//# sourceURL=C:/Development/NodeJS/Shop-pin-Frontend/Shop-pin-Frontend/pages/message/chat/chat.vue?vue&type=template&id=86236f44&");
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _Standalone_HBuilderX_plugins_uniapp_cli_node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_Standalone_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_preprocess_loader_index_js_ref_17_0_Standalone_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_webpack_uni_mp_loader_lib_template_js_Standalone_HBuilderX_plugins_uniapp_cli_node_modules_vue_loader_lib_index_js_vue_loader_options_chat_vue_vue_type_template_id_86236f44___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../../../Standalone/HBuilderX/plugins/uniapp-cli/node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../../../../../Standalone/HBuilderX/plugins/uniapp-cli/node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader??ref--17-0!../../../../../../../Standalone/HBuilderX/plugins/uniapp-cli/node_modules/@dcloudio/webpack-uni-mp-loader/lib/template.js!../../../../../../../Standalone/HBuilderX/plugins/uniapp-cli/node_modules/vue-loader/lib??vue-loader-options!./chat.vue?vue&type=template&id=86236f44& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader/index.js?!./node_modules/@dcloudio/webpack-uni-mp-loader/lib/template.js!./node_modules/vue-loader/lib/index.js?!../../../../Development/NodeJS/Shop-pin-Frontend/Shop-pin-Frontend/pages/message/chat/chat.vue?vue&type=template&id=86236f44&");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _Standalone_HBuilderX_plugins_uniapp_cli_node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_Standalone_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_preprocess_loader_index_js_ref_17_0_Standalone_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_webpack_uni_mp_loader_lib_template_js_Standalone_HBuilderX_plugins_uniapp_cli_node_modules_vue_loader_lib_index_js_vue_loader_options_chat_vue_vue_type_template_id_86236f44___WEBPACK_IMPORTED_MODULE_0__["render"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _Standalone_HBuilderX_plugins_uniapp_cli_node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_Standalone_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_preprocess_loader_index_js_ref_17_0_Standalone_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_webpack_uni_mp_loader_lib_template_js_Standalone_HBuilderX_plugins_uniapp_cli_node_modules_vue_loader_lib_index_js_vue_loader_options_chat_vue_vue_type_template_id_86236f44___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
+
+
 
 /***/ }),
 
-/***/ "./node_modules/babel-loader/lib/index.js!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader/index.js?!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader/index.js?!./node_modules/@dcloudio/webpack-uni-mp-loader/lib/script.js!./node_modules/vue-loader/lib/index.js?!../../../../Development/NodeJS/Shop-pin-Frontend/Shop-pin-Frontend/pages/message/chat/chat.vue?vue&type=script&lang=js&":
-/*!*********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/babel-loader/lib!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader??ref--12-1!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader??ref--18-0!./node_modules/@dcloudio/webpack-uni-mp-loader/lib/script.js!./node_modules/vue-loader/lib??vue-loader-options!C:/Development/NodeJS/Shop-pin-Frontend/Shop-pin-Frontend/pages/message/chat/chat.vue?vue&type=script&lang=js& ***!
-  \*********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+/***/ "./node_modules/babel-loader/lib/index.js!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader/index.js?!./node_modules/@dcloudio/webpack-uni-mp-loader/lib/script.js!./node_modules/vue-loader/lib/index.js?!../../../../Development/NodeJS/Shop-pin-Frontend/Shop-pin-Frontend/pages/message/chat/chat.vue?vue&type=script&lang=js&":
+/*!***************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader??ref--12-1!./node_modules/@dcloudio/webpack-uni-mp-loader/lib/script.js!./node_modules/vue-loader/lib??vue-loader-options!C:/Development/NodeJS/Shop-pin-Frontend/Shop-pin-Frontend/pages/message/chat/chat.vue?vue&type=script&lang=js& ***!
+  \***************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval("/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, \"__esModule\", { value: true });exports.default = void 0;var _default =\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n{\n  data: function data() {\n    return {\n      //文字消息\n\n      textMsg: '',\n      //消息列表\n      scrollAnimation: false,\n      scrollTop: 0,\n      scrollToView: '',\n      msgList: [],\n      msgImgList: [],\n      myuid: 0,\n      //录音相关参数\n\n      //H5不能录音\n      RECORDER: uni.getRecorderManager(),\n\n      isVoice: false,\n      voiceTis: '按住 说话',\n      recordTis: \"手指上滑 取消发送\",\n      recording: false,\n      willStop: false,\n      initPoint: { identifier: 0, Y: 0 },\n      recordTimer: null,\n      recordLength: 0,\n      //播放语音相关参数\n      AUDIO: uni.createInnerAudioContext(),\n      playMsgid: null,\n      VoiceTimer: null,\n      //表情定义\n      showEmji: '',\n      emojiList: [\n      [{ \"url\": \"100.gif\", alt: \"[微笑]\" }, { \"url\": \"101.gif\", alt: \"[伤心]\" }, { \"url\": \"102.gif\", alt: \"[美女]\" }, { \"url\": \"103.gif\", alt: \"[发呆]\" }, { \"url\": \"104.gif\", alt: \"[墨镜]\" }, { \"url\": \"105.gif\", alt: \"[哭]\" }, { \"url\": \"106.gif\", alt: \"[羞]\" }, { \"url\": \"107.gif\", alt: \"[哑]\" }, { \"url\": \"108.gif\", alt: \"[睡]\" }, { \"url\": \"109.gif\", alt: \"[哭]\" }, { \"url\": \"110.gif\", alt: \"[囧]\" }, { \"url\": \"111.gif\", alt: \"[怒]\" }, { \"url\": \"112.gif\", alt: \"[调皮]\" }, { \"url\": \"113.gif\", alt: \"[笑]\" }, { \"url\": \"114.gif\", alt: \"[惊讶]\" }, { \"url\": \"115.gif\", alt: \"[难过]\" }, { \"url\": \"116.gif\", alt: \"[酷]\" }, { \"url\": \"117.gif\", alt: \"[汗]\" }, { \"url\": \"118.gif\", alt: \"[抓狂]\" }, { \"url\": \"119.gif\", alt: \"[吐]\" }, { \"url\": \"120.gif\", alt: \"[笑]\" }, { \"url\": \"121.gif\", alt: \"[快乐]\" }, { \"url\": \"122.gif\", alt: \"[奇]\" }, { \"url\": \"123.gif\", alt: \"[傲]\" }],\n      [{ \"url\": \"124.gif\", alt: \"[饿]\" }, { \"url\": \"125.gif\", alt: \"[累]\" }, { \"url\": \"126.gif\", alt: \"[吓]\" }, { \"url\": \"127.gif\", alt: \"[汗]\" }, { \"url\": \"128.gif\", alt: \"[高兴]\" }, { \"url\": \"129.gif\", alt: \"[闲]\" }, { \"url\": \"130.gif\", alt: \"[努力]\" }, { \"url\": \"131.gif\", alt: \"[骂]\" }, { \"url\": \"132.gif\", alt: \"[疑问]\" }, { \"url\": \"133.gif\", alt: \"[秘密]\" }, { \"url\": \"134.gif\", alt: \"[乱]\" }, { \"url\": \"135.gif\", alt: \"[疯]\" }, { \"url\": \"136.gif\", alt: \"[哀]\" }, { \"url\": \"137.gif\", alt: \"[鬼]\" }, { \"url\": \"138.gif\", alt: \"[打击]\" }, { \"url\": \"139.gif\", alt: \"[bye]\" }, { \"url\": \"140.gif\", alt: \"[汗]\" }, { \"url\": \"141.gif\", alt: \"[抠]\" }, { \"url\": \"142.gif\", alt: \"[鼓掌]\" }, { \"url\": \"143.gif\", alt: \"[糟糕]\" }, { \"url\": \"144.gif\", alt: \"[恶搞]\" }, { \"url\": \"145.gif\", alt: \"[什么]\" }, { \"url\": \"146.gif\", alt: \"[什么]\" }, { \"url\": \"147.gif\", alt: \"[累]\" }],\n      [{ \"url\": \"148.gif\", alt: \"[看]\" }, { \"url\": \"149.gif\", alt: \"[难过]\" }, { \"url\": \"150.gif\", alt: \"[难过]\" }, { \"url\": \"151.gif\", alt: \"[坏]\" }, { \"url\": \"152.gif\", alt: \"[亲]\" }, { \"url\": \"153.gif\", alt: \"[吓]\" }, { \"url\": \"154.gif\", alt: \"[可怜]\" }, { \"url\": \"155.gif\", alt: \"[刀]\" }, { \"url\": \"156.gif\", alt: \"[水果]\" }, { \"url\": \"157.gif\", alt: \"[酒]\" }, { \"url\": \"158.gif\", alt: \"[篮球]\" }, { \"url\": \"159.gif\", alt: \"[乒乓]\" }, { \"url\": \"160.gif\", alt: \"[咖啡]\" }, { \"url\": \"161.gif\", alt: \"[美食]\" }, { \"url\": \"162.gif\", alt: \"[动物]\" }, { \"url\": \"163.gif\", alt: \"[鲜花]\" }, { \"url\": \"164.gif\", alt: \"[枯]\" }, { \"url\": \"165.gif\", alt: \"[唇]\" }, { \"url\": \"166.gif\", alt: \"[爱]\" }, { \"url\": \"167.gif\", alt: \"[分手]\" }, { \"url\": \"168.gif\", alt: \"[生日]\" }, { \"url\": \"169.gif\", alt: \"[电]\" }, { \"url\": \"170.gif\", alt: \"[炸弹]\" }, { \"url\": \"171.gif\", alt: \"[刀子]\" }],\n      [{ \"url\": \"172.gif\", alt: \"[足球]\" }, { \"url\": \"173.gif\", alt: \"[瓢虫]\" }, { \"url\": \"174.gif\", alt: \"[翔]\" }, { \"url\": \"175.gif\", alt: \"[月亮]\" }, { \"url\": \"176.gif\", alt: \"[太阳]\" }, { \"url\": \"177.gif\", alt: \"[礼物]\" }, { \"url\": \"178.gif\", alt: \"[抱抱]\" }, { \"url\": \"179.gif\", alt: \"[拇指]\" }, { \"url\": \"180.gif\", alt: \"[贬低]\" }, { \"url\": \"181.gif\", alt: \"[握手]\" }, { \"url\": \"182.gif\", alt: \"[剪刀手]\" }, { \"url\": \"183.gif\", alt: \"[抱拳]\" }, { \"url\": \"184.gif\", alt: \"[勾引]\" }, { \"url\": \"185.gif\", alt: \"[拳头]\" }, { \"url\": \"186.gif\", alt: \"[小拇指]\" }, { \"url\": \"187.gif\", alt: \"[拇指八]\" }, { \"url\": \"188.gif\", alt: \"[食指]\" }, { \"url\": \"189.gif\", alt: \"[ok]\" }, { \"url\": \"190.gif\", alt: \"[情侣]\" }, { \"url\": \"191.gif\", alt: \"[爱心]\" }, { \"url\": \"192.gif\", alt: \"[蹦哒]\" }, { \"url\": \"193.gif\", alt: \"[颤抖]\" }, { \"url\": \"194.gif\", alt: \"[怄气]\" }, { \"url\": \"195.gif\", alt: \"[跳舞]\" }],\n      [{ \"url\": \"196.gif\", alt: \"[发呆]\" }, { \"url\": \"197.gif\", alt: \"[背着]\" }, { \"url\": \"198.gif\", alt: \"[伸手]\" }, { \"url\": \"199.gif\", alt: \"[耍帅]\" }, { \"url\": \"200.png\", alt: \"[微笑]\" }, { \"url\": \"201.png\", alt: \"[生病]\" }, { \"url\": \"202.png\", alt: \"[哭泣]\" }, { \"url\": \"203.png\", alt: \"[吐舌]\" }, { \"url\": \"204.png\", alt: \"[迷糊]\" }, { \"url\": \"205.png\", alt: \"[瞪眼]\" }, { \"url\": \"206.png\", alt: \"[恐怖]\" }, { \"url\": \"207.png\", alt: \"[忧愁]\" }, { \"url\": \"208.png\", alt: \"[眨眉]\" }, { \"url\": \"209.png\", alt: \"[闭眼]\" }, { \"url\": \"210.png\", alt: \"[鄙视]\" }, { \"url\": \"211.png\", alt: \"[阴暗]\" }, { \"url\": \"212.png\", alt: \"[小鬼]\" }, { \"url\": \"213.png\", alt: \"[礼物]\" }, { \"url\": \"214.png\", alt: \"[拜佛]\" }, { \"url\": \"215.png\", alt: \"[力量]\" }, { \"url\": \"216.png\", alt: \"[金钱]\" }, { \"url\": \"217.png\", alt: \"[蛋糕]\" }, { \"url\": \"218.png\", alt: \"[彩带]\" }, { \"url\": \"219.png\", alt: \"[礼物]\" }]],\n\n      //表情图片图床名称\n      onlineEmoji: { \"100.gif\": \"AbNQgA.gif\", \"101.gif\": \"AbN3ut.gif\", \"102.gif\": \"AbNM3d.gif\", \"103.gif\": \"AbN8DP.gif\", \"104.gif\": \"AbNljI.gif\", \"105.gif\": \"AbNtUS.gif\", \"106.gif\": \"AbNGHf.gif\", \"107.gif\": \"AbNYE8.gif\", \"108.gif\": \"AbNaCQ.gif\", \"109.gif\": \"AbNN4g.gif\", \"110.gif\": \"AbN0vn.gif\", \"111.gif\": \"AbNd3j.gif\", \"112.gif\": \"AbNsbV.gif\", \"113.gif\": \"AbNwgs.gif\", \"114.gif\": \"AbNrD0.gif\", \"115.gif\": \"AbNDuq.gif\", \"116.gif\": \"AbNg5F.gif\", \"117.gif\": \"AbN6ET.gif\", \"118.gif\": \"AbNcUU.gif\", \"119.gif\": \"AbNRC4.gif\", \"120.gif\": \"AbNhvR.gif\", \"121.gif\": \"AbNf29.gif\", \"122.gif\": \"AbNW8J.gif\", \"123.gif\": \"AbNob6.gif\", \"124.gif\": \"AbN5K1.gif\", \"125.gif\": \"AbNHUO.gif\", \"126.gif\": \"AbNIDx.gif\", \"127.gif\": \"AbN7VK.gif\", \"128.gif\": \"AbNb5D.gif\", \"129.gif\": \"AbNX2d.gif\", \"130.gif\": \"AbNLPe.gif\", \"131.gif\": \"AbNjxA.gif\", \"132.gif\": \"AbNO8H.gif\", \"133.gif\": \"AbNxKI.gif\", \"134.gif\": \"AbNzrt.gif\", \"135.gif\": \"AbU9Vf.gif\", \"136.gif\": \"AbUSqP.gif\", \"137.gif\": \"AbUCa8.gif\", \"138.gif\": \"AbUkGQ.gif\", \"139.gif\": \"AbUFPg.gif\", \"140.gif\": \"AbUPIS.gif\", \"141.gif\": \"AbUZMn.gif\", \"142.gif\": \"AbUExs.gif\", \"143.gif\": \"AbUA2j.gif\", \"144.gif\": \"AbUMIU.gif\", \"145.gif\": \"AbUerq.gif\", \"146.gif\": \"AbUKaT.gif\", \"147.gif\": \"AbUmq0.gif\", \"148.gif\": \"AbUuZV.gif\", \"149.gif\": \"AbUliF.gif\", \"150.gif\": \"AbU1G4.gif\", \"151.gif\": \"AbU8z9.gif\", \"152.gif\": \"AbU3RJ.gif\", \"153.gif\": \"AbUYs1.gif\", \"154.gif\": \"AbUJMR.gif\", \"155.gif\": \"AbUadK.gif\", \"156.gif\": \"AbUtqx.gif\", \"157.gif\": \"AbUUZ6.gif\", \"158.gif\": \"AbUBJe.gif\", \"159.gif\": \"AbUdIO.gif\", \"160.gif\": \"AbU0iD.gif\", \"161.gif\": \"AbUrzd.gif\", \"162.gif\": \"AbUDRH.gif\", \"163.gif\": \"AbUyQA.gif\", \"164.gif\": \"AbUWo8.gif\", \"165.gif\": \"AbU6sI.gif\", \"166.gif\": \"AbU2eP.gif\", \"167.gif\": \"AbUcLt.gif\", \"168.gif\": \"AbU4Jg.gif\", \"169.gif\": \"AbURdf.gif\", \"170.gif\": \"AbUhFS.gif\", \"171.gif\": \"AbU5WQ.gif\", \"172.gif\": \"AbULwV.gif\", \"173.gif\": \"AbUIzj.gif\", \"174.gif\": \"AbUTQs.gif\", \"175.gif\": \"AbU7yn.gif\", \"176.gif\": \"AbUqe0.gif\", \"177.gif\": \"AbUHLq.gif\", \"178.gif\": \"AbUOoT.gif\", \"179.gif\": \"AbUvYF.gif\", \"180.gif\": \"AbUjFU.gif\", \"181.gif\": \"AbaSSJ.gif\", \"182.gif\": \"AbUxW4.gif\", \"183.gif\": \"AbaCO1.gif\", \"184.gif\": \"Abapl9.gif\", \"185.gif\": \"Aba9yR.gif\", \"186.gif\": \"AbaFw6.gif\", \"187.gif\": \"Abaiex.gif\", \"188.gif\": \"AbakTK.gif\", \"189.gif\": \"AbaZfe.png\", \"190.gif\": \"AbaEFO.gif\", \"191.gif\": \"AbaVYD.gif\", \"192.gif\": \"AbamSH.gif\", \"193.gif\": \"AbaKOI.gif\", \"194.gif\": \"Abanld.gif\", \"195.gif\": \"Abau6A.gif\", \"196.gif\": \"AbaQmt.gif\", \"197.gif\": \"Abal0P.gif\", \"198.gif\": \"AbatpQ.gif\", \"199.gif\": \"Aba1Tf.gif\", \"200.png\": \"Aba8k8.png\", \"201.png\": \"AbaGtS.png\", \"202.png\": \"AbaJfg.png\", \"203.png\": \"AbaNlj.png\", \"204.png\": \"Abawmq.png\", \"205.png\": \"AbaU6s.png\", \"206.png\": \"AbaaXn.png\", \"207.png\": \"Aba000.png\", \"208.png\": \"AbarkT.png\", \"209.png\": \"AbastU.png\", \"210.png\": \"AbaB7V.png\", \"211.png\": \"Abafn1.png\", \"212.png\": \"Abacp4.png\", \"213.png\": \"AbayhF.png\", \"214.png\": \"Abag1J.png\", \"215.png\": \"Aba2c9.png\", \"216.png\": \"AbaRXR.png\", \"217.png\": \"Aba476.png\", \"218.png\": \"Abah0x.png\", \"219.png\": \"Abdg58.png\" } };\n\n  },\n  onLoad: function onLoad(option) {var _this = this;\n    uni.setNavigationBarTitle({\n      title: option.name });\n\n    this.getMsgList();\n    //语音自然播放结束\n    this.AUDIO.onEnded(function (res) {\n      _this.playMsgid = null;\n    });\n    //录音开始事件\n    this.RECORDER.onStart(function (e) {\n      _this.recordBegin(e);\n    });\n    //录音结束事件\n    this.RECORDER.onStop(function (e) {\n      _this.recordEnd(e);\n    });\n  },\n  methods: {\n    getMsgList: function getMsgList() {\n      // 消息列表\n      var list = [\n      { id: 0, uid: 0, username: \"大黑哥\", face: \"/static/img/face.jpg\", time: \"12:56\", type: \"text\", msg: { content: \"为什么温度会相差那么大？\" } },\n      { id: 1, uid: 1, username: \"售后客服008\", face: \"/static/img/im/face/face_2.jpg\", time: \"12:57\", type: \"text\", msg: { content: \"这个是有偏差的，两个温度相差十几二十度是很正常的，如果相差五十度，那即是质量问题了。\" } },\n      { id: 2, uid: 1, username: \"售后客服008\", face: \"/static/img/im/face/face_2.jpg\", time: \"12:59\", type: \"voice\", msg: { url: \"/static/voice/1.mp3\", length: \"00:06\" } },\n      { id: 3, uid: 0, username: \"大黑哥\", face: \"/static/img/face.jpg\", time: \"13:05\", type: \"voice\", msg: { url: \"/static/voice/2.mp3\", length: \"00:06\" } },\n      { id: 4, uid: 0, username: \"大黑哥\", face: \"/static/img/face.jpg\", time: \"13:05\", type: \"img\", msg: { url: \"/static/img/goods/p10.jpg\", w: 200, h: 200 } },\n      { id: 5, uid: 1, username: \"售后客服008\", face: \"/static/img/im/face/face_2.jpg\", time: \"12:59\", type: \"img\", msg: { url: \"/static/img/q.jpg\", w: 1920, h: 1080 } }];\n\n      // 获取消息中的图片,并处理显示尺寸\n      for (var i = 0; i < list.length; i++) {\n        if (list[i].type == 'img') {\n          list[i] = this.setPicSize(list[i]);\n          console.log(\"list[i]: \" + JSON.stringify(list[i]));\n          this.msgImgList.push(list[i].msg.url);\n        }\n      }\n      this.msgList = list;\n      // 滚动到底部\n      this.$nextTick(function () {\n        this.scrollTop = 9999;\n        this.scrollAnimation = true;\n      });\n    },\n    //处理图片尺寸，如果不处理宽高，新进入页面加载图片时候会闪\n    setPicSize: function setPicSize(row) {\n      var maxW = uni.upx2px(350);\n      var maxH = uni.upx2px(350);\n      if (row.msg.w > maxW || row.msg.h > maxH) {\n        var scale = row.msg.w / row.msg.h;\n        if (row.msg.w > row.msg.h) {\n          row.msg.w = maxW;\n          row.msg.h = row.msg.w / scale;\n        } else {\n          row.msg.h = maxH;\n          row.msg.w = row.msg.h * scale;\n        }\n      }\n      return row;\n    },\n    // 接受消息(筛选处理)\n    screenMsg: function screenMsg(msg) {\n      //从长连接处转发给这个方法，进行筛选处理\n      if (msg.uid != this.myuid) {\n        uni.vibrateLong();\n      }\n      switch (msg.type) {\n        case 'text':\n          this.addTextMsg(msg);\n          break;\n        case 'voice':\n          this.addVoiceMsg(msg);\n          break;\n        case 'img':\n          this.addImgMsg(msg);\n          break;}\n\n      this.$nextTick(function () {\n        this.scrollToView = 'msg' + msg.id;\n      });\n    },\n    // 选择表情\n    chooseEmoji: function chooseEmoji() {\n      this.showEmji = this.showEmji == 'showEmoji' ? 'hideEmoji' : 'showEmoji';\n    },\n    // 隐藏表情\n    hideEmoji: function hideEmoji() {\n      this.showEmji = this.showEmji == 'showEmoji' ? 'hideEmoji' : '';\n    },\n    //添加表情\n    addEmoji: function addEmoji(em) {\n      this.textMsg += em.alt;\n    },\n    // 发送文字消息\n    sendText: function sendText() {\n      this.hideEmoji();\n      if (!this.textMsg) {\n        return;\n      }\n      var content = this.replaceEmoji(this.textMsg);\n      var msg = { content: content };\n      this.sendMsg(msg, 'text');\n      this.textMsg = '';\n    },\n    //替换表情符号为图片\n    replaceEmoji: function replaceEmoji(str) {var _this2 = this;\n      var replacedStr = str.replace(/\\[([^(\\]|\\[)]*)\\]/g, function (item, index) {\n        console.log(\"item: \" + item);\n        for (var i = 0; i < _this2.emojiList.length; i++) {\n          var row = _this2.emojiList[i];\n          for (var j = 0; j < row.length; j++) {\n            var EM = row[j];\n            if (EM.alt == item) {\n              //在线表情路径，图文混排必须使用网络路径\n              var onlinePath = 'https://s2.ax1x.com/2019/04/12/';\n              var imgstr = '<img src=\"' + onlinePath + _this2.onlineEmoji[EM.url] + '\">';\n              console.log(\"imgstr: \" + imgstr);\n              return imgstr;\n            }\n          }\n        }\n      });\n      return '<div style=\"display: flex;align-items: center;\">' + replacedStr + '</div>';\n    },\n    // 选择图片发送\n    chooseImage: function chooseImage() {var _this3 = this;\n      this.hideEmoji();\n      uni.chooseImage({\n        sizeType: ['original', 'compressed'], //可以指定是原图还是压缩图，默认二者都有\n        success: function success(res) {var _loop = function _loop(\n          i) {\n            uni.getImageInfo({\n              src: res.tempFilePaths[i],\n              success: function success(image) {\n                console.log(image.width);\n                console.log(image.height);\n                var msg = { url: res.tempFilePaths[i], w: image.width, h: image.height };\n                _this3.sendMsg(msg, 'img');\n              } });};for (var i = 0; i < res.tempFilePaths.length; i++) {_loop(i);\n\n          }\n        } });\n\n    },\n    // 发送消息\n    sendMsg: function sendMsg(content, type) {var _this4 = this;\n      //实际应用中，此处应该提交长连接，模板仅做本地处理。\n      var nowDate = new Date();\n      var lastid = this.msgList[this.msgList.length - 1].id;\n      lastid++;\n      var msg = { id: lastid, uid: 0, username: \"大黑哥\", face: \"/static/img/face.jpg\", time: nowDate.getHours() + \":\" + nowDate.getMinutes(), type: type, msg: content };\n      this.screenMsg(msg);\n      // 定时器模拟对方回复,三秒\n      setTimeout(function () {\n        lastid = _this4.msgList[_this4.msgList.length - 1].id;\n        lastid++;\n        msg = { id: lastid, uid: 1, username: \"售后客服008\", face: \"/static/img/im/face/face_2.jpg\", time: nowDate.getHours() + \":\" + nowDate.getMinutes(), type: type, msg: content };\n        _this4.screenMsg(msg);\n      }, 3000);\n    },\n\n    // 处理文字消息\n    addTextMsg: function addTextMsg(msg) {\n      this.msgList.push(msg);\n    },\n    // 处理语音消息\n    addVoiceMsg: function addVoiceMsg(msg) {\n      this.msgList.push(msg);\n    },\n    // 处理图片消息\n    addImgMsg: function addImgMsg(msg) {\n      msg = this.setPicSize(msg);\n      this.msgImgList.push(msg.msg.url);\n      this.msgList.push(msg);\n    },\n    // 预览图片\n    showPic: function showPic(row) {\n      uni.previewImage({\n        indicator: \"none\",\n        current: row.msg.url,\n        urls: this.msgImgList });\n\n    },\n    // 播放语音\n    playVoice: function playVoice(msg) {\n      this.playMsgid = msg.id;\n      this.AUDIO.src = msg.msg.url;\n      console.log(\"msg.msg.url: \" + msg.msg.url);\n      this.AUDIO.play();\n    },\n    // 录音开始\n    voiceBegin: function voiceBegin(e) {\n      if (e.touches.length > 1) {\n        return;\n      }\n      this.initPoint.Y = e.touches[0].clientY;\n      this.initPoint.identifier = e.touches[0].identifier;\n      this.RECORDER.start({ format: \"mp3\" }); //录音开始,\n    },\n    //录音开始UI效果\n    recordBegin: function recordBegin(e) {var _this5 = this;\n      this.recording = true;\n      this.voiceTis = '松开 结束';\n      this.recordLength = 0;\n      this.recordTimer = setInterval(function () {\n        _this5.recordLength++;\n      }, 1000);\n    },\n    // 录音被打断\n    voiceCancel: function voiceCancel() {\n      this.recording = false;\n      this.voiceTis = '按住 说话';\n      this.recordTis = '手指上滑 取消发送';\n      this.willStop = true; //不发送录音\n      this.RECORDER.stop(); //录音结束\n    },\n    // 录音中(判断是否触发上滑取消发送)\n    voiceIng: function voiceIng(e) {\n      if (!this.recording) {\n        return;\n      }\n      var touche = e.touches[0];\n      //上滑一个导航栏的高度触发上滑取消发送\n      if (this.initPoint.Y - touche.clientY >= uni.upx2px(100)) {\n        this.willStop = true;\n        this.recordTis = '松开手指 取消发送';\n      } else {\n        this.willStop = false;\n        this.recordTis = '手指上滑 取消发送';\n      }\n    },\n    // 结束录音\n    voiceEnd: function voiceEnd(e) {\n      if (!this.recording) {\n        return;\n      }\n      this.recording = false;\n      this.voiceTis = '按住 说话';\n      this.recordTis = '手指上滑 取消发送';\n      this.RECORDER.stop(); //录音结束\n    },\n    //录音结束(回调文件)\n    recordEnd: function recordEnd(e) {\n      clearInterval(this.recordTimer);\n      if (!this.willStop) {\n        console.log(\"e: \" + JSON.stringify(e));\n        var msg = {\n          length: 0,\n          url: e.tempFilePath };\n\n        var min = parseInt(this.recordLength / 60);\n        var sec = this.recordLength % 60;\n        min = min < 10 ? '0' + min : min;\n        sec = sec < 10 ? '0' + sec : sec;\n        msg.length = min + ':' + sec;\n        this.sendMsg(msg, 'voice');\n      } else {\n        console.log('取消发送录音');\n      }\n      this.willStop = false;\n    },\n    // 切换语音/文字输入\n    switchVoice: function switchVoice() {\n      this.hideEmoji();\n      this.isVoice = this.isVoice ? false : true;\n    },\n    discard: function discard() {\n      return;\n    } } };exports.default = _default;\n/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-app-plus/dist/index.js */ \"./node_modules/@dcloudio/uni-app-plus/dist/index.js\")[\"default\"]))\n\n//# sourceURL=uni-app:///pages/message/chat/chat.vue?vue&type=script&lang=js&?fab9");
+/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0; //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+var _default =
+{
+  data: function data() {
+    return {
+      //文字消息
+
+      textMsg: '',
+      //消息列表
+      scrollAnimation: false,
+      scrollTop: 0,
+      scrollToView: '',
+      msgList: [],
+      msgImgList: [],
+      myuid: 0,
+      //录音相关参数
+
+      //H5不能录音
+      RECORDER: uni.getRecorderManager(),
+
+      isVoice: false,
+      voiceTis: '按住 说话',
+      recordTis: "手指上滑 取消发送",
+      recording: false,
+      willStop: false,
+      initPoint: { identifier: 0, Y: 0 },
+      recordTimer: null,
+      recordLength: 0,
+      //播放语音相关参数
+      AUDIO: uni.createInnerAudioContext(),
+      playMsgid: null,
+      VoiceTimer: null,
+      //表情定义
+      showEmji: '',
+      emojiList: [
+      [{ "url": "100.gif", alt: "[微笑]" }, { "url": "101.gif", alt: "[伤心]" }, { "url": "102.gif", alt: "[美女]" }, { "url": "103.gif", alt: "[发呆]" }, { "url": "104.gif", alt: "[墨镜]" }, { "url": "105.gif", alt: "[哭]" }, { "url": "106.gif", alt: "[羞]" }, { "url": "107.gif", alt: "[哑]" }, { "url": "108.gif", alt: "[睡]" }, { "url": "109.gif", alt: "[哭]" }, { "url": "110.gif", alt: "[囧]" }, { "url": "111.gif", alt: "[怒]" }, { "url": "112.gif", alt: "[调皮]" }, { "url": "113.gif", alt: "[笑]" }, { "url": "114.gif", alt: "[惊讶]" }, { "url": "115.gif", alt: "[难过]" }, { "url": "116.gif", alt: "[酷]" }, { "url": "117.gif", alt: "[汗]" }, { "url": "118.gif", alt: "[抓狂]" }, { "url": "119.gif", alt: "[吐]" }, { "url": "120.gif", alt: "[笑]" }, { "url": "121.gif", alt: "[快乐]" }, { "url": "122.gif", alt: "[奇]" }, { "url": "123.gif", alt: "[傲]" }],
+      [{ "url": "124.gif", alt: "[饿]" }, { "url": "125.gif", alt: "[累]" }, { "url": "126.gif", alt: "[吓]" }, { "url": "127.gif", alt: "[汗]" }, { "url": "128.gif", alt: "[高兴]" }, { "url": "129.gif", alt: "[闲]" }, { "url": "130.gif", alt: "[努力]" }, { "url": "131.gif", alt: "[骂]" }, { "url": "132.gif", alt: "[疑问]" }, { "url": "133.gif", alt: "[秘密]" }, { "url": "134.gif", alt: "[乱]" }, { "url": "135.gif", alt: "[疯]" }, { "url": "136.gif", alt: "[哀]" }, { "url": "137.gif", alt: "[鬼]" }, { "url": "138.gif", alt: "[打击]" }, { "url": "139.gif", alt: "[bye]" }, { "url": "140.gif", alt: "[汗]" }, { "url": "141.gif", alt: "[抠]" }, { "url": "142.gif", alt: "[鼓掌]" }, { "url": "143.gif", alt: "[糟糕]" }, { "url": "144.gif", alt: "[恶搞]" }, { "url": "145.gif", alt: "[什么]" }, { "url": "146.gif", alt: "[什么]" }, { "url": "147.gif", alt: "[累]" }],
+      [{ "url": "148.gif", alt: "[看]" }, { "url": "149.gif", alt: "[难过]" }, { "url": "150.gif", alt: "[难过]" }, { "url": "151.gif", alt: "[坏]" }, { "url": "152.gif", alt: "[亲]" }, { "url": "153.gif", alt: "[吓]" }, { "url": "154.gif", alt: "[可怜]" }, { "url": "155.gif", alt: "[刀]" }, { "url": "156.gif", alt: "[水果]" }, { "url": "157.gif", alt: "[酒]" }, { "url": "158.gif", alt: "[篮球]" }, { "url": "159.gif", alt: "[乒乓]" }, { "url": "160.gif", alt: "[咖啡]" }, { "url": "161.gif", alt: "[美食]" }, { "url": "162.gif", alt: "[动物]" }, { "url": "163.gif", alt: "[鲜花]" }, { "url": "164.gif", alt: "[枯]" }, { "url": "165.gif", alt: "[唇]" }, { "url": "166.gif", alt: "[爱]" }, { "url": "167.gif", alt: "[分手]" }, { "url": "168.gif", alt: "[生日]" }, { "url": "169.gif", alt: "[电]" }, { "url": "170.gif", alt: "[炸弹]" }, { "url": "171.gif", alt: "[刀子]" }],
+      [{ "url": "172.gif", alt: "[足球]" }, { "url": "173.gif", alt: "[瓢虫]" }, { "url": "174.gif", alt: "[翔]" }, { "url": "175.gif", alt: "[月亮]" }, { "url": "176.gif", alt: "[太阳]" }, { "url": "177.gif", alt: "[礼物]" }, { "url": "178.gif", alt: "[抱抱]" }, { "url": "179.gif", alt: "[拇指]" }, { "url": "180.gif", alt: "[贬低]" }, { "url": "181.gif", alt: "[握手]" }, { "url": "182.gif", alt: "[剪刀手]" }, { "url": "183.gif", alt: "[抱拳]" }, { "url": "184.gif", alt: "[勾引]" }, { "url": "185.gif", alt: "[拳头]" }, { "url": "186.gif", alt: "[小拇指]" }, { "url": "187.gif", alt: "[拇指八]" }, { "url": "188.gif", alt: "[食指]" }, { "url": "189.gif", alt: "[ok]" }, { "url": "190.gif", alt: "[情侣]" }, { "url": "191.gif", alt: "[爱心]" }, { "url": "192.gif", alt: "[蹦哒]" }, { "url": "193.gif", alt: "[颤抖]" }, { "url": "194.gif", alt: "[怄气]" }, { "url": "195.gif", alt: "[跳舞]" }],
+      [{ "url": "196.gif", alt: "[发呆]" }, { "url": "197.gif", alt: "[背着]" }, { "url": "198.gif", alt: "[伸手]" }, { "url": "199.gif", alt: "[耍帅]" }, { "url": "200.png", alt: "[微笑]" }, { "url": "201.png", alt: "[生病]" }, { "url": "202.png", alt: "[哭泣]" }, { "url": "203.png", alt: "[吐舌]" }, { "url": "204.png", alt: "[迷糊]" }, { "url": "205.png", alt: "[瞪眼]" }, { "url": "206.png", alt: "[恐怖]" }, { "url": "207.png", alt: "[忧愁]" }, { "url": "208.png", alt: "[眨眉]" }, { "url": "209.png", alt: "[闭眼]" }, { "url": "210.png", alt: "[鄙视]" }, { "url": "211.png", alt: "[阴暗]" }, { "url": "212.png", alt: "[小鬼]" }, { "url": "213.png", alt: "[礼物]" }, { "url": "214.png", alt: "[拜佛]" }, { "url": "215.png", alt: "[力量]" }, { "url": "216.png", alt: "[金钱]" }, { "url": "217.png", alt: "[蛋糕]" }, { "url": "218.png", alt: "[彩带]" }, { "url": "219.png", alt: "[礼物]" }]],
+
+      //表情图片图床名称
+      onlineEmoji: { "100.gif": "AbNQgA.gif", "101.gif": "AbN3ut.gif", "102.gif": "AbNM3d.gif", "103.gif": "AbN8DP.gif", "104.gif": "AbNljI.gif", "105.gif": "AbNtUS.gif", "106.gif": "AbNGHf.gif", "107.gif": "AbNYE8.gif", "108.gif": "AbNaCQ.gif", "109.gif": "AbNN4g.gif", "110.gif": "AbN0vn.gif", "111.gif": "AbNd3j.gif", "112.gif": "AbNsbV.gif", "113.gif": "AbNwgs.gif", "114.gif": "AbNrD0.gif", "115.gif": "AbNDuq.gif", "116.gif": "AbNg5F.gif", "117.gif": "AbN6ET.gif", "118.gif": "AbNcUU.gif", "119.gif": "AbNRC4.gif", "120.gif": "AbNhvR.gif", "121.gif": "AbNf29.gif", "122.gif": "AbNW8J.gif", "123.gif": "AbNob6.gif", "124.gif": "AbN5K1.gif", "125.gif": "AbNHUO.gif", "126.gif": "AbNIDx.gif", "127.gif": "AbN7VK.gif", "128.gif": "AbNb5D.gif", "129.gif": "AbNX2d.gif", "130.gif": "AbNLPe.gif", "131.gif": "AbNjxA.gif", "132.gif": "AbNO8H.gif", "133.gif": "AbNxKI.gif", "134.gif": "AbNzrt.gif", "135.gif": "AbU9Vf.gif", "136.gif": "AbUSqP.gif", "137.gif": "AbUCa8.gif", "138.gif": "AbUkGQ.gif", "139.gif": "AbUFPg.gif", "140.gif": "AbUPIS.gif", "141.gif": "AbUZMn.gif", "142.gif": "AbUExs.gif", "143.gif": "AbUA2j.gif", "144.gif": "AbUMIU.gif", "145.gif": "AbUerq.gif", "146.gif": "AbUKaT.gif", "147.gif": "AbUmq0.gif", "148.gif": "AbUuZV.gif", "149.gif": "AbUliF.gif", "150.gif": "AbU1G4.gif", "151.gif": "AbU8z9.gif", "152.gif": "AbU3RJ.gif", "153.gif": "AbUYs1.gif", "154.gif": "AbUJMR.gif", "155.gif": "AbUadK.gif", "156.gif": "AbUtqx.gif", "157.gif": "AbUUZ6.gif", "158.gif": "AbUBJe.gif", "159.gif": "AbUdIO.gif", "160.gif": "AbU0iD.gif", "161.gif": "AbUrzd.gif", "162.gif": "AbUDRH.gif", "163.gif": "AbUyQA.gif", "164.gif": "AbUWo8.gif", "165.gif": "AbU6sI.gif", "166.gif": "AbU2eP.gif", "167.gif": "AbUcLt.gif", "168.gif": "AbU4Jg.gif", "169.gif": "AbURdf.gif", "170.gif": "AbUhFS.gif", "171.gif": "AbU5WQ.gif", "172.gif": "AbULwV.gif", "173.gif": "AbUIzj.gif", "174.gif": "AbUTQs.gif", "175.gif": "AbU7yn.gif", "176.gif": "AbUqe0.gif", "177.gif": "AbUHLq.gif", "178.gif": "AbUOoT.gif", "179.gif": "AbUvYF.gif", "180.gif": "AbUjFU.gif", "181.gif": "AbaSSJ.gif", "182.gif": "AbUxW4.gif", "183.gif": "AbaCO1.gif", "184.gif": "Abapl9.gif", "185.gif": "Aba9yR.gif", "186.gif": "AbaFw6.gif", "187.gif": "Abaiex.gif", "188.gif": "AbakTK.gif", "189.gif": "AbaZfe.png", "190.gif": "AbaEFO.gif", "191.gif": "AbaVYD.gif", "192.gif": "AbamSH.gif", "193.gif": "AbaKOI.gif", "194.gif": "Abanld.gif", "195.gif": "Abau6A.gif", "196.gif": "AbaQmt.gif", "197.gif": "Abal0P.gif", "198.gif": "AbatpQ.gif", "199.gif": "Aba1Tf.gif", "200.png": "Aba8k8.png", "201.png": "AbaGtS.png", "202.png": "AbaJfg.png", "203.png": "AbaNlj.png", "204.png": "Abawmq.png", "205.png": "AbaU6s.png", "206.png": "AbaaXn.png", "207.png": "Aba000.png", "208.png": "AbarkT.png", "209.png": "AbastU.png", "210.png": "AbaB7V.png", "211.png": "Abafn1.png", "212.png": "Abacp4.png", "213.png": "AbayhF.png", "214.png": "Abag1J.png", "215.png": "Aba2c9.png", "216.png": "AbaRXR.png", "217.png": "Aba476.png", "218.png": "Abah0x.png", "219.png": "Abdg58.png" } };
+
+  },
+  onLoad: function onLoad(option) {var _this = this;
+    uni.setNavigationBarTitle({
+      title: option.name });
+
+    this.getMsgList();
+    //语音自然播放结束
+    this.AUDIO.onEnded(function (res) {
+      _this.playMsgid = null;
+    });
+    //录音开始事件
+    this.RECORDER.onStart(function (e) {
+      _this.recordBegin(e);
+    });
+    //录音结束事件
+    this.RECORDER.onStop(function (e) {
+      _this.recordEnd(e);
+    });
+  },
+  methods: {
+    getMsgList: function getMsgList() {
+      // 消息列表
+      var list = [
+      { id: 0, uid: 0, username: "大黑哥", face: "/static/img/face.jpg", time: "12:56", type: "text", msg: { content: "为什么温度会相差那么大？" } },
+      { id: 1, uid: 1, username: "售后客服008", face: "/static/img/im/face/face_2.jpg", time: "12:57", type: "text", msg: { content: "这个是有偏差的，两个温度相差十几二十度是很正常的，如果相差五十度，那即是质量问题了。" } },
+      { id: 2, uid: 1, username: "售后客服008", face: "/static/img/im/face/face_2.jpg", time: "12:59", type: "voice", msg: { url: "/static/voice/1.mp3", length: "00:06" } },
+      { id: 3, uid: 0, username: "大黑哥", face: "/static/img/face.jpg", time: "13:05", type: "voice", msg: { url: "/static/voice/2.mp3", length: "00:06" } },
+      { id: 4, uid: 0, username: "大黑哥", face: "/static/img/face.jpg", time: "13:05", type: "img", msg: { url: "/static/img/goods/p10.jpg", w: 200, h: 200 } },
+      { id: 5, uid: 1, username: "售后客服008", face: "/static/img/im/face/face_2.jpg", time: "12:59", type: "img", msg: { url: "/static/img/q.jpg", w: 1920, h: 1080 } }];
+
+      // 获取消息中的图片,并处理显示尺寸
+      for (var i = 0; i < list.length; i++) {
+        if (list[i].type == 'img') {
+          list[i] = this.setPicSize(list[i]);
+          console.log("list[i]: " + JSON.stringify(list[i]), " at pages\\message\\chat\\chat.vue:179");
+          this.msgImgList.push(list[i].msg.url);
+        }
+      }
+      this.msgList = list;
+      // 滚动到底部
+      this.$nextTick(function () {
+        this.scrollTop = 9999;
+        this.scrollAnimation = true;
+      });
+    },
+    //处理图片尺寸，如果不处理宽高，新进入页面加载图片时候会闪
+    setPicSize: function setPicSize(row) {
+      var maxW = uni.upx2px(350);
+      var maxH = uni.upx2px(350);
+      if (row.msg.w > maxW || row.msg.h > maxH) {
+        var scale = row.msg.w / row.msg.h;
+        if (row.msg.w > row.msg.h) {
+          row.msg.w = maxW;
+          row.msg.h = row.msg.w / scale;
+        } else {
+          row.msg.h = maxH;
+          row.msg.w = row.msg.h * scale;
+        }
+      }
+      return row;
+    },
+    // 接受消息(筛选处理)
+    screenMsg: function screenMsg(msg) {
+      //从长连接处转发给这个方法，进行筛选处理
+      if (msg.uid != this.myuid) {
+        uni.vibrateLong();
+      }
+      switch (msg.type) {
+        case 'text':
+          this.addTextMsg(msg);
+          break;
+        case 'voice':
+          this.addVoiceMsg(msg);
+          break;
+        case 'img':
+          this.addImgMsg(msg);
+          break;}
+
+      this.$nextTick(function () {
+        this.scrollToView = 'msg' + msg.id;
+      });
+    },
+    // 选择表情
+    chooseEmoji: function chooseEmoji() {
+      this.showEmji = this.showEmji == 'showEmoji' ? 'hideEmoji' : 'showEmoji';
+    },
+    // 隐藏表情
+    hideEmoji: function hideEmoji() {
+      this.showEmji = this.showEmji == 'showEmoji' ? 'hideEmoji' : '';
+    },
+    //添加表情
+    addEmoji: function addEmoji(em) {
+      this.textMsg += em.alt;
+    },
+    // 发送文字消息
+    sendText: function sendText() {
+      this.hideEmoji();
+      if (!this.textMsg) {
+        return;
+      }
+      var content = this.replaceEmoji(this.textMsg);
+      var msg = { content: content };
+      this.sendMsg(msg, 'text');
+      this.textMsg = '';
+    },
+    //替换表情符号为图片
+    replaceEmoji: function replaceEmoji(str) {var _this2 = this;
+      var replacedStr = str.replace(/\[([^(\]|\[)]*)\]/g, function (item, index) {
+        console.log("item: " + item, " at pages\\message\\chat\\chat.vue:253");
+        for (var i = 0; i < _this2.emojiList.length; i++) {
+          var row = _this2.emojiList[i];
+          for (var j = 0; j < row.length; j++) {
+            var EM = row[j];
+            if (EM.alt == item) {
+              //在线表情路径，图文混排必须使用网络路径
+              var onlinePath = 'https://s2.ax1x.com/2019/04/12/';
+              var imgstr = '<img src="' + onlinePath + _this2.onlineEmoji[EM.url] + '">';
+              console.log("imgstr: " + imgstr, " at pages\\message\\chat\\chat.vue:262");
+              return imgstr;
+            }
+          }
+        }
+      });
+      return '<div style="display: flex;align-items: center;">' + replacedStr + '</div>';
+    },
+    // 选择图片发送
+    chooseImage: function chooseImage() {var _this3 = this;
+      this.hideEmoji();
+      uni.chooseImage({
+        sizeType: ['original', 'compressed'], //可以指定是原图还是压缩图，默认二者都有
+        success: function success(res) {var _loop = function _loop(
+          i) {
+            uni.getImageInfo({
+              src: res.tempFilePaths[i],
+              success: function success(image) {
+                console.log(image.width, " at pages\\message\\chat\\chat.vue:280");
+                console.log(image.height, " at pages\\message\\chat\\chat.vue:281");
+                var msg = { url: res.tempFilePaths[i], w: image.width, h: image.height };
+                _this3.sendMsg(msg, 'img');
+              } });};for (var i = 0; i < res.tempFilePaths.length; i++) {_loop(i);
+
+          }
+        } });
+
+    },
+    // 发送消息
+    sendMsg: function sendMsg(content, type) {var _this4 = this;
+      //实际应用中，此处应该提交长连接，模板仅做本地处理。
+      var nowDate = new Date();
+      var lastid = this.msgList[this.msgList.length - 1].id;
+      lastid++;
+      var msg = { id: lastid, uid: 0, username: "大黑哥", face: "/static/img/face.jpg", time: nowDate.getHours() + ":" + nowDate.getMinutes(), type: type, msg: content };
+      this.screenMsg(msg);
+      // 定时器模拟对方回复,三秒
+      setTimeout(function () {
+        lastid = _this4.msgList[_this4.msgList.length - 1].id;
+        lastid++;
+        msg = { id: lastid, uid: 1, username: "售后客服008", face: "/static/img/im/face/face_2.jpg", time: nowDate.getHours() + ":" + nowDate.getMinutes(), type: type, msg: content };
+        _this4.screenMsg(msg);
+      }, 3000);
+    },
+
+    // 处理文字消息
+    addTextMsg: function addTextMsg(msg) {
+      this.msgList.push(msg);
+    },
+    // 处理语音消息
+    addVoiceMsg: function addVoiceMsg(msg) {
+      this.msgList.push(msg);
+    },
+    // 处理图片消息
+    addImgMsg: function addImgMsg(msg) {
+      msg = this.setPicSize(msg);
+      this.msgImgList.push(msg.msg.url);
+      this.msgList.push(msg);
+    },
+    // 预览图片
+    showPic: function showPic(row) {
+      uni.previewImage({
+        indicator: "none",
+        current: row.msg.url,
+        urls: this.msgImgList });
+
+    },
+    // 播放语音
+    playVoice: function playVoice(msg) {
+      this.playMsgid = msg.id;
+      this.AUDIO.src = msg.msg.url;
+      console.log("msg.msg.url: " + msg.msg.url, " at pages\\message\\chat\\chat.vue:333");
+      this.AUDIO.play();
+    },
+    // 录音开始
+    voiceBegin: function voiceBegin(e) {
+      if (e.touches.length > 1) {
+        return;
+      }
+      this.initPoint.Y = e.touches[0].clientY;
+      this.initPoint.identifier = e.touches[0].identifier;
+      this.RECORDER.start({ format: "mp3" }); //录音开始,
+    },
+    //录音开始UI效果
+    recordBegin: function recordBegin(e) {var _this5 = this;
+      this.recording = true;
+      this.voiceTis = '松开 结束';
+      this.recordLength = 0;
+      this.recordTimer = setInterval(function () {
+        _this5.recordLength++;
+      }, 1000);
+    },
+    // 录音被打断
+    voiceCancel: function voiceCancel() {
+      this.recording = false;
+      this.voiceTis = '按住 说话';
+      this.recordTis = '手指上滑 取消发送';
+      this.willStop = true; //不发送录音
+      this.RECORDER.stop(); //录音结束
+    },
+    // 录音中(判断是否触发上滑取消发送)
+    voiceIng: function voiceIng(e) {
+      if (!this.recording) {
+        return;
+      }
+      var touche = e.touches[0];
+      //上滑一个导航栏的高度触发上滑取消发送
+      if (this.initPoint.Y - touche.clientY >= uni.upx2px(100)) {
+        this.willStop = true;
+        this.recordTis = '松开手指 取消发送';
+      } else {
+        this.willStop = false;
+        this.recordTis = '手指上滑 取消发送';
+      }
+    },
+    // 结束录音
+    voiceEnd: function voiceEnd(e) {
+      if (!this.recording) {
+        return;
+      }
+      this.recording = false;
+      this.voiceTis = '按住 说话';
+      this.recordTis = '手指上滑 取消发送';
+      this.RECORDER.stop(); //录音结束
+    },
+    //录音结束(回调文件)
+    recordEnd: function recordEnd(e) {
+      clearInterval(this.recordTimer);
+      if (!this.willStop) {
+        console.log("e: " + JSON.stringify(e), " at pages\\message\\chat\\chat.vue:391");
+        var msg = {
+          length: 0,
+          url: e.tempFilePath };
+
+        var min = parseInt(this.recordLength / 60);
+        var sec = this.recordLength % 60;
+        min = min < 10 ? '0' + min : min;
+        sec = sec < 10 ? '0' + sec : sec;
+        msg.length = min + ':' + sec;
+        this.sendMsg(msg, 'voice');
+      } else {
+        console.log('取消发送录音', " at pages\\message\\chat\\chat.vue:403");
+      }
+      this.willStop = false;
+    },
+    // 切换语音/文字输入
+    switchVoice: function switchVoice() {
+      this.hideEmoji();
+      this.isVoice = this.isVoice ? false : true;
+    },
+    discard: function discard() {
+      return;
+    } } };exports.default = _default;
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-app-plus/dist/index.js */ "./node_modules/@dcloudio/uni-app-plus/dist/index.js")["default"]))
 
 /***/ }),
 
@@ -79,7 +523,7 @@ eval("/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, 
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("// extracted by mini-css-extract-plugin\n\n//# sourceURL=C:/Development/NodeJS/Shop-pin-Frontend/Shop-pin-Frontend/pages/message/chat/chat.vue?vue&type=style&index=0&lang=scss&");
+// extracted by mini-css-extract-plugin
 
 /***/ }),
 
@@ -91,7 +535,18 @@ eval("// extracted by mini-css-extract-plugin\n\n//# sourceURL=C:/Development/No
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"render\", function() { return render; });\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"staticRenderFns\", function() { return staticRenderFns; });\nvar render = function() {\n  var _vm = this\n  var _h = _vm.$createElement\n  var _c = _vm._self._c || _h\n  return _c(\"view\", [\n    _c(\n      \"view\",\n      {\n        staticClass: \"content\",\n        attrs: { eventid: \"74c37c9e-4\" },\n        on: { touchstart: _vm.hideEmoji }\n      },\n      [\n        _c(\n          \"scroll-view\",\n          {\n            staticClass: \"msg-list\",\n            attrs: {\n              \"scroll-y\": \"true\",\n              \"scroll-with-animation\": _vm.scrollAnimation,\n              \"scroll-top\": _vm.scrollTop,\n              \"scroll-into-view\": _vm.scrollToView\n            }\n          },\n          _vm._l(_vm.msgList, function(row, index) {\n            return _c(\n              \"view\",\n              { key: index, staticClass: \"row\", attrs: { id: \"msg\" + row.id } },\n              [\n                row.uid == _vm.myuid\n                  ? _c(\"view\", { staticClass: \"my\" }, [\n                      _c(\"view\", { staticClass: \"left\" }, [\n                        row.type == \"text\"\n                          ? _c(\n                              \"view\",\n                              { staticClass: \"bubble\" },\n                              [\n                                _c(\"rich-text\", {\n                                  attrs: {\n                                    nodes: row.msg.content,\n                                    mpcomid: \"74c37c9e-0-\" + index\n                                  }\n                                })\n                              ],\n                              1\n                            )\n                          : _vm._e(),\n                        row.type == \"voice\"\n                          ? _c(\n                              \"view\",\n                              {\n                                staticClass: \"bubble voice\",\n                                class: _vm.playMsgid == row.id ? \"play\" : \"\",\n                                attrs: { eventid: \"74c37c9e-0-\" + index },\n                                on: {\n                                  tap: function($event) {\n                                    _vm.playVoice(row)\n                                  }\n                                }\n                              },\n                              [\n                                _c(\"view\", { staticClass: \"length\" }, [\n                                  _vm._v(_vm._s(row.msg.length))\n                                ]),\n                                _c(\"view\", { staticClass: \"icon my-voice\" })\n                              ]\n                            )\n                          : _vm._e(),\n                        row.type == \"img\"\n                          ? _c(\n                              \"view\",\n                              {\n                                staticClass: \"bubble img\",\n                                attrs: { eventid: \"74c37c9e-1-\" + index },\n                                on: {\n                                  tap: function($event) {\n                                    _vm.showPic(row)\n                                  }\n                                }\n                              },\n                              [\n                                _c(\"image\", {\n                                  style: {\n                                    width: row.msg.w + \"px\",\n                                    height: row.msg.h + \"px\"\n                                  },\n                                  attrs: { src: row.msg.url }\n                                })\n                              ]\n                            )\n                          : _vm._e()\n                      ]),\n                      _c(\"view\", { staticClass: \"right\" }, [\n                        _c(\"image\", { attrs: { src: row.face } })\n                      ])\n                    ])\n                  : _vm._e(),\n                row.uid != _vm.myuid\n                  ? _c(\"view\", { staticClass: \"other\" }, [\n                      _c(\"view\", { staticClass: \"left\" }, [\n                        _c(\"image\", { attrs: { src: row.face } })\n                      ]),\n                      _c(\"view\", { staticClass: \"right\" }, [\n                        _c(\"view\", { staticClass: \"username\" }, [\n                          _c(\"view\", { staticClass: \"name\" }, [\n                            _vm._v(_vm._s(row.username))\n                          ]),\n                          _c(\"view\", { staticClass: \"time\" }, [\n                            _vm._v(_vm._s(row.time))\n                          ])\n                        ]),\n                        row.type == \"text\"\n                          ? _c(\n                              \"view\",\n                              { staticClass: \"bubble\" },\n                              [\n                                _c(\"rich-text\", {\n                                  attrs: {\n                                    nodes: row.msg.content,\n                                    mpcomid: \"74c37c9e-1-\" + index\n                                  }\n                                })\n                              ],\n                              1\n                            )\n                          : _vm._e(),\n                        row.type == \"voice\"\n                          ? _c(\n                              \"view\",\n                              {\n                                staticClass: \"bubble voice\",\n                                class: _vm.playMsgid == row.id ? \"play\" : \"\",\n                                attrs: { eventid: \"74c37c9e-2-\" + index },\n                                on: {\n                                  tap: function($event) {\n                                    _vm.playVoice(row)\n                                  }\n                                }\n                              },\n                              [\n                                _c(\"view\", { staticClass: \"icon other-voice\" }),\n                                _c(\"view\", { staticClass: \"length\" }, [\n                                  _vm._v(_vm._s(row.msg.length))\n                                ])\n                              ]\n                            )\n                          : _vm._e(),\n                        row.type == \"img\"\n                          ? _c(\n                              \"view\",\n                              {\n                                staticClass: \"bubble img\",\n                                attrs: { eventid: \"74c37c9e-3-\" + index },\n                                on: {\n                                  tap: function($event) {\n                                    _vm.showPic(row)\n                                  }\n                                }\n                              },\n                              [\n                                _c(\"image\", {\n                                  style: {\n                                    width: row.msg.w + \"px\",\n                                    height: row.msg.h + \"px\"\n                                  },\n                                  attrs: { src: row.msg.url }\n                                })\n                              ]\n                            )\n                          : _vm._e()\n                      ])\n                    ])\n                  : _vm._e()\n              ]\n            )\n          })\n        )\n      ],\n      1\n    ),\n    _c(\n      \"view\",\n      {\n        staticClass: \"emoji-box\",\n        class: _vm.showEmji,\n        attrs: { eventid: \"74c37c9e-6\" },\n        on: {\n          touchmove: function($event) {\n            $event.stopPropagation()\n            $event.preventDefault()\n            _vm.discard($event)\n          }\n        }\n      },\n      [\n        _c(\n          \"swiper\",\n          {\n            staticClass: \"swiper\",\n            attrs: { \"indicator-dots\": \"true\", duration: \"150\" }\n          },\n          _vm._l(_vm.emojiList, function(page, pid) {\n            return _c(\n              \"swiper-item\",\n              { key: pid, attrs: { mpcomid: \"74c37c9e-2-\" + pid } },\n              _vm._l(page, function(em, eid) {\n                return _c(\n                  \"view\",\n                  {\n                    key: eid,\n                    attrs: { eventid: \"74c37c9e-5-\" + pid + \"-\" + eid },\n                    on: {\n                      tap: function($event) {\n                        _vm.addEmoji(em)\n                      }\n                    }\n                  },\n                  [\n                    _c(\"image\", {\n                      attrs: {\n                        mode: \"widthFix\",\n                        src: \"/static/img/emoji/\" + em.url\n                      }\n                    })\n                  ]\n                )\n              })\n            )\n          })\n        )\n      ],\n      1\n    ),\n    _c(\n      \"view\",\n      {\n        staticClass: \"input-box\",\n        class: _vm.showEmji,\n        attrs: { eventid: \"74c37c9e-13\" },\n        on: {\n          touchmove: function($event) {\n            $event.stopPropagation()\n            $event.preventDefault()\n            _vm.discard($event)\n          }\n        }\n      },\n      [\n        _c(\"view\", { staticClass: \"voice\" }, [\n          _c(\"view\", {\n            staticClass: \"icon\",\n            class: _vm.isVoice ? \"jianpan\" : \"yuyin\",\n            attrs: { eventid: \"74c37c9e-7\" },\n            on: { tap: _vm.switchVoice }\n          })\n        ]),\n        _c(\"view\", { staticClass: \"textbox\" }, [\n          _c(\n            \"view\",\n            {\n              staticClass: \"voice-mode\",\n              class: [\n                _vm.isVoice ? \"\" : \"hidden\",\n                _vm.recording ? \"recording\" : \"\"\n              ],\n              attrs: { eventid: \"74c37c9e-8\" },\n              on: {\n                touchstart: _vm.voiceBegin,\n                touchmove: function($event) {\n                  $event.stopPropagation()\n                  $event.preventDefault()\n                  _vm.voiceIng($event)\n                },\n                touchend: _vm.voiceEnd,\n                touchcancel: _vm.voiceCancel\n              }\n            },\n            [_vm._v(_vm._s(_vm.voiceTis))]\n          ),\n          _c(\n            \"view\",\n            { staticClass: \"text-mode\", class: _vm.isVoice ? \"hidden\" : \"\" },\n            [\n              _c(\"view\", { staticClass: \"box\" }, [\n                _c(\"textarea\", {\n                  directives: [\n                    {\n                      name: \"model\",\n                      rawName: \"v-model\",\n                      value: _vm.textMsg,\n                      expression: \"textMsg\"\n                    }\n                  ],\n                  attrs: { \"auto-height\": \"true\", eventid: \"74c37c9e-9\" },\n                  domProps: { value: _vm.textMsg },\n                  on: {\n                    input: function($event) {\n                      if ($event.target.composing) {\n                        return\n                      }\n                      _vm.textMsg = $event.target.value\n                    }\n                  }\n                })\n              ]),\n              _c(\n                \"view\",\n                {\n                  staticClass: \"em\",\n                  attrs: { eventid: \"74c37c9e-10\" },\n                  on: { tap: _vm.chooseEmoji }\n                },\n                [_c(\"view\", { staticClass: \"icon biaoqing\" })]\n              )\n            ]\n          )\n        ]),\n        _c(\n          \"view\",\n          {\n            staticClass: \"more\",\n            attrs: { eventid: \"74c37c9e-11\" },\n            on: { tap: _vm.chooseImage }\n          },\n          [_c(\"view\", { staticClass: \"icon tupian\" })]\n        ),\n        _c(\n          \"view\",\n          {\n            staticClass: \"send\",\n            class: _vm.isVoice ? \"hidden\" : \"\",\n            attrs: { eventid: \"74c37c9e-12\" },\n            on: { tap: _vm.sendText }\n          },\n          [_c(\"view\", { staticClass: \"btn\" }, [_vm._v(\"发送\")])]\n        )\n      ]\n    ),\n    _c(\n      \"view\",\n      { staticClass: \"record\", class: _vm.recording ? \"\" : \"hidden\" },\n      [\n        _c(\n          \"view\",\n          { staticClass: \"ing\", class: _vm.willStop ? \"hidden\" : \"\" },\n          [_c(\"view\", { staticClass: \"icon luyin2\" })]\n        ),\n        _c(\n          \"view\",\n          { staticClass: \"cancel\", class: _vm.willStop ? \"\" : \"hidden\" },\n          [_c(\"view\", { staticClass: \"icon chehui\" })]\n        ),\n        _c(\n          \"view\",\n          { staticClass: \"tis\", class: _vm.willStop ? \"change\" : \"\" },\n          [_vm._v(_vm._s(_vm.recordTis))]\n        )\n      ]\n    )\n  ])\n}\nvar staticRenderFns = []\nrender._withStripped = true\n\n\n\n//# sourceURL=C:/Development/NodeJS/Shop-pin-Frontend/Shop-pin-Frontend/pages/message/chat/chat.vue?vue&type=template&id=86236f44&");
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "render", function() { return render; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return staticRenderFns; });
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+}
+var staticRenderFns = []
+render._withStripped = true
+
+
 
 /***/ })
 

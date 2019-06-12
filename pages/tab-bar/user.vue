@@ -17,7 +17,7 @@
 			</view>
 		</view>
 		<!-- VIP banner -->
-		<view class="VIP animation-scale-down">
+		<view class="VIP pin-animation-scale-down" style="animation-delay: 0.9s;">
 			<view class="img">
 				<image src="../../static/img/VIP.png"></image>
 			</view>
@@ -25,7 +25,7 @@
 			<view class="tis">查看 Premium 特权</view>
 		</view>
 		<!-- 订单-余额 -->
-		<view class="order">
+		<view class="order pin-animation-slide-top" style="animation-delay: 0.3s;">
 			<!-- 订单类型 -->
 			<view class="list">
 				<view class="box" v-for="(row,index) in orderList" :key="index" @tap="toOrderList(row.key)">
@@ -39,8 +39,8 @@
 			<view class="balance-info">
 				<view class="left">
 					<view class="box" @tap="toCheckIn()">
-						<view class="num">{{hasCheckedIn ? '已签到':'未签到'}}</view>
-						<view class="text">签到赢积分</view>
+						<view class="num">{{hasCheckedIn ? '已浇水':'未浇水'}}</view>
+						<view class="text">种树赢积分</view>
 					</view>
 					<view class="box">
 						<view class="num">{{userInfo.credit}}</view>
@@ -60,17 +60,24 @@
 					</view>
 				</view>
 			</view>
-		</view>
-		<!-- 工具栏 -->
-		<view class="toolbar">
-			<view class="title"><i class="pin-icon">style</i> 我的工具栏</view>
-			<view class="list">
-				<view class="box" v-for="(row,index) in mytoolbarList" :key="index" @tap="toPage(row.url)">
-					<view class="icon">
-						<i class="pin-icon">{{row.icon}}</i>
+			<!-- 工具栏 -->
+			<view class="toolbar pin-solid-top">
+				<view class="list">
+					<view class="box" v-for="(row,index) in mytoolbarList" :key="index" @tap="toPage(row.url)">
+						<view class="icon">
+							<i class="pin-icon">{{row.icon}}</i>
+						</view>
+						<view class="text">{{row.text}}</view>
 					</view>
-					<view class="text">{{row.text}}</view>
 				</view>
+			</view>
+
+		</view>
+		<view class="pin-card pin-animation-slide-top" style="animation-delay: 0.7s;">
+			<view class="pin-padding">
+				<button open-type="contact" class="pin-button pin-bg-primary pin-text-lg">
+					<text><i class="pin-icon">contact_phone</i> 在线客服</text>
+				</button>
 			</view>
 		</view>
 		<!-- 占位 -->
@@ -153,19 +160,9 @@
 						icon: 'location_on'
 					},
 					{
-						url: '',
-						text: '账户安全',
-						icon: "settings"
-					},
-					{
-						url: '',
+						url: '../user/activity/check-in',
 						text: '签到',
 						icon: 'assignment_turned_in'
-					},
-					{
-						url: '',
-						text: '客服',
-						icon: 'contact_phone'
 					}
 				],
 				hasCheckedIn: false
@@ -181,7 +178,6 @@
 			// #ifdef APP-PLUS
 			this.statusHeight = plus.navigator.getStatusbarHeight();
 			// #endif
-			this.loadMyUserInfo()
 		},
 		onReady() {
 			//此处，演示,每次页面初次渲染都把登录状态重置
@@ -193,7 +189,7 @@
 			});
 		},
 		onShow() {
-
+			this.loadMyUserInfo()
 		},
 		methods: {
 			//消息列表
@@ -204,7 +200,7 @@
 			},
 			toOrderList(index) {
 				uni.navigateTo({
-					url: '../user/order-list/order-list?tbIndex=' + index
+					url: '../user/order/order-list?tbIndex=' + index
 				})
 			},
 			toSetting() {
@@ -257,6 +253,7 @@
 					successData => {
 						that.userInfo = successData.data.user
 						that.hasCheckedIn = successData.data.hasCheckedIn
+						uni.setStorageSync('userInfo', successData.data.user)
 					},
 					failData => {
 						console.log(failData)
@@ -271,8 +268,6 @@
 	}
 </script>
 <style lang="scss">
-	@import "../../static/css/pin-animation.css";
-
 	page {
 		position: relative;
 	}
@@ -281,54 +276,6 @@
 		font-size: 60upx;
 		font-style: normal;
 		color: $pin-color-accent;
-
-		&.setting {
-			&:before {
-				content: "\e64e";
-			}
-		}
-
-		&.qr {
-			&:before {
-				content: "\e600";
-			}
-		}
-
-		&.chongzhi {
-			&:before {
-				content: "\e648";
-			}
-		}
-
-		&.fukuan {
-			&:before {
-				content: "\e67f";
-			}
-		}
-
-		&.fahuo {
-			&:before {
-				content: "\e680";
-			}
-		}
-
-		&.shouhuo {
-			&:before {
-				content: "\e6b1";
-			}
-		}
-
-		&.pingjia {
-			&:before {
-				content: "\e66b";
-			}
-		}
-
-		&.tuihuo {
-			&:before {
-				content: "\e66c";
-			}
-		}
 	}
 
 	.status {
@@ -535,13 +482,8 @@
 	}
 
 	.toolbar {
-		width: 92%;
-		margin: 0 4% 0 4%;
-		padding: 0 0 20upx 0;
-		background-color: #fff;
-		border-radius: $pin-border-radius;
-		box-shadow: $pin-shadow;
-
+		padding-top: 20upx;
+		
 		.title {
 			padding-top: 10upx;
 			margin: 0 0 10upx 3%;
@@ -556,7 +498,7 @@
 			flex-wrap: wrap;
 
 			.box {
-				width: 25%;
+				width: 25% !important;
 				margin-bottom: 30upx;
 
 				.icon {

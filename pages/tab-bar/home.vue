@@ -1,6 +1,7 @@
 <template>
 	<view>
 		<header-bar :isSearchBar="true" />
+		<view class="pin-top-padding"></view>
 		<!-- 轮播图 -->
 		<view class="swiper">
 			<view class="swiper-box">
@@ -28,7 +29,7 @@
 			<image src="../../static/img/banner.jpg"></image>
 		</view> -->
 		<!-- 活动区 -->
-		<card-title icon="toys" text="拼团活动" sub-text="Group Promotion"/>
+		<!-- <card-title icon="toys" text="拼团活动" sub-text="Group Promotion"/>
 		<view class="promotion">
 			<view class="list">
 				<view class="column" v-for="(row, index) in Promotion" @tap="toPromotion(row)" :key="index">
@@ -51,11 +52,10 @@
 					</view>
 				</view>
 			</view>
-		</view>
+		</view> -->
 		<!-- 商品列表 -->
 		<card-title icon="whatshot" text="最热商品" sub-text="Hot Products"/>
-		<pageable-product-list data-source="/commons/product/new/" ref="pageableProductList"/>
-
+		<pageable-product-list product-data-source="/commons/product/new/" ref="pageableProductList"/>
 	</view>
 </template>
 

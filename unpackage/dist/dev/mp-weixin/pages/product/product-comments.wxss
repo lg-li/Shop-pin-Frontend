@@ -1,0 +1,71 @@
+@charset "UTF-8";
+/* 颜色变量 */
+.info-box {
+  padding: 20rpx 4%;
+  margin-bottom: 20rpx;
+}
+.comments .row {
+  height: 40rpx;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 10rpx;
+}
+.comments .row .text {
+    font-size: 30rpx;
+}
+.comments .row .arrow {
+    font-size: 28rpx;
+    position: absolute;
+    right: 4%;
+    color: #212121;
+}
+.comments .row .arrow .show {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+          -ms-flex-align: center;
+              align-items: center;
+}
+.comments .row .arrow .show .icon {
+        color: #ffc107;
+}
+.comments .comment .user-info {
+  width: 100%;
+  height: 40rpx;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.comments .comment .user-info .face {
+    width: 40rpx;
+    height: 40rpx;
+    margin-right: 8rpx;
+}
+.comments .comment .user-info .face image {
+      width: 40rpx;
+      height: 40rpx;
+      border-radius: 100%;
+}
+.comments .comment .user-info .username {
+    font-size: 36rpx;
+    color: #999;
+}
+.comments .comment .content {
+  margin-top: 10rpx;
+  font-size: 26rpx;
+}
+

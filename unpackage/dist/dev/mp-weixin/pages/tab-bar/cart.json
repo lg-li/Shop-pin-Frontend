@@ -1,5 +1,7 @@
 {
-  "usingComponents": {},
   "navigationBarTitleText": "我的购物车",
-  "enablePullDownRefresh": true
+  "enablePullDownRefresh": true,
+  "usingComponents": {
+    "full-page-empty-state": "/components/full-page-empty-state"
+  }
 }

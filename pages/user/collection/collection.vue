@@ -5,9 +5,10 @@
 			<view :class="{on:typeClass=='store'}" @tap="switchType('store')">店铺({{storeList.length}})</view>
 			<view class="border" :class="typeClass"></view>
 		</view>
-		<view class="place"></view>
 
 		<view class="list">
+			<view class="pin-top-padding"></view>
+			<view class="place"></view>
 			<!-- 收藏列表 -->
 			<view class="sub-list product" :class="subState">
 				<view class="tis" v-if="productList.length==0">
@@ -79,8 +80,7 @@
 				isStop: false
 			}
 		},
-		onPageScroll(e) {
-		},
+		onPageScroll(e) {},
 		//下拉刷新，需要自己在page.json文件中配置开启页面下拉刷新 "enablePullDownRefresh": true
 		onPullDownRefresh() {
 			setTimeout(function() {
@@ -225,15 +225,15 @@
 		display: flex;
 		flex-wrap: wrap;
 	}
-	
+
 	.place {
-		min-height: 80upx;
+		min-height: 100upx;
 		width: 100%;
 		/*  #ifdef  APP-PLUS  */
 		margin-top: var(--status-bar-height);
 		/*  #endif  */
 	}
-	
+
 	.icon {
 		font-size: 60upx;
 		font-style: normal;
@@ -243,7 +243,7 @@
 	.hidden {
 		display: none !important;
 	}
-	
+
 	.tabr {
 		background-color: $pin-color-primary;
 		width: 94%;

@@ -1,4 +1,4 @@
 {
-  "usingComponents": {},
-  "backgroundColorBottom": "#e5e5e5"
+  "navigationBarTitleText": "消息详情",
+  "usingComponents": {}
 }

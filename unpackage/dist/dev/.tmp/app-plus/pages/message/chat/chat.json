@@ -1,9 +1,6 @@
 {
-  "usingComponents": {},
-  "navigationBarBackgroundColor": "#ffc107",
-  "navigationBarTextStyle": "black",
-  "backgroundColorTop": "#e5e5e5",
   "backgroundColorBottom": "#e5e5e5",
   "softinputNavBar": "none",
-  "bounce": "none"
+  "bounce": "none",
+  "usingComponents": {}
 }

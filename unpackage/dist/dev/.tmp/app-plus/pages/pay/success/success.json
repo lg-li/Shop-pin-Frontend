@@ -1,5 +1,4 @@
 {
-  "usingComponents": {},
-  "navigationBarBackgroundColor": "#ffc107",
-  "navigationBarTitleText": "支付成功"
+  "navigationBarTitleText": "支付成功",
+  "usingComponents": {}
 }

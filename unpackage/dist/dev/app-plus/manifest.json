@@ -11,7 +11,7 @@
     "code": "100"
   },
   "description": "智能拼团购电商",
-  "launch_path": "__uniappservice.html",
+  "launch_path": "__uniapptabbar.html",
   "developer": {
     "name": "",
     "email": "",
@@ -19,7 +19,10 @@
   },
   "permissions": {
     "Share": {},
-    "OAuth": {}
+    "OAuth": {},
+    "UniNView": {
+      "description": "UniNView原生渲染"
+    }
   },
   "plus": {
     "useragent": {
@@ -41,6 +44,7 @@
       "style": "dark",
       "background": "#ffc107"
     },
+    "usingComponents": true,
     "distribute": {
       "orientation": [
         "portrait-primary"
@@ -116,14 +120,19 @@
     },
     "allowsInlineMediaPlayback": true,
     "safearea": {
-      "background": "#fafafa",
+      "background": "#ffffff",
       "bottom": {
         "offset": "auto"
       }
     },
     "uni-app": {
       "compilerVersion": "1.9.9",
-      "control": "webview"
+      "control": "v8"
+    },
+    "secondwebview": {
+      "id": "1",
+      "launch_path": "__uniappview.html",
+      "kernel": "WKWebview"
     }
   }
 }

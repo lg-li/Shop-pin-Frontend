@@ -37,8 +37,7 @@
 				"enablePullDownRefresh": true,
 				"app-plus": {
 					"animationType": "fade-in",
-					"animationDuration": 300,
-					"softinputNavBar": "none"
+					"animationDuration": 300
 				}
 			}
 		},
@@ -79,9 +78,8 @@
 			"style": {
 				"navigationBarTitleText": "登录",
 				"app-plus": {
-					"animationType": "fade-in",
-					"animationDuration": 300,
-					"softinputNavBar": "none"
+					"animationType": "slide-in-top",
+					"animationDuration": 300
 				}
 			}
 		},
@@ -111,7 +109,38 @@
 				"softinputNavBar": "none"
 			}
 		}, {
-			"path": "pages/user/order-list/order-list",
+			"path": "pages/pay/payment/payment",
+			"style": {
+				"navigationBarTitleText": "订单支付"
+			}
+		}, {
+			"path": "pages/pay/success/success",
+			"style": {
+				"navigationBarTitleText": "支付成功"
+			}
+		}, {
+			"path": "pages/store/store-index/store-index",
+			"style": {
+				"navigationBarTitleText": "店铺首页"
+			}
+		}, {
+			"path": "pages/store/store-group-playground/store-group-playground",
+			"style": {
+				"navigationBarTitleText": "拼团广场"
+			}
+		}, {
+			"path": "pages/order/order-group/order-group-detail",
+			"style": {
+				"navigationBarTitleText": "我的拼团"
+			}
+		}, {
+			"path": "pages/user/order/comment-on-order",
+			"style": {
+				"navigationBarTitleText": "评价订单"
+			}
+		},
+		{
+			"path": "pages/user/order/order-list",
 			"style": {
 				"navigationBarTitleText": "我的订单"
 			}
@@ -130,22 +159,6 @@
 			"style": {
 				"navigationBarTitleText": "我的二维码",
 				"app-plus": {
-					"bounce": "none"
-				}
-			}
-		},
-		{
-			"path": "pages/message/messages",
-			"style": {
-				"enablePullDownRefresh": true,
-				"navigationBarTitleText": "消息列表"
-			}
-		}, {
-			"path": "pages/message/chat/chat",
-			"style": {
-				"backgroundColorBottom": "#e5e5e5",
-				"app-plus": {
-					"softinputNavBar": "none",
 					"bounce": "none"
 				}
 			}
@@ -181,17 +194,36 @@
 				"navigationBarTitleText": "充值"
 			}
 		}, {
-			"path": "pages/pay/payment/payment",
+			"path": "pages/user/order/individual-order-detail",
 			"style": {
-				"navigationBarTitleText": "订单支付"
+				"navigationBarTitleText": "订单详情"
 			}
 		}, {
-			"path": "pages/pay/success/success",
+			"path": "pages/product/product-comments",
 			"style": {
-				"navigationBarTitleText": "支付成功"
+				"navigationBarTitleText": "商品评论"
 			}
 		}
 	],
+	"subPackages": [{
+		"root": "pages/message",
+		"pages": [{
+			"path": "messages",
+			"style": {
+				"enablePullDownRefresh": true,
+				"navigationBarTitleText": "消息列表"
+			}
+		}, {
+			"path": "chat/chat",
+			"style": {
+				"navigationBarTitleText": "消息详情",
+				"app-plus": {
+					"softinputNavBar": "none",
+					"bounce": "none"
+				}
+			}
+		}]
+	}],
 	"globalStyle": {
 		"navigationBarTextStyle": "black",
 		"navigationBarTitleText": "Pin 团",

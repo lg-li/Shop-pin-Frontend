@@ -1,8 +1,12 @@
-const SERVER_URL = "http://localhost:5488"
+const SERVER_URL = "localhost:5488"
+// const SERVER_URL = "5io2.com:5488"
 export default {
+	serverUrl: SERVER_URL,
 	code: {
 		success: 200,
-		invalidCredential: 401
+		invalidCredential: 401,
+		repeatPayment: 900,
+		insufficientBalance: 901
 	},
 	request(method, url, data, successCallback, failCallback, completeCallback) {
 		// 获取 token
@@ -10,7 +14,7 @@ export default {
 		// 对整体请求的统一封装
 		uni.request({
 			method: method,
-			url: SERVER_URL + url,
+			url: "http://" + SERVER_URL + url,
 			data: data,
 			dataType: "json",
 			header: {
@@ -51,7 +55,8 @@ export default {
 		});
 	},
 	data: {
-		isLoginInProgress: false ,// 登录操作 mutex lock
+		isLoginInProgress: false, // 登录操作 mutex lock
+		pinUser: null
 	},
 	invokers: {},
 	setData(key, value) {
@@ -67,8 +72,15 @@ export default {
 		this.data[key] = value;
 		this.invokers[key] = invoker
 	},
+	getToken() {
+		return uni.getStorageSync("pin-token")
+	},
+	loginSuccessCallback: null,
+	setLoginSuccessCallback(loginSuccessCallback) {
+		this.loginSuccessCallback = loginSuccessCallback
+	},
 	loginFromWechat(successCallback, failCallback) {
-		if(this.data.isLoginInProgress) {
+		if (this.data.isLoginInProgress) {
 			console.log("登录操作正在进行，互斥锁阻止继续执行")
 			return
 		}
@@ -88,17 +100,23 @@ export default {
 						userInfo.code = code
 						that.request('POST', '/sign-in/wechat-mini-program', userInfo,
 							successData => {
+								that.data.isLoginInProgress = false
 								if (successData.code == that.code.success) {
 									// 保存 token 到 storage
 									uni.setStorageSync('pin-token', successData.data)
 									if (successCallback) {
 										successCallback()
 									}
+									if (that.loginSuccessCallback) {
+										that.loginSuccessCallback()
+									}
+									that.getPinUserInfo()
 								} else {
 									failCallback(successData)
 								}
 							},
 							failData => {
+								that.data.isLoginInProgress = false
 								if (failCallback) {
 									failCallback(failData)
 								}
@@ -107,9 +125,26 @@ export default {
 				});
 			},
 			fail: (e) => {
+				that.data.isLoginInProgress = false
 				console.log("fail: " + JSON.stringify(e));
 			}
 		});
+	},
+	getPinUserInfo() {
+		let that  = this
+		this.request('GET', '/commons/user/info', null,
+			successData => {
+				that.data.pinUser = successData.data.user
+				uni.setStorageSync('pinUser', successData.data.user)
+			},
+			failData => {
+				console.log(failData)
+				uni.showToast({
+					icon: 'none',
+					title: '加载全局用户信息时出错'
+				})
+			}
+		)
 	},
 	getFriendlyTimeText(dateTimeStamp) {
 		let targetDate = new Date(dateTimeStamp)
@@ -130,7 +165,8 @@ export default {
 		let hourC = diffValue / hour;
 		let minC = diffValue / minute;
 		if (weekC >= 1) {
-			result = targetDate.getFullYear() + '-' + targetDate.getMonth() + '-' + targetDate.getDate() + ' ' + targetDate.getHours() + ':' + targetDate.getMinutes() + ':' + targetDate.getSeconds()
+			result = targetDate.getFullYear() + '-' + targetDate.getMonth() + '-' + targetDate.getDate() + ' ' + targetDate.getHours() +
+				':' + targetDate.getMinutes() + ':' + targetDate.getSeconds()
 			// result = "" + parseInt(weekC) + "周前";
 		} else if (dayC >= 1) {
 			result = "" + parseInt(dayC) + "天前";

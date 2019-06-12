@@ -1,0 +1,29 @@
+@charset "UTF-8";
+/* 颜色变量 */
+.uni-rate {
+  min-height: 80rpx;
+  line-height: 80rpx;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+.uni-rate-icon {
+    position: relative;
+    display: inline-block;
+    -webkit-transition: 0.5s all;
+    -o-transition: 0.5s all;
+    transition: 0.5s all;
+}
+.uni-rate-icon-on {
+      position: absolute;
+      top: 0;
+      left: 0;
+      overflow: hidden;
+}
+

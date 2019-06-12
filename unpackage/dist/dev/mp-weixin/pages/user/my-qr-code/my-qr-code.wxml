@@ -1,2 +1,1 @@
-<import src="./my-qr-code.vue.wxml" />
-    <template is="6806b414" data="{{ ...$root['0'], $root }}"/>
+<view bind:__l="__l"><view class="block"></view><view class="QR"><image src="../../../static/img/qr.png"></image></view><view class="title">扫描二维码，加我好友</view><view data-event-opts="{{[['tap',[['printscreen',['$event']]]]]}}" hidden="{{!(showBtn)}}" class="btn" bindtap="__e">{{''+tis+''}}</view><view class="logo"></view></view>

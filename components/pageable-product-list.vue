@@ -16,7 +16,12 @@
 
 <script>
 	export default {
-		props: ['dataSource'],
+		props: {
+			productDataSource: {
+				type: String,
+				value: ''
+			}
+		},
 		data() {
 			return {
 				productList: [],
@@ -41,7 +46,7 @@
 				});
 			},
 			loadProducts() {
-				const dataSource = this.dataSource
+				const dataSource = this.productDataSource
 				if (dataSource == null) {
 					dataSource = '/commons/product/new/'
 				}
@@ -80,16 +85,6 @@
 </script>
 
 <style lang="scss">
-	.loading-text {
-		width: 100%;
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		height: 60upx;
-		color: #979797;
-		font-size: 24upx;
-	}
-
 	.product-list {
 		width: 92%;
 		padding: 0 4% 3vw 4%;

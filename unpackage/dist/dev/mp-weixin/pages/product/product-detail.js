@@ -1,20 +1,5 @@
 (global["webpackJsonp"] = global["webpackJsonp"] || []).push([["pages/product/product-detail"],{
 
-/***/ "../../../../Development/NodeJS/Shop-pin-Frontend/Shop-pin-Frontend/main.js?{\"page\":\"pages%2Fproduct%2Fproduct-detail\"}":
-/*!*********************************************************************************************************************!*\
-  !*** C:/Development/NodeJS/Shop-pin-Frontend/Shop-pin-Frontend/main.js?{"page":"pages%2Fproduct%2Fproduct-detail"} ***!
-  \*********************************************************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-__webpack_require__(/*! uni-pages */ "../../../../Development/NodeJS/Shop-pin-Frontend/Shop-pin-Frontend/pages.json");
-var _mpvuePageFactory = _interopRequireDefault(__webpack_require__(/*! mpvue-page-factory */ "./node_modules/@dcloudio/vue-cli-plugin-uni/packages/mpvue-page-factory/index.js"));
-var _productDetail = _interopRequireDefault(__webpack_require__(/*! ./pages/product/product-detail.vue */ "../../../../Development/NodeJS/Shop-pin-Frontend/Shop-pin-Frontend/pages/product/product-detail.vue"));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}
-Page((0, _mpvuePageFactory.default)(_productDetail.default));
-
-/***/ }),
-
 /***/ "../../../../Development/NodeJS/Shop-pin-Frontend/Shop-pin-Frontend/pages/product/product-detail.vue":
 /*!**************************************************************************************************!*\
   !*** C:/Development/NodeJS/Shop-pin-Frontend/Shop-pin-Frontend/pages/product/product-detail.vue ***!
@@ -64,10 +49,10 @@ component.options.__file = "Development/NodeJS/Shop-pin-Frontend/Shop-pin-Fronte
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _Standalone_HBuilderX_plugins_uniapp_cli_node_modules_babel_loader_lib_index_js_Standalone_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_preprocess_loader_index_js_ref_12_1_Standalone_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_preprocess_loader_index_js_ref_18_0_Standalone_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_webpack_uni_mp_loader_lib_script_js_Standalone_HBuilderX_plugins_uniapp_cli_node_modules_vue_loader_lib_index_js_vue_loader_options_product_detail_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../../Standalone/HBuilderX/plugins/uniapp-cli/node_modules/babel-loader/lib!../../../../../../Standalone/HBuilderX/plugins/uniapp-cli/node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader??ref--12-1!../../../../../../Standalone/HBuilderX/plugins/uniapp-cli/node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader??ref--18-0!../../../../../../Standalone/HBuilderX/plugins/uniapp-cli/node_modules/@dcloudio/webpack-uni-mp-loader/lib/script.js!../../../../../../Standalone/HBuilderX/plugins/uniapp-cli/node_modules/vue-loader/lib??vue-loader-options!./product-detail.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader/index.js?!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader/index.js?!./node_modules/@dcloudio/webpack-uni-mp-loader/lib/script.js!./node_modules/vue-loader/lib/index.js?!../../../../Development/NodeJS/Shop-pin-Frontend/Shop-pin-Frontend/pages/product/product-detail.vue?vue&type=script&lang=js&");
-/* harmony import */ var _Standalone_HBuilderX_plugins_uniapp_cli_node_modules_babel_loader_lib_index_js_Standalone_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_preprocess_loader_index_js_ref_12_1_Standalone_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_preprocess_loader_index_js_ref_18_0_Standalone_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_webpack_uni_mp_loader_lib_script_js_Standalone_HBuilderX_plugins_uniapp_cli_node_modules_vue_loader_lib_index_js_vue_loader_options_product_detail_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_Standalone_HBuilderX_plugins_uniapp_cli_node_modules_babel_loader_lib_index_js_Standalone_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_preprocess_loader_index_js_ref_12_1_Standalone_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_preprocess_loader_index_js_ref_18_0_Standalone_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_webpack_uni_mp_loader_lib_script_js_Standalone_HBuilderX_plugins_uniapp_cli_node_modules_vue_loader_lib_index_js_vue_loader_options_product_detail_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__);
-/* harmony reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in _Standalone_HBuilderX_plugins_uniapp_cli_node_modules_babel_loader_lib_index_js_Standalone_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_preprocess_loader_index_js_ref_12_1_Standalone_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_preprocess_loader_index_js_ref_18_0_Standalone_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_webpack_uni_mp_loader_lib_script_js_Standalone_HBuilderX_plugins_uniapp_cli_node_modules_vue_loader_lib_index_js_vue_loader_options_product_detail_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__) if(__WEBPACK_IMPORT_KEY__ !== 'default') (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return _Standalone_HBuilderX_plugins_uniapp_cli_node_modules_babel_loader_lib_index_js_Standalone_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_preprocess_loader_index_js_ref_12_1_Standalone_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_preprocess_loader_index_js_ref_18_0_Standalone_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_webpack_uni_mp_loader_lib_script_js_Standalone_HBuilderX_plugins_uniapp_cli_node_modules_vue_loader_lib_index_js_vue_loader_options_product_detail_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__[key]; }) }(__WEBPACK_IMPORT_KEY__));
- /* harmony default export */ __webpack_exports__["default"] = (_Standalone_HBuilderX_plugins_uniapp_cli_node_modules_babel_loader_lib_index_js_Standalone_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_preprocess_loader_index_js_ref_12_1_Standalone_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_preprocess_loader_index_js_ref_18_0_Standalone_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_webpack_uni_mp_loader_lib_script_js_Standalone_HBuilderX_plugins_uniapp_cli_node_modules_vue_loader_lib_index_js_vue_loader_options_product_detail_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0___default.a); 
+/* harmony import */ var _Standalone_HBuilderX_plugins_uniapp_cli_node_modules_babel_loader_lib_index_js_Standalone_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_preprocess_loader_index_js_ref_12_1_Standalone_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_webpack_uni_mp_loader_lib_script_js_Standalone_HBuilderX_plugins_uniapp_cli_node_modules_vue_loader_lib_index_js_vue_loader_options_product_detail_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../../Standalone/HBuilderX/plugins/uniapp-cli/node_modules/babel-loader/lib!../../../../../../Standalone/HBuilderX/plugins/uniapp-cli/node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader??ref--12-1!../../../../../../Standalone/HBuilderX/plugins/uniapp-cli/node_modules/@dcloudio/webpack-uni-mp-loader/lib/script.js!../../../../../../Standalone/HBuilderX/plugins/uniapp-cli/node_modules/vue-loader/lib??vue-loader-options!./product-detail.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader/index.js?!./node_modules/@dcloudio/webpack-uni-mp-loader/lib/script.js!./node_modules/vue-loader/lib/index.js?!../../../../Development/NodeJS/Shop-pin-Frontend/Shop-pin-Frontend/pages/product/product-detail.vue?vue&type=script&lang=js&");
+/* harmony import */ var _Standalone_HBuilderX_plugins_uniapp_cli_node_modules_babel_loader_lib_index_js_Standalone_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_preprocess_loader_index_js_ref_12_1_Standalone_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_webpack_uni_mp_loader_lib_script_js_Standalone_HBuilderX_plugins_uniapp_cli_node_modules_vue_loader_lib_index_js_vue_loader_options_product_detail_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_Standalone_HBuilderX_plugins_uniapp_cli_node_modules_babel_loader_lib_index_js_Standalone_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_preprocess_loader_index_js_ref_12_1_Standalone_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_webpack_uni_mp_loader_lib_script_js_Standalone_HBuilderX_plugins_uniapp_cli_node_modules_vue_loader_lib_index_js_vue_loader_options_product_detail_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__);
+/* harmony reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in _Standalone_HBuilderX_plugins_uniapp_cli_node_modules_babel_loader_lib_index_js_Standalone_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_preprocess_loader_index_js_ref_12_1_Standalone_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_webpack_uni_mp_loader_lib_script_js_Standalone_HBuilderX_plugins_uniapp_cli_node_modules_vue_loader_lib_index_js_vue_loader_options_product_detail_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__) if(__WEBPACK_IMPORT_KEY__ !== 'default') (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return _Standalone_HBuilderX_plugins_uniapp_cli_node_modules_babel_loader_lib_index_js_Standalone_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_preprocess_loader_index_js_ref_12_1_Standalone_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_webpack_uni_mp_loader_lib_script_js_Standalone_HBuilderX_plugins_uniapp_cli_node_modules_vue_loader_lib_index_js_vue_loader_options_product_detail_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__[key]; }) }(__WEBPACK_IMPORT_KEY__));
+ /* harmony default export */ __webpack_exports__["default"] = (_Standalone_HBuilderX_plugins_uniapp_cli_node_modules_babel_loader_lib_index_js_Standalone_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_preprocess_loader_index_js_ref_12_1_Standalone_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_webpack_uni_mp_loader_lib_script_js_Standalone_HBuilderX_plugins_uniapp_cli_node_modules_vue_loader_lib_index_js_vue_loader_options_product_detail_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0___default.a); 
 
 /***/ }),
 
@@ -105,15 +90,76 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ "./node_modules/babel-loader/lib/index.js!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader/index.js?!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader/index.js?!./node_modules/@dcloudio/webpack-uni-mp-loader/lib/script.js!./node_modules/vue-loader/lib/index.js?!../../../../Development/NodeJS/Shop-pin-Frontend/Shop-pin-Frontend/pages/product/product-detail.vue?vue&type=script&lang=js&":
-/*!**************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/babel-loader/lib!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader??ref--12-1!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader??ref--18-0!./node_modules/@dcloudio/webpack-uni-mp-loader/lib/script.js!./node_modules/vue-loader/lib??vue-loader-options!C:/Development/NodeJS/Shop-pin-Frontend/Shop-pin-Frontend/pages/product/product-detail.vue?vue&type=script&lang=js& ***!
-  \**************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+/***/ "./node_modules/babel-loader/lib/index.js!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader/index.js?!./node_modules/@dcloudio/webpack-uni-mp-loader/lib/script.js!./node_modules/vue-loader/lib/index.js?!../../../../Development/NodeJS/Shop-pin-Frontend/Shop-pin-Frontend/pages/product/product-detail.vue?vue&type=script&lang=js&":
+/*!********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader??ref--12-1!./node_modules/@dcloudio/webpack-uni-mp-loader/lib/script.js!./node_modules/vue-loader/lib??vue-loader-options!C:/Development/NodeJS/Shop-pin-Frontend/Shop-pin-Frontend/pages/product/product-detail.vue?vue&type=script&lang=js& ***!
+  \********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var _default =
+/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var CardTitle = function CardTitle() {return __webpack_require__.e(/*! import() | components/card-title */ "components/card-title").then(__webpack_require__.bind(null, /*! ../../components/card-title.vue */ "../../../../Development/NodeJS/Shop-pin-Frontend/Shop-pin-Frontend/components/card-title.vue"));};var _default =
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -326,6 +372,9 @@ __webpack_require__.r(__webpack_exports__);
 
 
 {
+  components: {
+    "card-title": CardTitle },
+
   data: function data() {
     return {
       //控制渐变标题栏的参数
@@ -351,33 +400,26 @@ __webpack_require__.r(__webpack_exports__);
       productAttributeValuesMap: {},
       productSKUStockCache: {},
       productDetail: {},
+      productServices: [{
+        name: "正品保证",
+        description: "此商品官方保证为正品" },
+
+      {
+        name: "极速退款",
+        description: "此商品享受退货极速退款服务" },
+
+      {
+        name: "7天退换",
+        description: "此商品享受7天无理由退换服务" }],
+
+
       selectedResult: {
         sku: null,
         amount: 1,
         skuString: '' },
 
+      selectedComment: null,
       attributeSelectMap: {},
-      productData: {
-        service: [{
-          name: "正品保证",
-          description: "此商品官方保证为正品" },
-
-        {
-          name: "极速退款",
-          description: "此商品享受退货极速退款服务" },
-
-        {
-          name: "7天退换",
-          description: "此商品享受7天无理由退换服务" }],
-
-
-        comment: {
-          number: 102,
-          userface: '../../static/img/face.jpg',
-          username: '大黑哥',
-          content: '很不错，之前买了很多次了，很好看，能放很久，和图片色差不大，值得购买！' } },
-
-
       selectSpec: null, //选中规格
       isKeep: false, //收藏 商品描述html
       descriptionStr: '<div style="text-align:center;"><img width="100%" src="https://s2.ax1x.com/2019/03/28/AdOogx.jpg"/><img width="100%" src="https://s2.ax1x.com/2019/03/28/AdOHKK.jpg"/><img width="100%" src="https://s2.ax1x.com/2019/03/28/AdOTv6.jpg"/></div>' };
@@ -389,7 +431,8 @@ __webpack_require__.r(__webpack_exports__);
     this.showBack = false;
 
     //option为object类型，会序列化上个页面传递的参数
-    console.log(option.productId); //打印出上个页面传递的参数。
+    console.log(option.productId); //打印出上个页面传递的参数
+    this.productId = option.productId;
     this.loadProductDetail(option.productId);
   },
   onReady: function onReady() {
@@ -406,6 +449,7 @@ __webpack_require__.r(__webpack_exports__);
     //切换层级
     this.beforeHeaderzIndex = e.scrollTop > 0 ? 10 : 11;
     this.afterHeaderzIndex = e.scrollTop > 0 ? 11 : 10;
+    this.$forceUpdate();
   },
   //上拉加载，需要自己在page.json文件中配置"onReachBottomDistance"
   onReachBottom: function onReachBottom() {
@@ -418,22 +462,28 @@ __webpack_require__.r(__webpack_exports__);
       var that = this;
       this.$pin.request('GET', '/commons/product/' + productId, null,
       function (successData) {
-        console.log(successData);
-        that.productDetail = successData.data;
-        uni.setNavigationBarTitle({
-          title: that.productDetail.name });
+        if (successData.code == that.$pin.code.success) {
+          that.productDetail = successData.data.product;
+          that.selectedComment = successData.data.comment;
+          uni.setNavigationBarTitle({
+            title: that.productDetail.name });
 
-        that.swiperList.push({
-          id: 1,
-          img: that.productDetail.imageUrls });
+          that.swiperList.push({
+            id: 1,
+            img: that.productDetail.imageUrls });
 
-        that.parseProductAttributes(successData.data.productAttributeDefinitions, successData.data.productAttributeValues);
+          that.parseProductAttributes(successData.data.product.productAttributeDefinitions, successData.data.product.productAttributeValues);
+        } else {
+          uni.showToast({
+            title: '加载商品出错，' + successData.message,
+            icon: 'none' });
+
+        }
       },
       function (failData) {
-        console.log(failData);
         uni.showToast({
-          icon: 'none',
-          title: '加载商品出错' });
+          title: '加载商品出错，请重试',
+          icon: 'none' });
 
       });
 
@@ -471,6 +521,11 @@ __webpack_require__.r(__webpack_exports__);
         url: "../message/chat/chat?name=客服008" });
 
     },
+    toStore: function toStore(storeId) {
+      uni.navigateTo({
+        url: "../store/store-index/store-index?storeId=" + storeId });
+
+    },
     // 分享
     share: function share() {
       this.shareClass = 'show';
@@ -484,6 +539,11 @@ __webpack_require__.r(__webpack_exports__);
     //收藏
     keep: function keep() {
       this.isKeep = this.isKeep ? false : true;
+    },
+    toCart: function toCart() {
+      uni.switchTab({
+        url: "../tab-bar/cart" });
+
     },
     // 加入购物车
     joinCart: function joinCart() {
@@ -552,7 +612,9 @@ __webpack_require__.r(__webpack_exports__);
 
     },
     //跳转评论列表
-    showComments: function showComments(productid) {
+    toComments: function toComments(productId) {
+      uni.navigateTo({
+        url: "./product-comments?productId=" + productId });
 
     },
     //选择规格
@@ -684,7 +746,6 @@ __webpack_require__.r(__webpack_exports__);
     },
     //规格弹窗
     showSpec: function showSpec(fun) {
-      console.log('show');
       this.attributeModalClass = 'show';
       this.specCallback = fun;
     },
@@ -694,9 +755,10 @@ __webpack_require__.r(__webpack_exports__);
     //关闭规格弹窗
     hideSpec: function hideSpec() {var _this5 = this;
       this.attributeModalClass = 'hide';
+      this.joinCart();
       //回调
-      this.selectSpec && this.specCallback && this.specCallback();
-      this.specCallback = false;
+      // this.selectSpec && this.specCallback && this.specCallback();
+      // this.specCallback = false;
       setTimeout(function () {
         _this5.attributeModalClass = 'none';
       }, 200);
@@ -734,701 +796,8 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("view", [
-    _c("view", {
-      staticClass: "status",
-      style: { opacity: _vm.afterHeaderOpacity }
-    }),
-    _c("view", { staticClass: "product-header" }, [
-      _c(
-        "view",
-        {
-          staticClass: "before",
-          style: {
-            opacity: 1 - _vm.afterHeaderOpacity,
-            zIndex: _vm.beforeHeaderzIndex
-          }
-        },
-        [
-          _c("view", { staticClass: "back" }, [
-            _vm.showBack
-              ? _c("view", {
-                  staticClass: "icon xiangqian",
-                  attrs: { eventid: "4ce8c978-0" },
-                  on: { tap: _vm.back }
-                })
-              : _vm._e()
-          ]),
-          _c("view", { staticClass: "middle" }),
-          _c("view", { staticClass: "icon-btn" }, [
-            _c(
-              "view",
-              {
-                staticClass: "icon pin-icon",
-                attrs: { eventid: "4ce8c978-1" },
-                on: { tap: _vm.toMsg }
-              },
-              [_vm._v("notifications")]
-            ),
-            _c(
-              "view",
-              {
-                staticClass: "icon pin-icon",
-                attrs: { eventid: "4ce8c978-2" },
-                on: { tap: _vm.joinCart }
-              },
-              [_vm._v("shopping_cart")]
-            )
-          ])
-        ]
-      ),
-      _c(
-        "view",
-        {
-          staticClass: "after",
-          style: {
-            opacity: _vm.afterHeaderOpacity,
-            zIndex: _vm.afterHeaderzIndex
-          }
-        },
-        [
-          _c("view", { staticClass: "back" }, [
-            _vm.showBack
-              ? _c(
-                  "view",
-                  {
-                    staticClass: "icon pin-icon",
-                    attrs: { eventid: "4ce8c978-3" },
-                    on: { tap: _vm.back }
-                  },
-                  [_vm._v("arrow_back")]
-                )
-              : _vm._e()
-          ]),
-          _c(
-            "view",
-            { staticClass: "middle" },
-            _vm._l(_vm.anchorlist, function(anchor, index) {
-              return _c(
-                "view",
-                {
-                  key: index,
-                  class: [_vm.selectAnchor == index ? "on" : ""],
-                  attrs: { eventid: "4ce8c978-4-" + index },
-                  on: {
-                    tap: function($event) {
-                      _vm.toAnchor(index)
-                    }
-                  }
-                },
-                [_vm._v(_vm._s(anchor.name))]
-              )
-            })
-          ),
-          _c("view", { staticClass: "icon-btn" }, [
-            _c(
-              "view",
-              {
-                staticClass: "icon pin-icon",
-                attrs: { eventid: "4ce8c978-5" },
-                on: { tap: _vm.toMsg }
-              },
-              [_vm._v("notifications")]
-            ),
-            _c(
-              "view",
-              {
-                staticClass: "icon pin-icon",
-                attrs: { eventid: "4ce8c978-6" },
-                on: { tap: _vm.joinCart }
-              },
-              [_vm._v("shopping_cart")]
-            )
-          ])
-        ]
-      )
-    ]),
-    _c("view", { staticClass: "footer" }, [
-      _c("view", { staticClass: "icons" }, [
-        _c(
-          "view",
-          {
-            staticClass: "box",
-            attrs: { eventid: "4ce8c978-7" },
-            on: { tap: _vm.share }
-          },
-          [
-            _c("view", { staticClass: "icon pin-icon" }, [_vm._v("share")]),
-            _c("view", { staticClass: "text" }, [_vm._v("分享")])
-          ]
-        ),
-        _c(
-          "view",
-          {
-            staticClass: "box",
-            attrs: { eventid: "4ce8c978-8" },
-            on: { tap: _vm.toChat }
-          },
-          [
-            _c("view", { staticClass: "icon pin-icon" }, [
-              _vm._v("contact_phone")
-            ]),
-            _c("view", { staticClass: "text" }, [_vm._v("客服")])
-          ]
-        ),
-        _c(
-          "view",
-          {
-            staticClass: "box",
-            attrs: { eventid: "4ce8c978-9" },
-            on: { tap: _vm.keep }
-          },
-          [
-            _c("view", { staticClass: "icon pin-icon" }, [
-              _vm._v(_vm._s(_vm.isKeep ? "star" : "star_border"))
-            ]),
-            _c("view", { staticClass: "text" }, [
-              _vm._v(_vm._s(_vm.isKeep ? "已" : "") + "收藏")
-            ])
-          ]
-        )
-      ]),
-      _c("view", { staticClass: "btn" }, [
-        _c(
-          "view",
-          {
-            staticClass: "joinCart",
-            attrs: { eventid: "4ce8c978-10" },
-            on: { tap: _vm.joinCart }
-          },
-          [_vm._v("加入购物车")]
-        ),
-        _c(
-          "view",
-          {
-            staticClass: "buy",
-            attrs: { eventid: "4ce8c978-11" },
-            on: { tap: _vm.buy }
-          },
-          [_vm._v("立即购买")]
-        )
-      ])
-    ]),
-    _c(
-      "view",
-      {
-        staticClass: "share",
-        class: _vm.shareClass,
-        attrs: { eventid: "4ce8c978-14" },
-        on: {
-          touchmove: function($event) {
-            $event.stopPropagation()
-            $event.preventDefault()
-            _vm.discard($event)
-          },
-          tap: _vm.hideShare
-        }
-      },
-      [
-        _c("view", { staticClass: "mask" }),
-        _c(
-          "view",
-          {
-            staticClass: "layer",
-            attrs: { eventid: "4ce8c978-13" },
-            on: {
-              tap: function($event) {
-                $event.stopPropagation()
-                _vm.discard($event)
-              }
-            }
-          },
-          [
-            _c("view", { staticClass: "h1" }, [_vm._v("分享")]),
-            _vm._m(0),
-            _c(
-              "view",
-              {
-                staticClass: "btn",
-                attrs: { eventid: "4ce8c978-12" },
-                on: { tap: _vm.hideShare }
-              },
-              [_vm._v("取消")]
-            )
-          ]
-        )
-      ]
-    ),
-    _c(
-      "view",
-      {
-        staticClass: "popup service",
-        class: _vm.serviceClass,
-        attrs: { eventid: "4ce8c978-17" },
-        on: {
-          touchmove: function($event) {
-            $event.stopPropagation()
-            $event.preventDefault()
-            _vm.discard($event)
-          },
-          tap: _vm.hideService
-        }
-      },
-      [
-        _c("view", { staticClass: "mask" }),
-        _c(
-          "view",
-          {
-            staticClass: "layer",
-            attrs: { eventid: "4ce8c978-16" },
-            on: {
-              tap: function($event) {
-                $event.stopPropagation()
-                _vm.discard($event)
-              }
-            }
-          },
-          [
-            _c(
-              "view",
-              { staticClass: "content" },
-              _vm._l(_vm.productData.service, function(item, index) {
-                return _c("view", { key: index, staticClass: "row" }, [
-                  _c("view", { staticClass: "title" }, [
-                    _vm._v(_vm._s(item.name))
-                  ]),
-                  _c("view", { staticClass: "description" }, [
-                    _vm._v(_vm._s(item.description))
-                  ])
-                ])
-              })
-            ),
-            _c("view", { staticClass: "btn" }, [
-              _c(
-                "view",
-                {
-                  staticClass: "button",
-                  attrs: { eventid: "4ce8c978-15" },
-                  on: { tap: _vm.hideService }
-                },
-                [_vm._v("确定")]
-              )
-            ])
-          ]
-        )
-      ]
-    ),
-    _c(
-      "view",
-      {
-        staticClass: "popup spec",
-        class: _vm.attributeModalClass,
-        attrs: { eventid: "4ce8c978-25" },
-        on: {
-          touchmove: function($event) {
-            $event.stopPropagation()
-            $event.preventDefault()
-            _vm.discard($event)
-          },
-          tap: _vm.hideSpec
-        }
-      },
-      [
-        _c("view", { staticClass: "mask" }),
-        _c(
-          "view",
-          {
-            staticClass: "layer",
-            attrs: { eventid: "4ce8c978-24" },
-            on: {
-              tap: function($event) {
-                $event.stopPropagation()
-                _vm.discard($event)
-              }
-            }
-          },
-          [
-            _c(
-              "view",
-              { staticClass: "content" },
-              [
-                _vm._l(_vm.productAttributes, function(
-                  productAttribute,
-                  index
-                ) {
-                  return _c(
-                    "view",
-                    { key: productAttribute.attributeName + index },
-                    [
-                      _c("view", { staticClass: "title" }, [
-                        _vm._v(_vm._s(productAttribute.attributeName))
-                      ]),
-                      _c(
-                        "view",
-                        { staticClass: "attrubite-chip-list" },
-                        _vm._l(productAttribute.attributeValues, function(
-                          item,
-                          index2
-                        ) {
-                          return _c(
-                            "view",
-                            {
-                              key: item + index2,
-                              staticClass: "attrubite-chip",
-                              class: [
-                                _vm.attributeSelectMap[
-                                  productAttribute.attributeName
-                                ] == item
-                                  ? "on"
-                                  : ""
-                              ],
-                              attrs: {
-                                eventid: "4ce8c978-18-" + index + "-" + index2
-                              },
-                              on: {
-                                tap: function($event) {
-                                  _vm.setSelectAttribute(
-                                    productAttribute.attributeName,
-                                    item
-                                  )
-                                }
-                              }
-                            },
-                            [_vm._v(_vm._s(item))]
-                          )
-                        })
-                      )
-                    ]
-                  )
-                }),
-                _vm.selectedResult.sku != null
-                  ? _c("view", { staticClass: "length" }, [
-                      _c("view", { staticClass: "text" }, [
-                        _vm._v(
-                          "数量 (" + _vm._s(_vm.productDetail.unitName) + ")"
-                        )
-                      ]),
-                      _c("view", { staticClass: "number" }, [
-                        _c(
-                          "view",
-                          {
-                            staticClass: "sub",
-                            attrs: { eventid: "4ce8c978-19" },
-                            on: {
-                              tap: function($event) {
-                                $event.stopPropagation()
-                                _vm.sub($event)
-                              }
-                            }
-                          },
-                          [
-                            _c("view", { staticClass: "icon pin-icon" }, [
-                              _vm._v("remove")
-                            ])
-                          ]
-                        ),
-                        _c(
-                          "view",
-                          {
-                            staticClass: "input",
-                            attrs: { eventid: "4ce8c978-21" },
-                            on: {
-                              tap: function($event) {
-                                $event.stopPropagation()
-                                _vm.discard($event)
-                              }
-                            }
-                          },
-                          [
-                            _c("input", {
-                              directives: [
-                                {
-                                  name: "model",
-                                  rawName: "v-model",
-                                  value: _vm.selectedResult.amount,
-                                  expression: "selectedResult.amount"
-                                }
-                              ],
-                              attrs: { type: "number", eventid: "4ce8c978-20" },
-                              domProps: { value: _vm.selectedResult.amount },
-                              on: {
-                                input: function($event) {
-                                  if ($event.target.composing) {
-                                    return
-                                  }
-                                  _vm.selectedResult.amount =
-                                    $event.target.value
-                                }
-                              }
-                            })
-                          ]
-                        ),
-                        _c(
-                          "view",
-                          {
-                            staticClass: "add",
-                            attrs: { eventid: "4ce8c978-22" },
-                            on: {
-                              tap: function($event) {
-                                $event.stopPropagation()
-                                _vm.add($event)
-                              }
-                            }
-                          },
-                          [
-                            _c("view", { staticClass: "icon pin-icon" }, [
-                              _vm._v("add")
-                            ])
-                          ]
-                        )
-                      ])
-                    ])
-                  : _vm._e()
-              ],
-              2
-            ),
-            _c(
-              "view",
-              {
-                directives: [
-                  {
-                    name: "show",
-                    rawName: "v-show",
-                    value:
-                      _vm.productAttributeValuesMap[
-                        _vm.selectedResult.skuString
-                      ] != null &&
-                      _vm.productAttributeValuesMap[
-                        _vm.selectedResult.skuString
-                      ].stock > 0,
-                    expression:
-                      "productAttributeValuesMap[selectedResult.skuString] != null && productAttributeValuesMap[selectedResult.skuString].stock >0"
-                  }
-                ],
-                staticClass: "btn"
-              },
-              [
-                _c(
-                  "view",
-                  {
-                    staticClass: "button",
-                    attrs: { eventid: "4ce8c978-23" },
-                    on: { tap: _vm.hideSpec }
-                  },
-                  [_vm._v("完成")]
-                )
-              ]
-            )
-          ]
-        )
-      ]
-    ),
-    _c(
-      "view",
-      { staticClass: "swiper-box" },
-      [
-        _c(
-          "swiper",
-          {
-            attrs: {
-              circular: "true",
-              autoplay: "true",
-              eventid: "4ce8c978-27"
-            },
-            on: { change: _vm.swiperChange }
-          },
-          _vm._l(_vm.swiperList, function(swiper, index0) {
-            return _c(
-              "swiper-item",
-              { key: swiper.id, attrs: { mpcomid: "4ce8c978-0-" + index0 } },
-              [
-                _c("image", {
-                  attrs: { src: swiper.img, eventid: "4ce8c978-26-" + index0 },
-                  on: {
-                    tap: function($event) {
-                      _vm.toSwiper(swiper)
-                    }
-                  }
-                })
-              ]
-            )
-          })
-        ),
-        _c("view", { staticClass: "indicator" }, [
-          _vm._v(
-            _vm._s(_vm.currentSwiper + 1) + "/" + _vm._s(_vm.swiperList.length)
-          )
-        ])
-      ],
-      1
-    ),
-    _c("view", { staticClass: "info-box product-info" }, [
-      _c("view", { staticClass: "price" }, [
-        _vm._v("￥" + _vm._s(_vm.productDetail.price))
-      ]),
-      _c("view", { staticClass: "title" }, [
-        _vm._v(_vm._s(_vm.productDetail.name))
-      ])
-    ]),
-    _c("view", { staticClass: "info-box spec" }, [
-      _c(
-        "view",
-        {
-          staticClass: "row",
-          attrs: { eventid: "4ce8c978-28" },
-          on: { tap: _vm.showService }
-        },
-        [
-          _c("view", { staticClass: "text" }, [_vm._v("服务")]),
-          _c(
-            "view",
-            { staticClass: "content" },
-            _vm._l(_vm.productData.service, function(item, index) {
-              return _c("view", { key: index, staticClass: "serviceitem" }, [
-                _vm._v(_vm._s(item.name))
-              ])
-            })
-          ),
-          _vm._m(1)
-        ]
-      ),
-      _c(
-        "view",
-        {
-          staticClass: "row",
-          attrs: { eventid: "4ce8c978-29" },
-          on: {
-            tap: function($event) {
-              _vm.showSpec(false)
-            }
-          }
-        },
-        [
-          _c("view", { staticClass: "text" }, [_vm._v("选择")]),
-          _c("view", { staticClass: "content" }, [
-            _c("view", [
-              _vm._v(
-                "选择规格：" +
-                  _vm._s(
-                    _vm.selectedResult.sku == null
-                      ? "未选择"
-                      : _vm.selectedResult.skuString
-                  ) +
-                  "\n\t\t\t\t\t" +
-                  _vm._s(
-                    _vm.selectedResult.amount == 0
-                      ? ""
-                      : _vm.selectedResult.amount + _vm.productDetail.unitName
-                  )
-              )
-            ])
-          ]),
-          _vm._m(2)
-        ]
-      )
-    ]),
-    _c(
-      "view",
-      { staticClass: "info-box comments", attrs: { id: "comments" } },
-      [
-        _c("view", { staticClass: "row" }, [
-          _c("view", { staticClass: "text" }, [_vm._v("商品评价")]),
-          _c("view", { staticClass: "arrow" }, [
-            _c(
-              "view",
-              {
-                staticClass: "show",
-                attrs: { eventid: "4ce8c978-30" },
-                on: {
-                  tap: function($event) {
-                    _vm.showComments(_vm.productDetail.id)
-                  }
-                }
-              },
-              [
-                _vm._v("查看全部"),
-                _c("view", { staticClass: "icon pin-icon" }, [
-                  _vm._v("keyboard_arrow_right")
-                ])
-              ]
-            )
-          ])
-        ]),
-        _c("view", { staticClass: "comment" }, [
-          _c("view", { staticClass: "user-info" }, [
-            _c("view", { staticClass: "face" }, [
-              _c("image", { attrs: { src: _vm.productData.comment.userface } })
-            ]),
-            _c("view", { staticClass: "username" }, [
-              _vm._v(_vm._s(_vm.productData.comment.username))
-            ])
-          ]),
-          _c("view", { staticClass: "content" }, [
-            _vm._v(_vm._s(_vm.productData.comment.content))
-          ])
-        ])
-      ]
-    ),
-    _c("view", { staticClass: "description" }, [
-      _c("view", { staticClass: "title" }, [_vm._v("———— 商品详情 ————")]),
-      _c(
-        "view",
-        { staticClass: "content" },
-        [
-          _c("rich-text", {
-            attrs: { nodes: _vm.descriptionStr, mpcomid: "4ce8c978-1" }
-          })
-        ],
-        1
-      )
-    ])
-  ])
 }
-var staticRenderFns = [
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("view", { staticClass: "list" }, [
-      _c("view", { staticClass: "box" }, [
-        _c("image", { attrs: { src: "../../static/img/share/wx.png" } }),
-        _c("view", { staticClass: "title" }, [_vm._v("微信好友")])
-      ]),
-      _c("view", { staticClass: "box" }, [
-        _c("image", { attrs: { src: "../../static/img/share/pyq.png" } }),
-        _c("view", { staticClass: "title" }, [_vm._v("朋友圈")])
-      ]),
-      _c("view", { staticClass: "box" }, [
-        _c("image", { attrs: { src: "../../static/img/share/wb.png" } }),
-        _c("view", { staticClass: "title" }, [_vm._v("新浪微博")])
-      ]),
-      _c("view", { staticClass: "box" }, [
-        _c("image", { attrs: { src: "../../static/img/share/qq.png" } }),
-        _c("view", { staticClass: "title" }, [_vm._v("QQ")])
-      ])
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("view", { staticClass: "arrow" }, [
-      _c("view", { staticClass: "icon pin-icon" }, [
-        _vm._v("keyboard_arrow_right")
-      ])
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("view", { staticClass: "arrow" }, [
-      _c("view", { staticClass: "icon pin-icon" }, [
-        _vm._v("keyboard_arrow_right")
-      ])
-    ])
-  }
-]
+var staticRenderFns = []
 render._withStripped = true
 
 

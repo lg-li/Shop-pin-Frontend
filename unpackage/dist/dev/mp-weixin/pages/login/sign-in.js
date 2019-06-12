@@ -1,20 +1,5 @@
 (global["webpackJsonp"] = global["webpackJsonp"] || []).push([["pages/login/sign-in"],{
 
-/***/ "../../../../Development/NodeJS/Shop-pin-Frontend/Shop-pin-Frontend/main.js?{\"page\":\"pages%2Flogin%2Fsign-in\"}":
-/*!************************************************************************************************************!*\
-  !*** C:/Development/NodeJS/Shop-pin-Frontend/Shop-pin-Frontend/main.js?{"page":"pages%2Flogin%2Fsign-in"} ***!
-  \************************************************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-__webpack_require__(/*! uni-pages */ "../../../../Development/NodeJS/Shop-pin-Frontend/Shop-pin-Frontend/pages.json");
-var _mpvuePageFactory = _interopRequireDefault(__webpack_require__(/*! mpvue-page-factory */ "./node_modules/@dcloudio/vue-cli-plugin-uni/packages/mpvue-page-factory/index.js"));
-var _signIn = _interopRequireDefault(__webpack_require__(/*! ./pages/login/sign-in.vue */ "../../../../Development/NodeJS/Shop-pin-Frontend/Shop-pin-Frontend/pages/login/sign-in.vue"));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}
-Page((0, _mpvuePageFactory.default)(_signIn.default));
-
-/***/ }),
-
 /***/ "../../../../Development/NodeJS/Shop-pin-Frontend/Shop-pin-Frontend/pages/login/sign-in.vue":
 /*!*****************************************************************************************!*\
   !*** C:/Development/NodeJS/Shop-pin-Frontend/Shop-pin-Frontend/pages/login/sign-in.vue ***!
@@ -64,10 +49,10 @@ component.options.__file = "Development/NodeJS/Shop-pin-Frontend/Shop-pin-Fronte
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _Standalone_HBuilderX_plugins_uniapp_cli_node_modules_babel_loader_lib_index_js_Standalone_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_preprocess_loader_index_js_ref_12_1_Standalone_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_preprocess_loader_index_js_ref_18_0_Standalone_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_webpack_uni_mp_loader_lib_script_js_Standalone_HBuilderX_plugins_uniapp_cli_node_modules_vue_loader_lib_index_js_vue_loader_options_sign_in_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../../Standalone/HBuilderX/plugins/uniapp-cli/node_modules/babel-loader/lib!../../../../../../Standalone/HBuilderX/plugins/uniapp-cli/node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader??ref--12-1!../../../../../../Standalone/HBuilderX/plugins/uniapp-cli/node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader??ref--18-0!../../../../../../Standalone/HBuilderX/plugins/uniapp-cli/node_modules/@dcloudio/webpack-uni-mp-loader/lib/script.js!../../../../../../Standalone/HBuilderX/plugins/uniapp-cli/node_modules/vue-loader/lib??vue-loader-options!./sign-in.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader/index.js?!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader/index.js?!./node_modules/@dcloudio/webpack-uni-mp-loader/lib/script.js!./node_modules/vue-loader/lib/index.js?!../../../../Development/NodeJS/Shop-pin-Frontend/Shop-pin-Frontend/pages/login/sign-in.vue?vue&type=script&lang=js&");
-/* harmony import */ var _Standalone_HBuilderX_plugins_uniapp_cli_node_modules_babel_loader_lib_index_js_Standalone_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_preprocess_loader_index_js_ref_12_1_Standalone_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_preprocess_loader_index_js_ref_18_0_Standalone_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_webpack_uni_mp_loader_lib_script_js_Standalone_HBuilderX_plugins_uniapp_cli_node_modules_vue_loader_lib_index_js_vue_loader_options_sign_in_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_Standalone_HBuilderX_plugins_uniapp_cli_node_modules_babel_loader_lib_index_js_Standalone_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_preprocess_loader_index_js_ref_12_1_Standalone_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_preprocess_loader_index_js_ref_18_0_Standalone_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_webpack_uni_mp_loader_lib_script_js_Standalone_HBuilderX_plugins_uniapp_cli_node_modules_vue_loader_lib_index_js_vue_loader_options_sign_in_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__);
-/* harmony reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in _Standalone_HBuilderX_plugins_uniapp_cli_node_modules_babel_loader_lib_index_js_Standalone_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_preprocess_loader_index_js_ref_12_1_Standalone_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_preprocess_loader_index_js_ref_18_0_Standalone_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_webpack_uni_mp_loader_lib_script_js_Standalone_HBuilderX_plugins_uniapp_cli_node_modules_vue_loader_lib_index_js_vue_loader_options_sign_in_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__) if(__WEBPACK_IMPORT_KEY__ !== 'default') (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return _Standalone_HBuilderX_plugins_uniapp_cli_node_modules_babel_loader_lib_index_js_Standalone_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_preprocess_loader_index_js_ref_12_1_Standalone_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_preprocess_loader_index_js_ref_18_0_Standalone_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_webpack_uni_mp_loader_lib_script_js_Standalone_HBuilderX_plugins_uniapp_cli_node_modules_vue_loader_lib_index_js_vue_loader_options_sign_in_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__[key]; }) }(__WEBPACK_IMPORT_KEY__));
- /* harmony default export */ __webpack_exports__["default"] = (_Standalone_HBuilderX_plugins_uniapp_cli_node_modules_babel_loader_lib_index_js_Standalone_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_preprocess_loader_index_js_ref_12_1_Standalone_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_preprocess_loader_index_js_ref_18_0_Standalone_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_webpack_uni_mp_loader_lib_script_js_Standalone_HBuilderX_plugins_uniapp_cli_node_modules_vue_loader_lib_index_js_vue_loader_options_sign_in_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0___default.a); 
+/* harmony import */ var _Standalone_HBuilderX_plugins_uniapp_cli_node_modules_babel_loader_lib_index_js_Standalone_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_preprocess_loader_index_js_ref_12_1_Standalone_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_webpack_uni_mp_loader_lib_script_js_Standalone_HBuilderX_plugins_uniapp_cli_node_modules_vue_loader_lib_index_js_vue_loader_options_sign_in_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../../Standalone/HBuilderX/plugins/uniapp-cli/node_modules/babel-loader/lib!../../../../../../Standalone/HBuilderX/plugins/uniapp-cli/node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader??ref--12-1!../../../../../../Standalone/HBuilderX/plugins/uniapp-cli/node_modules/@dcloudio/webpack-uni-mp-loader/lib/script.js!../../../../../../Standalone/HBuilderX/plugins/uniapp-cli/node_modules/vue-loader/lib??vue-loader-options!./sign-in.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader/index.js?!./node_modules/@dcloudio/webpack-uni-mp-loader/lib/script.js!./node_modules/vue-loader/lib/index.js?!../../../../Development/NodeJS/Shop-pin-Frontend/Shop-pin-Frontend/pages/login/sign-in.vue?vue&type=script&lang=js&");
+/* harmony import */ var _Standalone_HBuilderX_plugins_uniapp_cli_node_modules_babel_loader_lib_index_js_Standalone_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_preprocess_loader_index_js_ref_12_1_Standalone_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_webpack_uni_mp_loader_lib_script_js_Standalone_HBuilderX_plugins_uniapp_cli_node_modules_vue_loader_lib_index_js_vue_loader_options_sign_in_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_Standalone_HBuilderX_plugins_uniapp_cli_node_modules_babel_loader_lib_index_js_Standalone_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_preprocess_loader_index_js_ref_12_1_Standalone_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_webpack_uni_mp_loader_lib_script_js_Standalone_HBuilderX_plugins_uniapp_cli_node_modules_vue_loader_lib_index_js_vue_loader_options_sign_in_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__);
+/* harmony reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in _Standalone_HBuilderX_plugins_uniapp_cli_node_modules_babel_loader_lib_index_js_Standalone_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_preprocess_loader_index_js_ref_12_1_Standalone_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_webpack_uni_mp_loader_lib_script_js_Standalone_HBuilderX_plugins_uniapp_cli_node_modules_vue_loader_lib_index_js_vue_loader_options_sign_in_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__) if(__WEBPACK_IMPORT_KEY__ !== 'default') (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return _Standalone_HBuilderX_plugins_uniapp_cli_node_modules_babel_loader_lib_index_js_Standalone_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_preprocess_loader_index_js_ref_12_1_Standalone_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_webpack_uni_mp_loader_lib_script_js_Standalone_HBuilderX_plugins_uniapp_cli_node_modules_vue_loader_lib_index_js_vue_loader_options_sign_in_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__[key]; }) }(__WEBPACK_IMPORT_KEY__));
+ /* harmony default export */ __webpack_exports__["default"] = (_Standalone_HBuilderX_plugins_uniapp_cli_node_modules_babel_loader_lib_index_js_Standalone_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_preprocess_loader_index_js_ref_12_1_Standalone_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_webpack_uni_mp_loader_lib_script_js_Standalone_HBuilderX_plugins_uniapp_cli_node_modules_vue_loader_lib_index_js_vue_loader_options_sign_in_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0___default.a); 
 
 /***/ }),
 
@@ -105,61 +90,62 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ "./node_modules/babel-loader/lib/index.js!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader/index.js?!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader/index.js?!./node_modules/@dcloudio/webpack-uni-mp-loader/lib/script.js!./node_modules/vue-loader/lib/index.js?!../../../../Development/NodeJS/Shop-pin-Frontend/Shop-pin-Frontend/pages/login/sign-in.vue?vue&type=script&lang=js&":
-/*!*****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/babel-loader/lib!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader??ref--12-1!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader??ref--18-0!./node_modules/@dcloudio/webpack-uni-mp-loader/lib/script.js!./node_modules/vue-loader/lib??vue-loader-options!C:/Development/NodeJS/Shop-pin-Frontend/Shop-pin-Frontend/pages/login/sign-in.vue?vue&type=script&lang=js& ***!
-  \*****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+/***/ "./node_modules/babel-loader/lib/index.js!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader/index.js?!./node_modules/@dcloudio/webpack-uni-mp-loader/lib/script.js!./node_modules/vue-loader/lib/index.js?!../../../../Development/NodeJS/Shop-pin-Frontend/Shop-pin-Frontend/pages/login/sign-in.vue?vue&type=script&lang=js&":
+/*!***********************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader??ref--12-1!./node_modules/@dcloudio/webpack-uni-mp-loader/lib/script.js!./node_modules/vue-loader/lib??vue-loader-options!C:/Development/NodeJS/Shop-pin-Frontend/Shop-pin-Frontend/pages/login/sign-in.vue?vue&type=script&lang=js& ***!
+  \***********************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var _default =
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0; //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+var _default =
 {
   data: function data() {
     return {
@@ -192,7 +178,9 @@ __webpack_require__.r(__webpack_exports__);
   },
   methods: {
     onGetUserInfo: function onGetUserInfo(e) {
-      console.log(e);
+      if (e != null) {
+        this.$pin.loginFromWechat(this.loginSuccess, this.loginFailed);
+      }
     },
     oauthLogin: function oauthLogin(provider) {
       var that = this;
@@ -210,13 +198,7 @@ __webpack_require__.r(__webpack_exports__);
               console.log('用户信息：' + JSON.stringify(infoRes.userInfo));
               var userInfo = infoRes.userInfo;
               userInfo.code = code;
-              that.$pin.request('POST', '/sign-in/', userInfo,
-              function (successData) {
-
-              },
-              function (failData) {
-
-              });
+              that.$pin.loginFromWechat(that.loginSuccess, that.loginFailed);
             } });
 
         },
@@ -262,6 +244,8 @@ __webpack_require__.r(__webpack_exports__);
       }
     },
     loginFailed: function loginFailed() {
+      uni.showToast({
+        title: '登录失败，请确认微信是否授权。' });
 
     },
     wechatLogin: function wechatLogin() {
@@ -339,244 +323,13 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("view", [
-    _vm._m(0),
-    !_vm.recommendWechatLogin
-      ? _c("view", { staticClass: "form" }, [
-          _c("view", { staticClass: "username pin-shadow" }, [
-            _c("input", {
-              directives: [
-                {
-                  name: "model",
-                  rawName: "v-model",
-                  value: _vm.user,
-                  expression: "user"
-                }
-              ],
-              attrs: { placeholder: "手机号或邮箱...", eventid: "0f9cd1f4-0" },
-              domProps: { value: _vm.user },
-              on: {
-                input: function($event) {
-                  if ($event.target.composing) {
-                    return
-                  }
-                  _vm.user = $event.target.value
-                }
-              }
-            })
-          ]),
-          _c("view", { staticClass: "password" }, [
-            _c("input", {
-              directives: [
-                {
-                  name: "model",
-                  rawName: "v-model",
-                  value: _vm.password,
-                  expression: "password"
-                }
-              ],
-              attrs: {
-                placeholder: "密码...",
-                password: "true",
-                eventid: "0f9cd1f4-1"
-              },
-              domProps: { value: _vm.password },
-              on: {
-                input: function($event) {
-                  if ($event.target.composing) {
-                    return
-                  }
-                  _vm.password = $event.target.value
-                }
-              }
-            })
-          ]),
-          _c(
-            "view",
-            {
-              staticClass: "pin-button pin-bg-accent",
-              attrs: { eventid: "0f9cd1f4-2" },
-              on: { tap: _vm.doLogin }
-            },
-            [
-              _c("i", { staticClass: "pin-icon" }, [_vm._v("done")]),
-              _vm._v("登 录")
-            ],
-            1
-          ),
-          _c("view", { staticClass: "res" }, [
-            _c(
-              "view",
-              {
-                attrs: { eventid: "0f9cd1f4-3" },
-                on: {
-                  tap: function($event) {
-                    _vm.toPage("sign-up")
-                  }
-                }
-              },
-              [
-                _c("i", { staticClass: "pin-icon" }, [_vm._v("person_add")]),
-                _vm._v("用户注册")
-              ],
-              1
-            ),
-            _c(
-              "view",
-              {
-                attrs: { eventid: "0f9cd1f4-4" },
-                on: {
-                  tap: function($event) {
-                    _vm.toPage("reset-password")
-                  }
-                }
-              },
-              [
-                _c("i", { staticClass: "pin-icon" }, [_vm._v("help")]),
-                _vm._v("忘记密码")
-              ],
-              1
-            )
-          ]),
-          _vm.isWechatMiniProgram
-            ? _c(
-                "view",
-                { staticClass: "pin-text-center" },
-                [
-                  _c("i", { staticClass: "pin-icon" }, [_vm._v("info")]),
-                  _vm._v("您正在使用微信小程序，推荐使用微信登录。")
-                ],
-                1
-              )
-            : _vm._e()
-        ])
-      : _c(
-          "view",
-          { staticClass: "form" },
-          [
-            _c(
-              "button",
-              {
-                staticClass: "pin-button pin-bg-accent",
-                attrs: { "open-type": "getUserInfo", eventid: "0f9cd1f4-5" },
-                on: { getuserinfo: _vm.onGetUserInfo }
-              },
-              [
-                _c("i", { staticClass: "icon weixin" }),
-                _vm._v("使用微信授权登录")
-              ],
-              1
-            ),
-            _vm.isWechatMiniProgram
-              ? _c(
-                  "view",
-                  {
-                    staticClass: "pin-margin pin-text-right",
-                    attrs: { eventid: "0f9cd1f4-6" },
-                    on: {
-                      tap: function($event) {
-                        _vm.recommendWechatLogin = false
-                      }
-                    }
-                  },
-                  [
-                    _c("i", { staticClass: "pin-icon" }, [_vm._v("info")]),
-                    _vm._v(
-                      "您正在使用微信小程序，推荐使用微信登录。\n\t\t\t您亦可选择"
-                    ),
-                    _c("i", { staticClass: "pin-icon text-xxxl" }, [
-                      _vm._v("person")
-                    ]),
-                    _vm._v("使用 Pin 帐号密码登录")
-                  ],
-                  1
-                )
-              : _vm._e()
-          ],
-          1
-        ),
-    _vm.isShowOauth
-      ? _c("view", { staticClass: "oauth pin-animation-slide-up" }, [
-          _c("view", { staticClass: "text" }, [_vm._v("— 第三方快速登录 —")]),
-          _c(
-            "view",
-            { staticClass: "list" },
-            [
-              _vm.showProvider.weixin && !_vm.isWechatMiniProgram
-                ? _c("view", {
-                    staticClass: "icon weixin",
-                    attrs: { eventid: "0f9cd1f4-7" },
-                    on: {
-                      tap: function($event) {
-                        _vm.oauthLogin("weixin")
-                      }
-                    }
-                  })
-                : _vm._e(),
-              _vm.showProvider.weixin && _vm.isWechatMiniProgram
-                ? _c("button", {
-                    staticClass: "icon weixin",
-                    attrs: {
-                      "open-type": "getUserInfo",
-                      eventid: "0f9cd1f4-8"
-                    },
-                    on: { getuserinfo: _vm.onGetUserInfo }
-                  })
-                : _vm._e(),
-              _vm.showProvider.qq
-                ? _c("view", {
-                    staticClass: "icon qq",
-                    attrs: { eventid: "0f9cd1f4-9" },
-                    on: {
-                      tap: function($event) {
-                        _vm.oauthLogin("qq")
-                      }
-                    }
-                  })
-                : _vm._e(),
-              _vm.showProvider.sinaweibo
-                ? _c("view", {
-                    staticClass: "icon sinaweibo",
-                    attrs: { eventid: "0f9cd1f4-10" },
-                    on: {
-                      tap: function($event) {
-                        _vm.oauthLogin("sinaweibo")
-                      }
-                    }
-                  })
-                : _vm._e(),
-              _vm.showProvider.xiaomi
-                ? _c("view", {
-                    staticClass: "icon xiaomi",
-                    attrs: { eventid: "0f9cd1f4-11" },
-                    on: {
-                      tap: function($event) {
-                        _vm.oauthLogin("xiaomi")
-                      }
-                    }
-                  })
-                : _vm._e()
-            ],
-            1
-          )
-        ])
-      : _vm._e()
-  ])
-}
-var staticRenderFns = [
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("view", { staticClass: "logo" }, [
-      _c("view", { staticClass: "img" }, [
-        _c("image", {
-          attrs: { mode: "widthFix", src: "../../static/img/logo.png" }
-        })
-      ])
-    ])
+  if (!_vm._isMounted) {
+    _vm.e0 = function($event) {
+      _vm.recommendWechatLogin = false
+    }
   }
-]
+}
+var staticRenderFns = []
 render._withStripped = true
 
 

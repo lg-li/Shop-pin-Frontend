@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "拼团广场",
+  "usingComponents": {
+    "full-page-empty-state": "/components/full-page-empty-state",
+    "order-individual-payment": "/components/order-individual-payment"
+  }
+}

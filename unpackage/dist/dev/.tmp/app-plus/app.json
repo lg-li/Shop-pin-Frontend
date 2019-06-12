@@ -1,5 +1,6 @@
 {
   "pages": [
+    "pages/splash-screen/splash-screen",
     "pages/tab-bar/home",
     "pages/tab-bar/category",
     "pages/tab-bar/cart",
@@ -12,6 +13,7 @@
     "pages/order/confirmation",
     "pages/user/order-list/order-list",
     "pages/user/setting/setting",
+    "pages/user/activity/check-in",
     "pages/user/my-qr-code/my-qr-code",
     "pages/message/messages",
     "pages/message/chat/chat",
@@ -26,18 +28,17 @@
   "subPackages": [],
   "window": {
     "navigationBarTextStyle": "black",
-    "navigationBarTitleText": "Let's \"Pin\"!",
+    "navigationBarTitleText": "Pin 团",
     "navigationBarBackgroundColor": "#ffc107",
-    "backgroundColor": "#fafafa",
-    "backgroundColorTop": "#ffffff",
-    "backgroundColorBottom": "#ffffff"
+    "backgroundColor": "#eaeaea",
+    "backgroundColorTop": "#ffc107",
+    "backgroundColorBottom": "#eaeaea"
   },
-  "usingComponents": {},
   "tabBar": {
     "color": "#525252",
     "selectedColor": "#212121",
     "borderStyle": "white",
-    "backgroundColor": "#fafafa",
+    "backgroundColor": "#ffffff",
     "list": [
       {
         "pagePath": "pages/tab-bar/home",
@@ -70,5 +71,6 @@
     "autoclose": false
   },
   "appname": "Pin!",
-  "compilerVersion": "1.9.9"
+  "compilerVersion": "1.9.9",
+  "usingComponents": {}
 }

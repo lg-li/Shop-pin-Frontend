@@ -1,0 +1,1 @@
+<view class="pin-flex" bind:__l="__l"><block wx:for="{{items}}" wx:for-item="item" wx:for-index="idx" wx:key="idx"><filter-radio-item name="{{item.name}}" value="{{item.value}}" checked="{{item.checked}}" data-event-opts="{{[['^change',[['radioChange']]]]}}" bind:change="__e"></filter-radio-item></block></view>

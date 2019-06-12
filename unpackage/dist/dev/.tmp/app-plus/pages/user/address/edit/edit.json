@@ -1,5 +1,6 @@
 {
-  "usingComponents": {},
-  "navigationBarBackgroundColor": "#ffc107",
-  "navigationBarTitleText": "编辑收件人地址"
+  "navigationBarTitleText": "编辑收件人地址",
+  "usingComponents": {
+    "mpvue-city-picker": "/components/mpvue-citypicker/mpvueCityPicker"
+  }
 }

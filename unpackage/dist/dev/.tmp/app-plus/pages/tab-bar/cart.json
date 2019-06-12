@@ -1,9 +1,10 @@
 {
-  "usingComponents": {},
   "navigationBarTitleText": "我的购物车",
   "enablePullDownRefresh": true,
-  "navigationBarTextStyle": "black",
   "animationType": "fade-in",
   "animationDuration": 300,
-  "softinputNavBar": "none"
+  "softinputNavBar": "none",
+  "usingComponents": {
+    "full-page-empty-state": "/components/full-page-empty-state"
+  }
 }

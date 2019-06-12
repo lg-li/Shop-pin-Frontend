@@ -1,5 +1,7 @@
 {
-  "usingComponents": {},
   "navigationBarTitleText": "商品浏览",
-  "onReachBottomDistance": 50
+  "onReachBottomDistance": 50,
+  "usingComponents": {
+    "card-title": "/components/card-title"
+  }
 }

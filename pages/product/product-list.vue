@@ -8,8 +8,9 @@
 		</view>
 		<!-- 占位 -->
 		<view class="place"></view>
+		<view class="pin-top-padding"></view>
 		<!-- 商品列表 -->
-		<pageable-product-list :data-source="dataSource" ref="pageableProductList"/>
+		<pageable-product-list :product-data-source="productDataSource" ref="pageableProductList"/>
 	</view>
 </template>
 
@@ -21,7 +22,7 @@
 		},
 		data() {
 			return {
-				dataSource: '',
+				productDataSource: '',
 				headerTop: "0px",
 				headerPosition: "fixed",
 				orderbyList: [{
@@ -52,7 +53,7 @@
 				uni.setNavigationBarTitle({
 					title: option.categoryName
 				});
-				this.dataSource = "/commons/product/by-category/" + option.categoryId + "/"
+				this.productDataSource = "/commons/product/by-category/" + option.categoryId + "/"
 			}
 
 			//兼容H5下排序栏位置

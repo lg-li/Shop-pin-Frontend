@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "filter-radio-item": "/components/pin-checkbox/pin-checkbox-item"
+  },
+  "component": true
+}

@@ -1,20 +1,5 @@
 (global["webpackJsonp"] = global["webpackJsonp"] || []).push([["pages/message/chat/chat"],{
 
-/***/ "../../../../Development/NodeJS/Shop-pin-Frontend/Shop-pin-Frontend/main.js?{\"page\":\"pages%2Fmessage%2Fchat%2Fchat\"}":
-/*!******************************************************************************************************************!*\
-  !*** C:/Development/NodeJS/Shop-pin-Frontend/Shop-pin-Frontend/main.js?{"page":"pages%2Fmessage%2Fchat%2Fchat"} ***!
-  \******************************************************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-__webpack_require__(/*! uni-pages */ "../../../../Development/NodeJS/Shop-pin-Frontend/Shop-pin-Frontend/pages.json");
-var _mpvuePageFactory = _interopRequireDefault(__webpack_require__(/*! mpvue-page-factory */ "./node_modules/@dcloudio/vue-cli-plugin-uni/packages/mpvue-page-factory/index.js"));
-var _chat = _interopRequireDefault(__webpack_require__(/*! ./pages/message/chat/chat.vue */ "../../../../Development/NodeJS/Shop-pin-Frontend/Shop-pin-Frontend/pages/message/chat/chat.vue"));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}
-Page((0, _mpvuePageFactory.default)(_chat.default));
-
-/***/ }),
-
 /***/ "../../../../Development/NodeJS/Shop-pin-Frontend/Shop-pin-Frontend/pages/message/chat/chat.vue":
 /*!*********************************************************************************************!*\
   !*** C:/Development/NodeJS/Shop-pin-Frontend/Shop-pin-Frontend/pages/message/chat/chat.vue ***!
@@ -64,10 +49,10 @@ component.options.__file = "Development/NodeJS/Shop-pin-Frontend/Shop-pin-Fronte
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _Standalone_HBuilderX_plugins_uniapp_cli_node_modules_babel_loader_lib_index_js_Standalone_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_preprocess_loader_index_js_ref_12_1_Standalone_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_preprocess_loader_index_js_ref_18_0_Standalone_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_webpack_uni_mp_loader_lib_script_js_Standalone_HBuilderX_plugins_uniapp_cli_node_modules_vue_loader_lib_index_js_vue_loader_options_chat_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../../../Standalone/HBuilderX/plugins/uniapp-cli/node_modules/babel-loader/lib!../../../../../../../Standalone/HBuilderX/plugins/uniapp-cli/node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader??ref--12-1!../../../../../../../Standalone/HBuilderX/plugins/uniapp-cli/node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader??ref--18-0!../../../../../../../Standalone/HBuilderX/plugins/uniapp-cli/node_modules/@dcloudio/webpack-uni-mp-loader/lib/script.js!../../../../../../../Standalone/HBuilderX/plugins/uniapp-cli/node_modules/vue-loader/lib??vue-loader-options!./chat.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader/index.js?!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader/index.js?!./node_modules/@dcloudio/webpack-uni-mp-loader/lib/script.js!./node_modules/vue-loader/lib/index.js?!../../../../Development/NodeJS/Shop-pin-Frontend/Shop-pin-Frontend/pages/message/chat/chat.vue?vue&type=script&lang=js&");
-/* harmony import */ var _Standalone_HBuilderX_plugins_uniapp_cli_node_modules_babel_loader_lib_index_js_Standalone_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_preprocess_loader_index_js_ref_12_1_Standalone_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_preprocess_loader_index_js_ref_18_0_Standalone_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_webpack_uni_mp_loader_lib_script_js_Standalone_HBuilderX_plugins_uniapp_cli_node_modules_vue_loader_lib_index_js_vue_loader_options_chat_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_Standalone_HBuilderX_plugins_uniapp_cli_node_modules_babel_loader_lib_index_js_Standalone_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_preprocess_loader_index_js_ref_12_1_Standalone_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_preprocess_loader_index_js_ref_18_0_Standalone_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_webpack_uni_mp_loader_lib_script_js_Standalone_HBuilderX_plugins_uniapp_cli_node_modules_vue_loader_lib_index_js_vue_loader_options_chat_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__);
-/* harmony reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in _Standalone_HBuilderX_plugins_uniapp_cli_node_modules_babel_loader_lib_index_js_Standalone_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_preprocess_loader_index_js_ref_12_1_Standalone_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_preprocess_loader_index_js_ref_18_0_Standalone_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_webpack_uni_mp_loader_lib_script_js_Standalone_HBuilderX_plugins_uniapp_cli_node_modules_vue_loader_lib_index_js_vue_loader_options_chat_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__) if(__WEBPACK_IMPORT_KEY__ !== 'default') (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return _Standalone_HBuilderX_plugins_uniapp_cli_node_modules_babel_loader_lib_index_js_Standalone_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_preprocess_loader_index_js_ref_12_1_Standalone_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_preprocess_loader_index_js_ref_18_0_Standalone_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_webpack_uni_mp_loader_lib_script_js_Standalone_HBuilderX_plugins_uniapp_cli_node_modules_vue_loader_lib_index_js_vue_loader_options_chat_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__[key]; }) }(__WEBPACK_IMPORT_KEY__));
- /* harmony default export */ __webpack_exports__["default"] = (_Standalone_HBuilderX_plugins_uniapp_cli_node_modules_babel_loader_lib_index_js_Standalone_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_preprocess_loader_index_js_ref_12_1_Standalone_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_preprocess_loader_index_js_ref_18_0_Standalone_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_webpack_uni_mp_loader_lib_script_js_Standalone_HBuilderX_plugins_uniapp_cli_node_modules_vue_loader_lib_index_js_vue_loader_options_chat_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0___default.a); 
+/* harmony import */ var _Standalone_HBuilderX_plugins_uniapp_cli_node_modules_babel_loader_lib_index_js_Standalone_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_preprocess_loader_index_js_ref_12_1_Standalone_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_webpack_uni_mp_loader_lib_script_js_Standalone_HBuilderX_plugins_uniapp_cli_node_modules_vue_loader_lib_index_js_vue_loader_options_chat_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../../../Standalone/HBuilderX/plugins/uniapp-cli/node_modules/babel-loader/lib!../../../../../../../Standalone/HBuilderX/plugins/uniapp-cli/node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader??ref--12-1!../../../../../../../Standalone/HBuilderX/plugins/uniapp-cli/node_modules/@dcloudio/webpack-uni-mp-loader/lib/script.js!../../../../../../../Standalone/HBuilderX/plugins/uniapp-cli/node_modules/vue-loader/lib??vue-loader-options!./chat.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader/index.js?!./node_modules/@dcloudio/webpack-uni-mp-loader/lib/script.js!./node_modules/vue-loader/lib/index.js?!../../../../Development/NodeJS/Shop-pin-Frontend/Shop-pin-Frontend/pages/message/chat/chat.vue?vue&type=script&lang=js&");
+/* harmony import */ var _Standalone_HBuilderX_plugins_uniapp_cli_node_modules_babel_loader_lib_index_js_Standalone_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_preprocess_loader_index_js_ref_12_1_Standalone_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_webpack_uni_mp_loader_lib_script_js_Standalone_HBuilderX_plugins_uniapp_cli_node_modules_vue_loader_lib_index_js_vue_loader_options_chat_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_Standalone_HBuilderX_plugins_uniapp_cli_node_modules_babel_loader_lib_index_js_Standalone_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_preprocess_loader_index_js_ref_12_1_Standalone_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_webpack_uni_mp_loader_lib_script_js_Standalone_HBuilderX_plugins_uniapp_cli_node_modules_vue_loader_lib_index_js_vue_loader_options_chat_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__);
+/* harmony reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in _Standalone_HBuilderX_plugins_uniapp_cli_node_modules_babel_loader_lib_index_js_Standalone_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_preprocess_loader_index_js_ref_12_1_Standalone_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_webpack_uni_mp_loader_lib_script_js_Standalone_HBuilderX_plugins_uniapp_cli_node_modules_vue_loader_lib_index_js_vue_loader_options_chat_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__) if(__WEBPACK_IMPORT_KEY__ !== 'default') (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return _Standalone_HBuilderX_plugins_uniapp_cli_node_modules_babel_loader_lib_index_js_Standalone_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_preprocess_loader_index_js_ref_12_1_Standalone_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_webpack_uni_mp_loader_lib_script_js_Standalone_HBuilderX_plugins_uniapp_cli_node_modules_vue_loader_lib_index_js_vue_loader_options_chat_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__[key]; }) }(__WEBPACK_IMPORT_KEY__));
+ /* harmony default export */ __webpack_exports__["default"] = (_Standalone_HBuilderX_plugins_uniapp_cli_node_modules_babel_loader_lib_index_js_Standalone_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_preprocess_loader_index_js_ref_12_1_Standalone_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_webpack_uni_mp_loader_lib_script_js_Standalone_HBuilderX_plugins_uniapp_cli_node_modules_vue_loader_lib_index_js_vue_loader_options_chat_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0___default.a); 
 
 /***/ }),
 
@@ -105,116 +90,116 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ "./node_modules/babel-loader/lib/index.js!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader/index.js?!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader/index.js?!./node_modules/@dcloudio/webpack-uni-mp-loader/lib/script.js!./node_modules/vue-loader/lib/index.js?!../../../../Development/NodeJS/Shop-pin-Frontend/Shop-pin-Frontend/pages/message/chat/chat.vue?vue&type=script&lang=js&":
-/*!*********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/babel-loader/lib!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader??ref--12-1!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader??ref--18-0!./node_modules/@dcloudio/webpack-uni-mp-loader/lib/script.js!./node_modules/vue-loader/lib??vue-loader-options!C:/Development/NodeJS/Shop-pin-Frontend/Shop-pin-Frontend/pages/message/chat/chat.vue?vue&type=script&lang=js& ***!
-  \*********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+/***/ "./node_modules/babel-loader/lib/index.js!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader/index.js?!./node_modules/@dcloudio/webpack-uni-mp-loader/lib/script.js!./node_modules/vue-loader/lib/index.js?!../../../../Development/NodeJS/Shop-pin-Frontend/Shop-pin-Frontend/pages/message/chat/chat.vue?vue&type=script&lang=js&":
+/*!***************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader??ref--12-1!./node_modules/@dcloudio/webpack-uni-mp-loader/lib/script.js!./node_modules/vue-loader/lib??vue-loader-options!C:/Development/NodeJS/Shop-pin-Frontend/Shop-pin-Frontend/pages/message/chat/chat.vue?vue&type=script&lang=js& ***!
+  \***************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var _default =
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0; //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+var _default =
 {
   data: function data() {
     return {
@@ -557,362 +542,6 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("view", [
-    _c(
-      "view",
-      {
-        staticClass: "content",
-        attrs: { eventid: "74c37c9e-4" },
-        on: { touchstart: _vm.hideEmoji }
-      },
-      [
-        _c(
-          "scroll-view",
-          {
-            staticClass: "msg-list",
-            attrs: {
-              "scroll-y": "true",
-              "scroll-with-animation": _vm.scrollAnimation,
-              "scroll-top": _vm.scrollTop,
-              "scroll-into-view": _vm.scrollToView
-            }
-          },
-          _vm._l(_vm.msgList, function(row, index) {
-            return _c(
-              "view",
-              { key: index, staticClass: "row", attrs: { id: "msg" + row.id } },
-              [
-                row.uid == _vm.myuid
-                  ? _c("view", { staticClass: "my" }, [
-                      _c("view", { staticClass: "left" }, [
-                        row.type == "text"
-                          ? _c(
-                              "view",
-                              { staticClass: "bubble" },
-                              [
-                                _c("rich-text", {
-                                  attrs: {
-                                    nodes: row.msg.content,
-                                    mpcomid: "74c37c9e-0-" + index
-                                  }
-                                })
-                              ],
-                              1
-                            )
-                          : _vm._e(),
-                        row.type == "voice"
-                          ? _c(
-                              "view",
-                              {
-                                staticClass: "bubble voice",
-                                class: _vm.playMsgid == row.id ? "play" : "",
-                                attrs: { eventid: "74c37c9e-0-" + index },
-                                on: {
-                                  tap: function($event) {
-                                    _vm.playVoice(row)
-                                  }
-                                }
-                              },
-                              [
-                                _c("view", { staticClass: "length" }, [
-                                  _vm._v(_vm._s(row.msg.length))
-                                ]),
-                                _c("view", { staticClass: "icon my-voice" })
-                              ]
-                            )
-                          : _vm._e(),
-                        row.type == "img"
-                          ? _c(
-                              "view",
-                              {
-                                staticClass: "bubble img",
-                                attrs: { eventid: "74c37c9e-1-" + index },
-                                on: {
-                                  tap: function($event) {
-                                    _vm.showPic(row)
-                                  }
-                                }
-                              },
-                              [
-                                _c("image", {
-                                  style: {
-                                    width: row.msg.w + "px",
-                                    height: row.msg.h + "px"
-                                  },
-                                  attrs: { src: row.msg.url }
-                                })
-                              ]
-                            )
-                          : _vm._e()
-                      ]),
-                      _c("view", { staticClass: "right" }, [
-                        _c("image", { attrs: { src: row.face } })
-                      ])
-                    ])
-                  : _vm._e(),
-                row.uid != _vm.myuid
-                  ? _c("view", { staticClass: "other" }, [
-                      _c("view", { staticClass: "left" }, [
-                        _c("image", { attrs: { src: row.face } })
-                      ]),
-                      _c("view", { staticClass: "right" }, [
-                        _c("view", { staticClass: "username" }, [
-                          _c("view", { staticClass: "name" }, [
-                            _vm._v(_vm._s(row.username))
-                          ]),
-                          _c("view", { staticClass: "time" }, [
-                            _vm._v(_vm._s(row.time))
-                          ])
-                        ]),
-                        row.type == "text"
-                          ? _c(
-                              "view",
-                              { staticClass: "bubble" },
-                              [
-                                _c("rich-text", {
-                                  attrs: {
-                                    nodes: row.msg.content,
-                                    mpcomid: "74c37c9e-1-" + index
-                                  }
-                                })
-                              ],
-                              1
-                            )
-                          : _vm._e(),
-                        row.type == "voice"
-                          ? _c(
-                              "view",
-                              {
-                                staticClass: "bubble voice",
-                                class: _vm.playMsgid == row.id ? "play" : "",
-                                attrs: { eventid: "74c37c9e-2-" + index },
-                                on: {
-                                  tap: function($event) {
-                                    _vm.playVoice(row)
-                                  }
-                                }
-                              },
-                              [
-                                _c("view", { staticClass: "icon other-voice" }),
-                                _c("view", { staticClass: "length" }, [
-                                  _vm._v(_vm._s(row.msg.length))
-                                ])
-                              ]
-                            )
-                          : _vm._e(),
-                        row.type == "img"
-                          ? _c(
-                              "view",
-                              {
-                                staticClass: "bubble img",
-                                attrs: { eventid: "74c37c9e-3-" + index },
-                                on: {
-                                  tap: function($event) {
-                                    _vm.showPic(row)
-                                  }
-                                }
-                              },
-                              [
-                                _c("image", {
-                                  style: {
-                                    width: row.msg.w + "px",
-                                    height: row.msg.h + "px"
-                                  },
-                                  attrs: { src: row.msg.url }
-                                })
-                              ]
-                            )
-                          : _vm._e()
-                      ])
-                    ])
-                  : _vm._e()
-              ]
-            )
-          })
-        )
-      ],
-      1
-    ),
-    _c(
-      "view",
-      {
-        staticClass: "emoji-box",
-        class: _vm.showEmji,
-        attrs: { eventid: "74c37c9e-6" },
-        on: {
-          touchmove: function($event) {
-            $event.stopPropagation()
-            $event.preventDefault()
-            _vm.discard($event)
-          }
-        }
-      },
-      [
-        _c(
-          "swiper",
-          {
-            staticClass: "swiper",
-            attrs: { "indicator-dots": "true", duration: "150" }
-          },
-          _vm._l(_vm.emojiList, function(page, pid) {
-            return _c(
-              "swiper-item",
-              { key: pid, attrs: { mpcomid: "74c37c9e-2-" + pid } },
-              _vm._l(page, function(em, eid) {
-                return _c(
-                  "view",
-                  {
-                    key: eid,
-                    attrs: { eventid: "74c37c9e-5-" + pid + "-" + eid },
-                    on: {
-                      tap: function($event) {
-                        _vm.addEmoji(em)
-                      }
-                    }
-                  },
-                  [
-                    _c("image", {
-                      attrs: {
-                        mode: "widthFix",
-                        src: "/static/img/emoji/" + em.url
-                      }
-                    })
-                  ]
-                )
-              })
-            )
-          })
-        )
-      ],
-      1
-    ),
-    _c(
-      "view",
-      {
-        staticClass: "input-box",
-        class: _vm.showEmji,
-        attrs: { eventid: "74c37c9e-13" },
-        on: {
-          touchmove: function($event) {
-            $event.stopPropagation()
-            $event.preventDefault()
-            _vm.discard($event)
-          }
-        }
-      },
-      [
-        _c("view", { staticClass: "voice" }, [
-          _c("view", {
-            staticClass: "icon",
-            class: _vm.isVoice ? "jianpan" : "yuyin",
-            attrs: { eventid: "74c37c9e-7" },
-            on: { tap: _vm.switchVoice }
-          })
-        ]),
-        _c("view", { staticClass: "textbox" }, [
-          _c(
-            "view",
-            {
-              staticClass: "voice-mode",
-              class: [
-                _vm.isVoice ? "" : "hidden",
-                _vm.recording ? "recording" : ""
-              ],
-              attrs: { eventid: "74c37c9e-8" },
-              on: {
-                touchstart: _vm.voiceBegin,
-                touchmove: function($event) {
-                  $event.stopPropagation()
-                  $event.preventDefault()
-                  _vm.voiceIng($event)
-                },
-                touchend: _vm.voiceEnd,
-                touchcancel: _vm.voiceCancel
-              }
-            },
-            [_vm._v(_vm._s(_vm.voiceTis))]
-          ),
-          _c(
-            "view",
-            { staticClass: "text-mode", class: _vm.isVoice ? "hidden" : "" },
-            [
-              _c("view", { staticClass: "box" }, [
-                _c("textarea", {
-                  directives: [
-                    {
-                      name: "model",
-                      rawName: "v-model",
-                      value: _vm.textMsg,
-                      expression: "textMsg"
-                    }
-                  ],
-                  attrs: { "auto-height": "true", eventid: "74c37c9e-9" },
-                  domProps: { value: _vm.textMsg },
-                  on: {
-                    input: function($event) {
-                      if ($event.target.composing) {
-                        return
-                      }
-                      _vm.textMsg = $event.target.value
-                    }
-                  }
-                })
-              ]),
-              _c(
-                "view",
-                {
-                  staticClass: "em",
-                  attrs: { eventid: "74c37c9e-10" },
-                  on: { tap: _vm.chooseEmoji }
-                },
-                [_c("view", { staticClass: "icon biaoqing" })]
-              )
-            ]
-          )
-        ]),
-        _c(
-          "view",
-          {
-            staticClass: "more",
-            attrs: { eventid: "74c37c9e-11" },
-            on: { tap: _vm.chooseImage }
-          },
-          [_c("view", { staticClass: "icon tupian" })]
-        ),
-        _c(
-          "view",
-          {
-            staticClass: "send",
-            class: _vm.isVoice ? "hidden" : "",
-            attrs: { eventid: "74c37c9e-12" },
-            on: { tap: _vm.sendText }
-          },
-          [_c("view", { staticClass: "btn" }, [_vm._v("发送")])]
-        )
-      ]
-    ),
-    _c(
-      "view",
-      { staticClass: "record", class: _vm.recording ? "" : "hidden" },
-      [
-        _c(
-          "view",
-          { staticClass: "ing", class: _vm.willStop ? "hidden" : "" },
-          [_c("view", { staticClass: "icon luyin2" })]
-        ),
-        _c(
-          "view",
-          { staticClass: "cancel", class: _vm.willStop ? "" : "hidden" },
-          [_c("view", { staticClass: "icon chehui" })]
-        ),
-        _c(
-          "view",
-          { staticClass: "tis", class: _vm.willStop ? "change" : "" },
-          [_vm._v(_vm._s(_vm.recordTis))]
-        )
-      ]
-    )
-  ])
 }
 var staticRenderFns = []
 render._withStripped = true

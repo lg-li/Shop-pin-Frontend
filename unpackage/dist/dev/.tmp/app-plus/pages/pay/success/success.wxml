@@ -1,2 +1,1 @@
-<import src="./success.vue.wxml" />
-    <template is="4211f1c7" data="{{ ...$root['0'], $root }}"/>
+<view bind:__l="__l"><view class="icon"><image src="/static/img/success.png"></image></view><view class="tis">订单支付成功</view><view class="pay-amount">{{'支付金额: '+amount+'元'}}</view><view class="back"><view data-event-opts="{{[['tap',[['toUser',['$event']]]]]}}" class="pin-button lg" bindtap="__e">返回个人中心</view></view></view>

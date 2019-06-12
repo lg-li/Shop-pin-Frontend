@@ -1,104 +1,114 @@
 <template>
 	<view>
+		<view class="pin-top-padding"></view>
 		<!-- 收货地址 -->
-		<view class="pin-list-item" @tap="selectAddress">
-			<view class="list-left">
-				<i class="pin-icon">location_on</i>
-			</view>
-			<view class="list-right" v-if="selectedAddress != null">
-				<view class="list-header">
-					<view class="list-title">
-						{{selectedAddress.realName}}
-					</view>
-					<view class="list-sub-title">
-						{{selectedAddress.phone}}
-					</view>
+		<view class="pin-card">
+			<view class="pin-list-item" @tap="selectAddress">
+				<view class="list-left pin-text-center pin-text-xxxl">
+					<i class="pin-icon">location_on</i>
 				</view>
-				<view class="list-detail">
-					{{selectedAddress.province}} {{selectedAddress.detail}}
-					{{selectedAddress.detailed}}
-				</view>
-			</view>
-			<view class="list-right" v-else>
-				<view class="list-header">
-					<view class="list-title">
-						您未创建默认地址
+				<view class="list-right" v-if="selectedAddress != null">
+					<view class="list-header">
+						<view class="list-title">
+							{{selectedAddress.realName}}
+						</view>
+						<view class="list-sub-title">
+							{{selectedAddress.phone}}
+						</view>
+					</view>
+					<view class="list-detail">
+						{{selectedAddress.province}} {{selectedAddress.detail}}
+						{{selectedAddress.detailed}}
 					</view>
 				</view>
-				<view class="list-detail">
-					点此创建/编辑默认收货地址
+				<view class="list-right" v-else>
+					<view class="list-header">
+						<view class="list-title">
+							您未创建默认地址
+						</view>
+					</view>
+					<view class="list-detail">
+						点此创建/编辑默认收货地址
+					</view>
 				</view>
 			</view>
 		</view>
+		
 		<!-- 购买商品列表 -->
-		<view class="buy-list">
-			<view class="row" v-for="(row,index) in orderItemList" :key="index">
-				<view class="goods-info">
-					<view class="img">
-						<image mode="aspectFill" :src="row.product.imageUrls"></image>
-					</view>
-					<view class="info">
-						<view class="title">{{row.product.name}}</view>
-						<view class="spec">规格{{row.productAttributeValue.sku}}</view>
-						<view class="price-number">
-							<view class="price">￥{{row.product.price*row.amount}}</view>
-							<view class="number">
-								× {{row.amount}}
+		<view class="pin-card">
+			<view class="pin-order-item-list">
+				<view class="row" v-for="(row,index) in orderItemList" :key="index">
+					<view class="goods-info">
+						<view class="img">
+							<image mode="aspectFill" :src="row.product.imageUrls"></image>
+						</view>
+						<view class="info">
+							<view class="title">{{row.product.name}}</view>
+							<view class="spec">规格{{row.productAttributeValue.sku}}</view>
+							<view class="price-number">
+								<view class="price">￥{{row.product.price*row.amount}}</view>
+								<view class="number">
+									× {{row.amount}}
+								</view>
 							</view>
 						</view>
 					</view>
 				</view>
 			</view>
 		</view>
+		
 		<!-- 提示-备注 -->
-		<view class="order">
-			<view class="row">
-				<view class="left">
-					积分
+		<view class="pin-card pin-text-md">
+			<view class="pin-list-item">
+				<view class="list-left">
+					<i class="pin-icon">card_giftcard</i> 积分
 				</view>
-				<view class="right">
-					可使用 {{credit}} 积分抵扣 ￥{{deduction}} 元
+				<view class="list-right">
+					本订单可使用 {{credit}} 积分抵扣 ￥{{deduction}} 元
 				</view>
 			</view>
-			<view class="row">
-				<view class="left">
-					备注
+			<view class="pin-list-item">
+				<view class="list-left">
+					<i class="pin-icon">comment</i> 备注
 				</view>
-				<view class="right">
+				<view class="list-right">
 					<input placeholder="备注内容(选填)" v-model="userRemark" />
 				</view>
 			</view>
 		</view>
 		<!-- 明细 -->
-		<view class="detail">
-			<view class="row">
-				<view class="nominal">
-					商品金额
+		<view class="pin-card">
+			<view class="pin-amount-detail">
+				<view class="row">
+					<view class="nominal">
+						商品金额
+					</view>
+					<view class="content">
+						￥{{totalPrice}}
+					</view>
 				</view>
-				<view class="content">
-					￥{{totalPrice}}
+				<view class="row">
+					<view class="nominal">
+						运费
+					</view>
+					<view class="content">
+						+ ￥{{shippingFee}}
+					</view>
 				</view>
-			</view>
-			<view class="row">
-				<view class="nominal">
-					运费
-				</view>
-				<view class="content">
-					+ ￥{{shippingFee}}
-				</view>
-			</view>
-			<view class="row">
-				<view class="nominal">
-					积分抵扣
-				</view>
-				<view class="content">
-					- ￥{{deduction}}
+				<view class="row">
+					<view class="nominal">
+						积分抵扣
+					</view>
+					<view class="content">
+						- ￥{{deduction}}
+					</view>
 				</view>
 			</view>
 		</view>
+		
 		<view class="blck">
-
 		</view>
+		
 		<view class="footer">
 			<view class="settlement">
 				<view class="sum">合计:<view class="money">￥{{sumPrice}}</view>
@@ -216,20 +226,6 @@
 							title: '创建订单失败'
 						})
 					})
-
-				setTimeout(() => {
-					uni.setStorage({
-						key: 'paymentOrder',
-						data: paymentOrder,
-						success: () => {
-							uni.hideLoading();
-							uni.redirectTo({
-								url: "../pay/payment/payment?amount=" + this.sumPrice
-							})
-						}
-					})
-				}, 1000)
-
 			},
 			//选择收货地址
 			selectAddress() {
@@ -242,145 +238,8 @@
 </script>
 
 <style lang="scss">
-	.buy-list {
-		width: 86%;
-		padding: 10upx 3%;
-		margin: 30upx auto 20upx auto;
-		box-shadow: 0upx 5upx 20upx rgba(0, 0, 0, 0.1);
-		border-radius: 20upx;
-
-		.row {
-			margin: 30upx 0;
-
-			.goods-info {
-				width: 100%;
-				display: flex;
-
-				.img {
-					width: 22vw;
-					height: 22vw;
-					border-radius: 10upx;
-					overflow: hidden;
-					flex-shrink: 0;
-					margin-right: 10upx;
-
-					image {
-						width: 22vw;
-						height: 22vw;
-					}
-				}
-
-				.info {
-					width: 100%;
-					height: 22vw;
-					overflow: hidden;
-					display: flex;
-					flex-wrap: wrap;
-					position: relative;
-
-					.title {
-						width: 100%;
-						font-size: 28upx;
-						display: -webkit-box;
-						-webkit-box-orient: vertical;
-						-webkit-line-clamp: 2;
-						// text-align: justify;
-						overflow: hidden;
-					}
-
-					.spec {
-						font-size: 24upx;
-						background-color: #f3f3f3;
-						color: $pin-color-accent;
-						height: 40upx;
-						display: flex;
-						align-items: center;
-						padding: 0 10upx;
-						border-radius: $pin-border-radius;
-					}
-
-					.price-number {
-						position: absolute;
-						width: 100%;
-						bottom: 0upx;
-						display: flex;
-						justify-content: space-between;
-						align-items: flex-end;
-						font-size: 28upx;
-						height: 40upx;
-
-						.price {
-							color: #f06c7a;
-						}
-
-						.number {
-							display: flex;
-							justify-content: center;
-							align-items: center;
-
-						}
-					}
-				}
-			}
-		}
-	}
-
-	.order {
-		width: 86%;
-		padding: 10upx 3%;
-		margin: 30upx auto 20upx auto;
-		box-shadow: 0upx 5upx 20upx rgba(0, 0, 0, 0.1);
-		border-radius: 20upx;
-
-		.row {
-			margin: 20upx 0;
-			height: 40upx;
-			display: flex;
-
-			.left {
-				font-size: 28upx;
-			}
-
-			.right {
-				margin-left: 40upx;
-				font-size: 26upx;
-				color: #999;
-
-				input {
-					font-size: 26upx;
-					color: #999;
-				}
-			}
-		}
-	}
-
 	.blck {
 		width: 100%;
 		height: 100upx;
-	}
-
-	.detail {
-		width: 86%;
-		padding: 10upx 3%;
-		margin: 30upx auto 20upx auto;
-		box-shadow: 0upx 5upx 20upx rgba(0, 0, 0, 0.1);
-		border-radius: 20upx;
-
-		.row {
-			height: 60upx;
-			display: flex;
-			justify-content: space-between;
-			align-items: center;
-
-			.nominal {
-				font-size: 28upx;
-			}
-
-			.content {
-				font-size: 32upx;
-				color: $pin-color-primary;
-				font-weight: 700;
-			}
-		}
 	}
 </style>

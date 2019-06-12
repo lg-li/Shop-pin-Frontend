@@ -1,4 +1,6 @@
 {
-  "usingComponents": {},
-  "navigationBarTitleText": "地址管理"
+  "navigationBarTitleText": "地址管理",
+  "usingComponents": {
+    "full-page-empty-state": "/components/full-page-empty-state"
+  }
 }

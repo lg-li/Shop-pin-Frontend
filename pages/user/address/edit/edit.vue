@@ -1,6 +1,7 @@
 <template>
 	<view>
-		<view class="content pin-card">
+		<view class="pin-top-padding"></view>
+		<view class="content pin-card pin-padding">
 			<view class="row">
 				<view class="nominal">
 					收件人
@@ -30,7 +31,12 @@
 					详细地址
 				</view>
 				<view class="input">
-					<textarea v-model="address.detail" auto-height="true" placeholder="输入详细地址"></textarea>
+					<textarea style="margin-right: 20upx;" v-model="address.detail" auto-height="true" placeholder="输入详细地址"></textarea>
+					<view class="switch" @tap="selectLocation">
+						<view class="pin-button pin-bg-primary pin-text-lg pin-text-cut">
+							<i class="pin-icon">map</i> 地图
+						</view>
+					</view>
 				</view>
 			</view>
 			<view class="row">
@@ -43,21 +49,24 @@
 			</view>
 			<view class="row">
 				<view class="nominal">
-					设置为默认地址
+					设为默认
 				</view>
 				<view class="input switch">
 					<switch color="#ffc107" :checked="address.default" @change="isDefaultChange" />
 				</view>
 			</view>
-			<view class="row" v-if="editType=='edit'" @tap="del">
-				<view class="del">
-					<i class="pin-icon">delete</i> 删除收货地址
+
+			<view class="row"></view>
+
+			<view class="row pin-margin" style="justify-content: center; align-items: center;" v-if="editType=='edit'" @tap="del">
+				<view class="pin-button pin-bg-accent long-width">
+					<i class="pin-icon">delete</i> 删除此地址
 				</view>
 			</view>
 		</view>
 		<view class="save" @tap="save">
 			<view class="pin-button pin-bg-primary long-width">
-				<i class="pin-icon">save</i> 保存地址
+				<i class="pin-icon">save</i> 保存此地址
 			</view>
 		</view>
 		<mpvue-city-picker :themeColor="themeColor" ref="mpvueCityPicker" :pickerValueDefault="cityPickerValue" @onCancel="onCancel"
@@ -106,6 +115,30 @@
 			},
 			isDefaultChange(e) {
 				this.address.default = e.detail.value;
+			},
+			selectLocation() {
+				var that = this;
+				uni.chooseLocation({
+					success: function(res) {
+						// 点击确定后成功回调返回的信息
+						console.log(res)
+						let addressRegex = /.+?(省|市|自治区|自治州|县|区)/g;
+						let provinceCityAndDistrict = res.address.match(addressRegex)
+						that.address.province = provinceCityAndDistrict[0]
+						
+						if (provinceCityAndDistrict.length < 3) {
+							that.address.city = provinceCityAndDistrict[0]
+							that.address.district = provinceCityAndDistrict[1]
+						} else {
+							that.address.city = provinceCityAndDistrict[1]
+							that.address.district = provinceCityAndDistrict[2]
+						}
+
+						that.address.detail = res.address + res.name;
+						that.address.latitude = res.latitude // 经度
+						that.address.longitude = res.longitude // 纬度
+					},
+				})
 			},
 			del() {
 				let that = this
@@ -215,9 +248,6 @@
 					key: 'address',
 					success: (e) => {
 						this.address = e.data
-						this.cityPickerValue[0] = e.data.province;
-						this.cityPickerValue[1] = e.data.city;
-						this.cityPickerValue[2] = e.data.district;
 					}
 				})
 			}

@@ -1,4 +1,6 @@
 {
-  "usingComponents": {},
-  "navigationBarTitleText": "分类检索"
+  "navigationBarTitleText": "分类检索",
+  "usingComponents": {
+    "header-bar": "/components/header-bar"
+  }
 }

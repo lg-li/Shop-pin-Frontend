@@ -1,0 +1,1 @@
+<view bind:__l="__l"><view class="logo"><image mode="widthFix" src="../../static/img/logo.png"></image></view><view class="loader-1"><view class="loader-inner"></view><view class="loader-inner"></view><view class="loader-inner"></view></view></view>

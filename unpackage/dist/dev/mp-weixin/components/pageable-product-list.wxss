@@ -1,0 +1,67 @@
+@charset "UTF-8";
+/* 颜色变量 */
+.product-list {
+  width: 92%;
+  padding: 0 4% 3vw 4%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+}
+.product-list .product {
+    width: 48%;
+    background-color: #fff;
+    margin: 0 0 15rpx 0;
+    border-radius: 20rpx;
+    -webkit-box-shadow: 0rpx 0rpx 20rpx rgba(0, 0, 0, 0.1);
+            box-shadow: 0rpx 0rpx 20rpx rgba(0, 0, 0, 0.1);
+}
+.product-list .product image {
+      width: 100%;
+      border-radius: 20rpx 20rpx 0 0;
+      min-height: 350rpx;
+      max-height: 350rpx;
+}
+.product-list .product .name {
+      width: 92%;
+      padding: 10rpx 4%;
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+      -webkit-line-clamp: 2;
+      text-align: justify;
+      overflow: hidden;
+      font-size: 30rpx;
+}
+.product-list .product .info {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: justify;
+      -webkit-justify-content: space-between;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
+      -webkit-box-align: end;
+      -webkit-align-items: flex-end;
+          -ms-flex-align: end;
+              align-items: flex-end;
+      width: 92%;
+      padding: 10rpx 4% 10rpx 4%;
+}
+.product-list .product .info .price {
+        color: #e65339;
+        font-size: 30rpx;
+        font-weight: 600;
+}
+.product-list .product .info .slogan {
+        color: #807c87;
+        font-size: 24rpx;
+}
+

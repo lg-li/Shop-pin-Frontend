@@ -1,0 +1,79 @@
+@charset "UTF-8";
+/* 颜色变量 */
+.empty-state-block {
+  width: 100%;
+  height: 25vh;
+  background-color: #ffc107 !important;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.empty-state-icon {
+  width: 55vw;
+  height: 55vw;
+  margin: -30vw auto 0 auto;
+  background-color: #fff;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 50%;
+  -webkit-box-shadow: 0rpx 0rpx 20rpx rgba(0, 0, 0, 0.1);
+          box-shadow: 0rpx 0rpx 20rpx rgba(0, 0, 0, 0.1);
+}
+.empty-state-icon-image {
+  width: 50vw;
+  height: 50vw;
+  border-radius: 50%;
+  background: #ffc107;
+  text-align: center;
+  line-height: 50vw;
+}
+.empty-state-icon-inside {
+  font-size: 36vw;
+  vertical-align: middle;
+  color: #212121;
+}
+.empty-state-title {
+  width: 100%;
+  margin-top: 50rpx;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 48rpx;
+  color: #212121;
+}
+.empty-state-description {
+  width: 100%;
+  margin-top: 10rpx;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 28rpx;
+  color: #212121;
+  padding-bottom: 50rpx;
+}
+

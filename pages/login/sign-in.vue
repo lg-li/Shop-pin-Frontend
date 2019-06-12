@@ -23,14 +23,15 @@
 			</view>
 		</view>
 		<view class="form" v-else>
-			<button open-type="getUserInfo" @getuserinfo="onGetUserInfo" class="pin-button pin-bg-accent"><i class="icon weixin"></i> 使用微信授权登录</button>
-			<view class="pin-margin pin-text-right" v-if="isWechatMiniProgram"  @tap="recommendWechatLogin = false">
+			<button open-type="getUserInfo" @getuserinfo="onGetUserInfo" class="pin-button pin-bg-accent"><i class="icon weixin"></i>
+				使用微信授权登录</button>
+			<view class="pin-margin pin-text-center" v-if="isWechatMiniProgram" @tap="recommendWechatLogin = false">
 				<i class="pin-icon">info</i> 您正在使用微信小程序，推荐使用微信登录。
 				您亦可选择 <i class="pin-icon text-xxxl">person</i> 使用 Pin 帐号密码登录
 			</view>
 		</view>
 		<!-- 第三方登录 -->
-		<view class="oauth pin-animation-slide-up" v-if="isShowOauth">
+		<view class="oauth" v-if="isShowOauth">
 			<view class="text">— 第三方快速登录 —</view>
 			<view class="list">
 				<view @tap="oauthLogin('weixin')" v-if="showProvider.weixin && !isWechatMiniProgram" class="icon weixin"></view>
@@ -77,7 +78,9 @@
 		},
 		methods: {
 			onGetUserInfo(e) {
-				console.log(e)
+				if (e != null) {
+					this.$pin.loginFromWechat(this.loginSuccess, this.loginFailed)
+				}
 			},
 			oauthLogin(provider) {
 				let that = this
@@ -95,13 +98,7 @@
 								console.log('用户信息：' + JSON.stringify(infoRes.userInfo));
 								let userInfo = infoRes.userInfo
 								userInfo.code = code
-								that.$pin.request('POST', '/sign-in/', userInfo,
-								successData=>{
-									
-								},
-								failData => {
-									
-								})
+								that.$pin.loginFromWechat(that.loginSuccess, that.loginFailed)
 							}
 						});
 					},
@@ -138,7 +135,7 @@
 				})
 				let pages = getCurrentPages()
 				console.log(pages)
-				if(pages.length > 1) {
+				if (pages.length > 1) {
 					uni.navigateBack(-1)
 				} else {
 					uni.switchTab({
@@ -147,13 +144,15 @@
 				}
 			},
 			loginFailed() {
-				
+				uni.showToast({
+					title: '登录失败，请确认微信是否授权。'
+				})
 			},
 			wechatLogin() {
 				console.log("LOGINING WECHAT UNI")
-				
+
 				this.$pin.loginFromWechat(this.loginSuccess, this.loginFailed)
-				
+
 				console.log("LOGINING WECHAT")
 			},
 			doLogin() {
@@ -200,7 +199,6 @@
 
 <style lang="scss">
 	@import "../../static/css/style.scss";
-	@import "../../static/css/pin-animation.css";
 
 	@font-face {
 		font-family: "Font-login";
@@ -212,7 +210,7 @@
 		font-style: normal;
 		color: $pin-color-accent-foreground;
 		margin-right: 10upx;
-		
+
 		&.weixin {
 			&:before {
 				content: "\e615";

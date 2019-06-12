@@ -1,5 +1,4 @@
 {
-  "usingComponents": {},
-  "navigationBarBackgroundColor": "#ffc107",
-  "navigationBarTitleText": "订单支付"
+  "navigationBarTitleText": "订单支付",
+  "usingComponents": {}
 }

@@ -1,39 +1,1106 @@
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+@charset "UTF-8";
+/* 颜色变量 */
+/* css 滤镜 控制黑白底色gif的 */
+.gif-black{  
+  mix-blend-mode: screen;
+}
+.gif-white{  
+  mix-blend-mode: multiply;
+}
+/* Animation css */
+[class*=animation-] {
+    -webkit-animation-duration: .5s;
+            animation-duration: .5s;
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+    -webkit-animation-fill-mode: both;
+            animation-fill-mode: both
+}
+.pin-animation-fade {
+    -webkit-animation-name: fade;
+            animation-name: fade;
+    -webkit-animation-duration: .8s;
+            animation-duration: .8s;
+    -webkit-animation-timing-function: linear;
+            animation-timing-function: linear
+}
+.pin-animation-scale-up {
+    -webkit-animation-name: scale-up;
+            animation-name: scale-up
+}
+.pin-animation-scale-down {
+    -webkit-animation-name: scale-down;
+            animation-name: scale-down
+}
+.pin-animation-slide-top {
+    -webkit-animation-name: slide-top;
+            animation-name: slide-top
+}
+.pin-animation-slide-bottom {
+    -webkit-animation-name: slide-bottom;
+            animation-name: slide-bottom
+}
+.pin-animation-slide-left {
+    -webkit-animation-name: slide-left;
+            animation-name: slide-left
+}
+.pin-animation-slide-right {
+    -webkit-animation-name: slide-right;
+            animation-name: slide-right
+}
+.pin-animation-shake {
+    -webkit-animation-name: shake;
+            animation-name: shake
+}
+.pin-animation-reverse {
+    animation-direction: reverse
+}
+@-webkit-keyframes fade {
+0% {
+        opacity: 0
+}
+100% {
+        opacity: 1
+}
+}
+@keyframes fade {
+0% {
+        opacity: 0
+}
+100% {
+        opacity: 1
+}
+}
+@-webkit-keyframes scale-up {
+0% {
+        opacity: 0;
+        -webkit-transform: scale(.2);
+                transform: scale(.2)
+}
+100% {
+        opacity: 1;
+        -webkit-transform: scale(1);
+                transform: scale(1)
+}
+}
+@keyframes scale-up {
+0% {
+        opacity: 0;
+        -webkit-transform: scale(.2);
+                transform: scale(.2)
+}
+100% {
+        opacity: 1;
+        -webkit-transform: scale(1);
+                transform: scale(1)
+}
+}
+@-webkit-keyframes scale-down {
+0% {
+        opacity: 0;
+        -webkit-transform: scale(1.8);
+                transform: scale(1.8)
+}
+100% {
+        opacity: 1;
+        -webkit-transform: scale(1);
+                transform: scale(1)
+}
+}
+@keyframes scale-down {
+0% {
+        opacity: 0;
+        -webkit-transform: scale(1.8);
+                transform: scale(1.8)
+}
+100% {
+        opacity: 1;
+        -webkit-transform: scale(1);
+                transform: scale(1)
+}
+}
+@-webkit-keyframes slide-top {
+0% {
+        opacity: 0;
+        -webkit-transform: translateY(-100%);
+                transform: translateY(-100%)
+}
+100% {
+        opacity: 1;
+        -webkit-transform: translateY(0);
+                transform: translateY(0)
+}
+}
+@keyframes slide-top {
+0% {
+        opacity: 0;
+        -webkit-transform: translateY(-100%);
+                transform: translateY(-100%)
+}
+100% {
+        opacity: 1;
+        -webkit-transform: translateY(0);
+                transform: translateY(0)
+}
+}
+@-webkit-keyframes slide-bottom {
+0% {
+        opacity: 0;
+        -webkit-transform: translateY(100%);
+                transform: translateY(100%)
+}
+100% {
+        opacity: 1;
+        -webkit-transform: translateY(0);
+                transform: translateY(0)
+}
+}
+@keyframes slide-bottom {
+0% {
+        opacity: 0;
+        -webkit-transform: translateY(100%);
+                transform: translateY(100%)
+}
+100% {
+        opacity: 1;
+        -webkit-transform: translateY(0);
+                transform: translateY(0)
+}
+}
+@-webkit-keyframes shake {
+0%,
+    100% {
+        -webkit-transform: translateX(0);
+                transform: translateX(0)
+}
+10% {
+        -webkit-transform: translateX(-9px);
+                transform: translateX(-9px)
+}
+20% {
+        -webkit-transform: translateX(8px);
+                transform: translateX(8px)
+}
+30% {
+        -webkit-transform: translateX(-7px);
+                transform: translateX(-7px)
+}
+40% {
+        -webkit-transform: translateX(6px);
+                transform: translateX(6px)
+}
+50% {
+        -webkit-transform: translateX(-5px);
+                transform: translateX(-5px)
+}
+60% {
+        -webkit-transform: translateX(4px);
+                transform: translateX(4px)
+}
+70% {
+        -webkit-transform: translateX(-3px);
+                transform: translateX(-3px)
+}
+80% {
+        -webkit-transform: translateX(2px);
+                transform: translateX(2px)
+}
+90% {
+        -webkit-transform: translateX(-1px);
+                transform: translateX(-1px)
+}
+}
+@keyframes shake {
+0%,
+    100% {
+        -webkit-transform: translateX(0);
+                transform: translateX(0)
+}
+10% {
+        -webkit-transform: translateX(-9px);
+                transform: translateX(-9px)
+}
+20% {
+        -webkit-transform: translateX(8px);
+                transform: translateX(8px)
+}
+30% {
+        -webkit-transform: translateX(-7px);
+                transform: translateX(-7px)
+}
+40% {
+        -webkit-transform: translateX(6px);
+                transform: translateX(6px)
+}
+50% {
+        -webkit-transform: translateX(-5px);
+                transform: translateX(-5px)
+}
+60% {
+        -webkit-transform: translateX(4px);
+                transform: translateX(4px)
+}
+70% {
+        -webkit-transform: translateX(-3px);
+                transform: translateX(-3px)
+}
+80% {
+        -webkit-transform: translateX(2px);
+                transform: translateX(2px)
+}
+90% {
+        -webkit-transform: translateX(-1px);
+                transform: translateX(-1px)
+}
+}
+@-webkit-keyframes slide-left {
+0% {
+        opacity: 0;
+        -webkit-transform: translateX(-100%);
+                transform: translateX(-100%)
+}
+100% {
+        opacity: 1;
+        -webkit-transform: translateX(0);
+                transform: translateX(0)
+}
+}
+@keyframes slide-left {
+0% {
+        opacity: 0;
+        -webkit-transform: translateX(-100%);
+                transform: translateX(-100%)
+}
+100% {
+        opacity: 1;
+        -webkit-transform: translateX(0);
+                transform: translateX(0)
+}
+}
+@-webkit-keyframes slide-right {
+0% {
+        opacity: 0;
+        -webkit-transform: translateX(100%);
+                transform: translateX(100%)
+}
+100% {
+        opacity: 1;
+        -webkit-transform: translateX(0);
+                transform: translateX(0)
+}
+}
+@keyframes slide-right {
+0% {
+        opacity: 0;
+        -webkit-transform: translateX(100%);
+                transform: translateX(100%)
+}
+100% {
+        opacity: 1;
+        -webkit-transform: translateX(0);
+                transform: translateX(0)
+}
+}
 /*每个页面公共css */
+page {
+  padding-bottom: 20rpx;
+  background-color: #fafafa;
+}
+@font-face {
+  font-family: 'Material Icons';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/materialicons/v47/flUhRq6tzZclQEJ-Vdg-IuiaDsNc.woff2) format("woff2");
+}
+.loading-text {
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 60rpx;
+  color: #979797;
+  font-size: 24rpx;
+}
+.pin-icon {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  display: inline-block;
+  white-space: nowrap;
+  word-wrap: normal;
+  direction: ltr;
+  padding-right: 10rpx;
+  padding-left: 10rpx;
+  -webkit-font-feature-settings: 'liga';
+  -webkit-font-smoothing: antialiased;
+}
+.pin-card {
+  border-radius: 20rpx;
+  -webkit-box-shadow: 0rpx 0rpx 20rpx rgba(0, 0, 0, 0.1);
+          box-shadow: 0rpx 0rpx 20rpx rgba(0, 0, 0, 0.1);
+  margin-left: 30rpx;
+  margin-right: 30rpx;
+  margin-top: 30rpx;
+  background-color: #ffffff;
+}
+.pin-card-title {
+  font-size: 36rpx;
+  margin-top: 10rpx;
+  margin-bottom: 10rpx;
+  padding: 20rpx;
+}
+.pin-button {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #212121;
+  background-color: #ffc107;
+  border-radius: 20rpx;
+  -webkit-box-shadow: 0rpx 0rpx 8rpx rgba(0, 0, 0, 0.2);
+          box-shadow: 0rpx 0rpx 8rpx rgba(0, 0, 0, 0.2);
+  font-size: 30rpx;
+  padding: 15rpx 40rpx;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.pin-button:hover {
+  -webkit-transform: scale(1.05);
+      -ms-transform: scale(1.05);
+          transform: scale(1.05);
+}
+.pin-button:active {
+  -webkit-transform: scale(0.9);
+      -ms-transform: scale(0.9);
+          transform: scale(0.9);
+}
+.long-width {
+  width: 80%;
+}
+.full-width {
+  width: 100%;
+}
+.pin-button.lg {
+  font-size: 40rpx;
+  padding: 20rpx 60rpx;
+}
+.pin-button.sm {
+  font-size: 20rpx;
+  padding: 10rpx 30rpx;
+}
+.pin-bg-white {
+  background-color: #ffffff;
+}
+.pin-primary {
+  color: #ffc107;
+}
+.pin-bg-primary {
+  background-color: #ffc107;
+  color: #212121;
+}
+.pin-accent {
+  color: #464646;
+}
+.pin-bg-accent {
+  background-color: #464646;
+  color: #ffffff;
+}
+.pin-solid-top {
+  border-top: #eeeeee 1px solid;
+}
+.pin-shadow {
+  -webkit-box-shadow: 0rpx 0rpx 20rpx rgba(0, 0, 0, 0.1);
+          box-shadow: 0rpx 0rpx 20rpx rgba(0, 0, 0, 0.1);
+}
+.pin-radius {
+  border-radius: 20rpx;
+}
+.pin-margin {
+  margin: 20rpx;
+}
+.pin-margin-0 {
+  margin: 0;
+}
+.pin-padding {
+  padding: 20rpx;
+}
+.pin-hoverable {
+  -webkit-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  transition: all 0.2s;
+}
+.pin-hoverable:hover {
+  -webkit-box-shadow: 0rpx 16rpx rgba(0, 0, 0, 0.3);
+          box-shadow: 0rpx 16rpx rgba(0, 0, 0, 0.3);
+  -webkit-transform: scale(1.1);
+      -ms-transform: scale(1.1);
+          transform: scale(1.1);
+}
+.pin-hoverable:active {
+  -webkit-box-shadow: 0rpx 0rpx 4rpx rgba(0, 0, 0, 0.1);
+          box-shadow: 0rpx 0rpx 4rpx rgba(0, 0, 0, 0.1);
+  -webkit-transform: scale(0.9);
+      -ms-transform: scale(0.9);
+          transform: scale(0.9);
+}
+.pin-text-bold {
+  font-weight: 700;
+}
+.pin-text-right {
+  text-align: right;
+}
+.pin-text-center {
+  text-align: center;
+}
+.pin-item-center {
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.pin-item-start {
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+.pin-flex {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+.pin-flex-wrap {
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+}
+.pin-flex-sub {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+.pin-flex-sub-50 {
+  -webkit-flex-basis: 50%;
+      -ms-flex-preferred-size: 50%;
+          flex-basis: 50%;
+}
+.pin-avatar {
+  border-radius: 20rpx;
+  width: 16vw;
+  height: 16vw;
+  min-width: 16vw;
+  min-height: 16vw;
+  -webkit-box-shadow: 0rpx 0rpx 20rpx rgba(0, 0, 0, 0.1);
+          box-shadow: 0rpx 0rpx 20rpx rgba(0, 0, 0, 0.1);
+}
+.footer {
+  width: 92%;
+  padding: 0 4%;
+  background-color: #ffffff;
+  -webkit-box-shadow: 0rpx 0rpx 20rpx rgba(0, 0, 0, 0.1);
+          box-shadow: 0rpx 0rpx 20rpx rgba(0, 0, 0, 0.1);
+  height: 100rpx;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 28rpx;
+  position: fixed;
+  bottom: 0rpx;
+  z-index: 5;
+}
+.footer .settlement {
+    width: 60%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+    -webkit-justify-content: flex-end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+.footer .settlement .sum {
+      width: 50%;
+      font-size: 28rpx;
+      margin-right: 10rpx;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: end;
+      -webkit-justify-content: flex-end;
+          -ms-flex-pack: end;
+              justify-content: flex-end;
+}
+.footer .settlement .sum .money {
+        font-weight: 600;
+}
+.footer .settlement .btn {
+      padding: 0 30rpx;
+      height: 50rpx;
+      background-color: #f06c7a;
+      color: #fff;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+          -ms-flex-align: center;
+              align-items: center;
+      border-radius: 30rpx;
+}
+.footer .delete-button {
+    background-color: #464646;
+    color: #ffffff;
+    padding: 0 30rpx;
+    height: 50rpx;
+    border-radius: 20rpx;
+    -webkit-box-shadow: 0rpx 0rpx 20rpx rgba(0, 0, 0, 0.1);
+            box-shadow: 0rpx 0rpx 20rpx rgba(0, 0, 0, 0.1);
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+.pin-top-padding {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 25vh;
+  background-color: #ffc107 !important;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  z-index: -1;
+}
+.pin-text-xs {
+  font-size: 20rpx;
+}
+.pin-text-sm {
+  font-size: 24rpx;
+}
+.pin-text-md {
+  font-size: 28rpx;
+}
+.pin-text-lg {
+  font-size: 32rpx;
+}
+.pin-text-xl {
+  font-size: 36rpx;
+}
+.pin-text-xxl {
+  font-size: 44rpx;
+}
+.pin-text-xxxl {
+  font-size: 56rpx;
+}
+.pin-text-sl {
+  font-size: 80rpx;
+}
+.pin-text-xsl {
+  font-size: 120rpx;
+}
+.pin-text-Abc {
+  text-transform: Capitalize;
+}
+.pin-text-ABC {
+  text-transform: Uppercase;
+}
+.pin-text-abc {
+  text-transform: Lowercase;
+}
+.pin-text-price::before {
+  content: "\A5";
+  font-size: 80%;
+  margin-right: 4rpx;
+}
+.pin-text-cut {
+  -o-text-overflow: ellipsis;
+     text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.pin-text-bold {
+  font-weight: bold;
+}
+.pin-text-center {
+  text-align: center;
+}
+.pin-text-content {
+  line-height: 1.6;
+}
+.pin-text-left {
+  text-align: left;
+}
+.pin-text-right {
+  text-align: right;
+}
+.pin-list-item {
+  padding: 20rpx 3%;
+  margin: 30rpx auto 20rpx auto;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  color: #464646;
+}
+.pin-list-item .list-left {
+    width: 16vw;
+    height: auto;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+}
+.pin-list-item .list-left image {
+      width: 60rpx;
+      height: 60rpx;
+}
+.pin-list-item .list-right {
+    width: calc(100% - 16vw);
+    margin-left: 20rpx;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+.pin-list-item .list-right .list-header {
+      width: 100%;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      font-size: 32rpx;
+}
+.pin-list-item .list-right .list-header .list-title {
+        -webkit-flex-basis: 70%;
+            -ms-flex-preferred-size: 70%;
+                flex-basis: 70%;
+}
+.pin-list-item .list-right .list-header .list-sub-title {
+        -webkit-flex-basis: 30%;
+            -ms-flex-preferred-size: 30%;
+                flex-basis: 30%;
+        text-align: right;
+}
+.pin-list-item .list-right .list-detail {
+      width: 100%;
+      font-size: 26rpx;
+      color: #999;
+}
+.pin-amount-detail {
+  padding: 10rpx 3%;
+}
+.pin-amount-detail .row {
+    height: 60rpx;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+.pin-amount-detail .row .nominal {
+      font-size: 28rpx;
+}
+.pin-amount-detail .row .content {
+      font-size: 32rpx;
+      font-weight: 700;
+}
+.pin-order-item-list {
+  padding: 10rpx 3%;
+}
+.pin-order-item-list .row {
+    margin: 30rpx 0;
+}
+.pin-order-item-list .row .goods-info {
+      width: 100%;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+}
+.pin-order-item-list .row .goods-info .img {
+        width: 22vw;
+        height: 22vw;
+        border-radius: 10rpx;
+        overflow: hidden;
+        -webkit-flex-shrink: 0;
+            -ms-flex-negative: 0;
+                flex-shrink: 0;
+        margin-right: 10rpx;
+}
+.pin-order-item-list .row .goods-info .img image {
+          width: 22vw;
+          height: 22vw;
+}
+.pin-order-item-list .row .goods-info .info {
+        width: 100%;
+        height: 22vw;
+        overflow: hidden;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-flex-wrap: wrap;
+            -ms-flex-wrap: wrap;
+                flex-wrap: wrap;
+        position: relative;
+}
+.pin-order-item-list .row .goods-info .info .title {
+          width: 100%;
+          font-size: 28rpx;
+          display: -webkit-box;
+          -webkit-box-orient: vertical;
+          -webkit-line-clamp: 2;
+          overflow: hidden;
+}
+.pin-order-item-list .row .goods-info .info .spec {
+          font-size: 24rpx;
+          background-color: #f3f3f3;
+          color: #464646;
+          height: 40rpx;
+          display: -webkit-box;
+          display: -webkit-flex;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-align: center;
+          -webkit-align-items: center;
+              -ms-flex-align: center;
+                  align-items: center;
+          padding: 0 10rpx;
+          border-radius: 20rpx;
+}
+.pin-order-item-list .row .goods-info .info .price-number {
+          position: absolute;
+          width: 100%;
+          bottom: 0rpx;
+          display: -webkit-box;
+          display: -webkit-flex;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-pack: justify;
+          -webkit-justify-content: space-between;
+              -ms-flex-pack: justify;
+                  justify-content: space-between;
+          -webkit-box-align: end;
+          -webkit-align-items: flex-end;
+              -ms-flex-align: end;
+                  align-items: flex-end;
+          font-size: 28rpx;
+          height: 40rpx;
+}
+.pin-order-item-list .row .goods-info .info .price-number .price {
+            color: #f06c7a;
+}
+.pin-order-item-list .row .goods-info .info .price-number .number {
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-pack: center;
+            -webkit-justify-content: center;
+                -ms-flex-pack: center;
+                    justify-content: center;
+            -webkit-box-align: center;
+            -webkit-align-items: center;
+                -ms-flex-align: center;
+                    align-items: center;
+}
+/* ==================
+        模态窗口
+==================== */
+.pin-modal {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1110;
+  opacity: 0;
+  outline: 0;
+  text-align: center;
+  -ms-transform: scale(1.185);
+  -webkit-transform: scale(1.185);
+          transform: scale(1.185);
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  -webkit-perspective: 2000rpx;
+          perspective: 2000rpx;
+  background: rgba(0, 0, 0, 0.6);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  -o-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+  pointer-events: none;
+}
+.pin-modal::before {
+  content: "\200B";
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+}
+.pin-modal.show {
+  opacity: 1;
+  -webkit-transition-duration: 0.3s;
+       -o-transition-duration: 0.3s;
+          transition-duration: 0.3s;
+  -ms-transform: scale(1);
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  overflow-x: hidden;
+  overflow-y: auto;
+  pointer-events: auto;
+}
+.pin-dialog-icon {
+  color: #eaeaea;
+  font-size: 200rpx;
+  position: absolute;
+  top: 100rpx;
+  left: 200rpx;
+  opacity: 0.4;
+  z-index: 0;
+}
+.pin-dialog {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: auto;
+  margin-right: auto;
+  width: 680rpx;
+  max-width: 100%;
+  background-color: #FFFFFF;
+  border-radius: 20rpx;
+  overflow: hidden;
+  z-index: 8;
+}
+.pin-modal.bottom-modal::before {
+  vertical-align: bottom;
+}
+.pin-modal.bottom-modal .pin-dialog {
+  width: 100%;
+  border-radius: 0;
+}
+.pin-modal.bottom-modal {
+  margin-bottom: -1000rpx;
+}
+.pin-modal.bottom-modal.show {
+  margin-bottom: 0;
+}
+.pin-modal.drawer-modal {
+  -webkit-transform: scale(1);
+      -ms-transform: scale(1);
+          transform: scale(1);
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+.pin-modal.drawer-modal .pin-dialog {
+  height: 100%;
+  min-width: 200rpx;
+  border-radius: 0;
+  margin: initial;
+  -webkit-transition-duration: 0.3s;
+       -o-transition-duration: 0.3s;
+          transition-duration: 0.3s;
+}
+.pin-modal.drawer-modal.justify-start .pin-dialog {
+  -webkit-transform: translateX(-100%);
+      -ms-transform: translateX(-100%);
+          transform: translateX(-100%);
+}
+.pin-modal.drawer-modal.justify-end .pin-dialog {
+  -webkit-transform: translateX(100%);
+      -ms-transform: translateX(100%);
+          transform: translateX(100%);
+}
+.pin-modal.drawer-modal.show .pin-dialog {
+  -webkit-transform: translateX(0%);
+      -ms-transform: translateX(0%);
+          transform: translateX(0%);
+}
+.pin-bar {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 100rpx;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.pin-bar .action {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100rpx;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  max-width: 100%;
+}
+.pin-bar .action.border-title {
+  position: relative;
+  top: -10rpx;
+}
+.pin-bar .action.border-title text[class*="bg-"]:last-child {
+  position: absolute;
+  bottom: -0.5rem;
+  min-width: 2rem;
+  height: 6rpx;
+  left: 0;
+}
+.pin-bar .action.sub-title {
+  position: relative;
+  top: -0.2rem;
+}
+.pin-bar .action.sub-title text {
+  position: relative;
+  z-index: 1;
+}
+.pin-bar .action.sub-title text[class*="bg-"]:last-child {
+  position: absolute;
+  display: inline-block;
+  bottom: -0.2rem;
+  border-radius: 6rpx;
+  width: 100%;
+  height: 0.6rem;
+  left: 0.6rem;
+  opacity: 0.3;
+  z-index: 0;
+}
+.pin-bar .action.sub-title text[class*="text-"]:last-child {
+  position: absolute;
+  display: inline-block;
+  bottom: -0.7rem;
+  left: 0.5rem;
+  opacity: 0.2;
+  z-index: 0;
+  text-align: right;
+  font-weight: 900;
+  font-size: 36rpx;
+}
+.pin-bar.justify-center .action.border-title text:last-child,
+.pin-bar.justify-center .action.sub-title text:last-child {
+  left: 0;
+  right: 0;
+  margin: auto;
+  text-align: center;
+}
+.pin-bar .action:first-child {
+  margin-left: 30rpx;
+}
+.pin-bar .action text.text-cut {
+  text-align: left;
+  width: 100%;
+}
+.pin-bar .pin-avatar:first-child {
+  margin-left: 20rpx;
+}
+.pin-bar .action:first-child > text[class*="icon"] {
+  margin-left: -0.3em;
+  margin-right: 0.3em;
+}
+.pin-bar .action:last-child {
+  margin-right: 30rpx;
+}
+.pin-bar .action > text[class*="icon"],
+.pin-bar .action > view[class*="icon"] {
+  font-size: 36rpx;
+}
+.pin-bar .action > text[class*="icon"] + text[class*="icon"] {
+  margin-left: 0.5em;
+}
+.pin-bar .content {
+  position: absolute;
+  text-align: center;
+  width: calc(100% - 340rpx);
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  margin: auto;
+  height: 60rpx;
+  font-size: 32rpx;
+  line-height: 60rpx;
+  cursor: none;
+  pointer-events: none;
+  -o-text-overflow: ellipsis;
+     text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
 

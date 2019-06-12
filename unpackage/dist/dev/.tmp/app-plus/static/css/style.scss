@@ -5,7 +5,7 @@ page {
 
 .logo {
 	width: 100%;
-	height: 25vh;
+	height: 20vh;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -43,17 +43,18 @@ page {
 	}
 
 	.btn {
-		color: $pin-color-primary;
+		color: $pin-color-accent-foreground;
 		width: 100%;
 		height: 90upx;
 		display: flex;
 		justify-content: center;
 		align-items: center;
 		border-radius: 45upx;
-		background-color: $pin-color-foreground;
+		background-color: $pin-color-accent;
 		// border: solid 1upx #fffefe;
 		// box-shadow: 0 0 2upx rgba(0, 0, 0, .5);
 		font-size: 40upx;
-
+		margin-top: 20upx;
+		margin-bottom: 20upx;
 	}
 }

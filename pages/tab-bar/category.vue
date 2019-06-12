@@ -174,7 +174,7 @@
 					flex-wrap: wrap;
 
 					.box {
-						width: calc(71.44vw / 3);
+						width: calc(70vw / 3);
 						margin-bottom: 30upx;
 						display: flex;
 						justify-content: center;
@@ -184,7 +184,7 @@
 						image {
 							border-radius: $pin-border-radius;
 							width: 60%;
-							height: calc(71.44vw / 3 * 0.6);
+							height: calc(70vw / 3 * 0.6);
 						}
 
 						.text {

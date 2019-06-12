@@ -1,7 +1,11 @@
 {
-  "usingComponents": {},
   "enablePullDownRefresh": true,
   "onReachBottomDistance": 50,
   "animationType": "fade-in",
-  "animationDuration": 300
+  "animationDuration": 300,
+  "usingComponents": {
+    "header-bar": "/components/header-bar",
+    "card-title": "/components/card-title",
+    "pageable-product-list": "/components/pageable-product-list"
+  }
 }

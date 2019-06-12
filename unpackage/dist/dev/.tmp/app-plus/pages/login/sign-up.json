@@ -1,8 +1,6 @@
 {
-  "usingComponents": {},
   "navigationBarTitleText": "注册账号",
-  "navigationBarBackgroundColor": "#ffc107",
-  "navigationBarTextStyle": "black",
   "bounce": "none",
-  "softinputNavBar": "none"
+  "softinputNavBar": "none",
+  "usingComponents": {}
 }

@@ -1,7 +1,8 @@
 <template>
 	<view>
-		<full-page-empty-state v-if="addressList.length == 0" title="没有收货地址" description="点击下方创建一个吧" icon="location_on" />
-		<view class="content">
+		<full-page-empty-state v-if="addressList == null || addressList.length == 0" title="没有收货地址" description="点击下方创建一个吧" icon="location_on" />
+		<view class="content" v-else>
+			<view class="pin-top-padding"></view>
 			<view class="list">
 				<view class="row pin-card" v-for="(row,index) in addressList" :key="index" @tap="select(row)">
 					<view class="left">
@@ -13,9 +14,7 @@
 						<view class="name-tel">
 							<view class="name">{{row.realName}}</view>
 							<view class="tel">{{row.phone}}</view>
-							<view class="default" v-if="row.isDefault">
-								默认
-							</view>
+							<view class="default" v-if="row.default">默认</view>
 						</view>
 						<view class="address">
 							{{row.province}} {{row.city}} {{row.district}} {{row.detail}}

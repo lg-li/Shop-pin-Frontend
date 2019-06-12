@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "店铺首页",
+  "usingComponents": {
+    "pageable-product-list": "/components/pageable-product-list"
+  }
+}

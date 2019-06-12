@@ -2,6 +2,7 @@
 	<view>
 		<view class="logo">
 			<image mode="widthFix" src="../../static/img/logo.png"></image>
+			<view class="pin-text-md">趣味团购，优享特惠</view>
 		</view>
 		<view class="loader-1">
 			<view class="loader-inner" />
@@ -23,10 +24,9 @@
 				uni.switchTab({
 					url: '../tab-bar/home'
 				})
-			}, 3000)
+			}, 2000)
 		},
 		methods: {
-
 		}
 	}
 </script>
@@ -60,7 +60,7 @@
 		top: 50%;
 		left: 50%;
 		transform-type: preserve-3d;
-		animation: loading-11 2s cubic-bezier(0.55, 0.3, 0.24, 0.99) infinite;
+		animation: loading-11 1.5s cubic-bezier(0.55, 0.3, 0.24, 0.99) infinite;
 	}
 
 	.loader-1 .loader-inner:nth-child(2) {

@@ -1,0 +1,231 @@
+@charset "UTF-8";
+/* 颜色变量 */
+page {
+  background-color: #fafafa;
+}
+.top-tab-bar {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 10;
+  background-color: #ffc107;
+  height: 80rpx;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+}
+.top-tab-bar .grid {
+    width: 20%;
+    height: 80rpx;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    color: #444;
+    font-size: 28rpx;
+}
+.top-tab-bar .grid .text {
+      height: 76rpx;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+          -ms-flex-align: center;
+              align-items: center;
+}
+.top-tab-bar .grid .text.on {
+        font-weight: 700;
+        color: #212121;
+        border-bottom: solid 5rpx #212121;
+        -webkit-transition: all 0.5s;
+        -o-transition: all 0.5s;
+        transition: all 0.5s;
+}
+.onorder {
+  margin-top: 80rpx;
+  width: 100%;
+}
+.order-list {
+  margin-top: 80rpx;
+  padding-top: 20rpx;
+  width: 100%;
+}
+.order-list .list {
+    width: 94%;
+    margin: 0 auto;
+}
+.order-list .list .row {
+      width: calc(100% - 40rpx);
+      padding: 10rpx 20rpx;
+      border-radius: 20rpx;
+      -webkit-box-shadow: 0rpx 0rpx 20rpx rgba(0, 0, 0, 0.1);
+              box-shadow: 0rpx 0rpx 20rpx rgba(0, 0, 0, 0.1);
+      background-color: #fff;
+      margin-bottom: 20rpx;
+}
+.order-list .list .row .store-name {
+        padding: 20rpx;
+        padding: 5rpx;
+        font-size: 28rpx;
+        color: #212121;
+        height: 50rpx;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+            -ms-flex-align: center;
+                align-items: center;
+}
+.order-list .list .row .order-info {
+        width: 100%;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+}
+.order-list .list .row .order-info .left {
+          -webkit-flex-shrink: 0;
+              -ms-flex-negative: 0;
+                  flex-shrink: 0;
+          width: 25vw;
+          height: 25vw;
+}
+.order-list .list .row .order-info .left image {
+            width: 25vw;
+            height: 25vw;
+            border-radius: 20rpx;
+}
+.order-list .list .row .order-info .right {
+          width: 100%;
+          margin-left: 20rpx;
+          position: relative;
+}
+.order-list .list .row .order-info .right .name {
+            width: 100%;
+            font-size: 28rpx;
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp: 2;
+            overflow: hidden;
+}
+.order-list .list .row .order-info .right .spec {
+            font-size: 24rpx;
+            color: #464646;
+            padding-top: 20rpx;
+}
+.order-list .list .row .order-info .right .price-number {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-pack: end;
+            -webkit-justify-content: flex-end;
+                -ms-flex-pack: end;
+                    justify-content: flex-end;
+            font-size: 22rpx;
+            color: #333;
+            display: flex;
+            -webkit-box-align: end;
+            -webkit-align-items: flex-end;
+                -ms-flex-align: end;
+                    align-items: flex-end;
+}
+.order-list .list .row .order-info .right .price-number .price {
+              font-size: 24rpx;
+              margin-right: 5rpx;
+}
+.order-list .list .row .detail {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: end;
+        -webkit-justify-content: flex-end;
+            -ms-flex-pack: end;
+                justify-content: flex-end;
+        -webkit-box-align: end;
+        -webkit-align-items: flex-end;
+            -ms-flex-align: end;
+                align-items: flex-end;
+        height: 60rpx;
+        font-size: 26rpx;
+}
+.order-list .list .row .detail .sum {
+          padding: 0 8rpx;
+          display: -webkit-box;
+          display: -webkit-flex;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-align: end;
+          -webkit-align-items: flex-end;
+              -ms-flex-align: end;
+                  align-items: flex-end;
+}
+.order-list .list .row .detail .sum .price {
+            font-size: 30rpx;
+}
+.order-list .list .row .btns {
+        height: 80rpx;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -webkit-box-pack: end;
+        -webkit-justify-content: flex-end;
+            -ms-flex-pack: end;
+                justify-content: flex-end;
+}
+.order-list .list .row .btns view {
+          min-width: 120rpx;
+          height: 50rpx;
+          padding: 0 20rpx;
+          border-radius: 20rpx;
+          display: -webkit-box;
+          display: -webkit-flex;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-pack: center;
+          -webkit-justify-content: center;
+              -ms-flex-pack: center;
+                  justify-content: center;
+          -webkit-box-align: center;
+          -webkit-align-items: center;
+              -ms-flex-align: center;
+                  align-items: center;
+          font-size: 28rpx;
+          margin-left: 20rpx;
+}
+.order-list .list .row .btns .default {
+          border: solid 1rpx #ccc;
+          color: #666;
+}
+.order-list .list .row .btns .pay {
+          -webkit-box-shadow: 0rpx 0rpx 20rpx rgba(0, 0, 0, 0.1);
+                  box-shadow: 0rpx 0rpx 20rpx rgba(0, 0, 0, 0.1);
+          background-color: #ffc107;
+          color: #212121;
+}
+

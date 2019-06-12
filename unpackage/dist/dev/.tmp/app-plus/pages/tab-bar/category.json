@@ -1,8 +1,9 @@
 {
-  "usingComponents": {},
-  "navigationBarTextStyle": "black",
   "navigationBarTitleText": "分类检索",
   "animationType": "fade-in",
   "animationDuration": 300,
-  "bounce": "none"
+  "bounce": "none",
+  "usingComponents": {
+    "header-bar": "/components/header-bar"
+  }
 }

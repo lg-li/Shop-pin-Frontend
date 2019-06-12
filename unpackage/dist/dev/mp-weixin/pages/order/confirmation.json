@@ -1,5 +1,5 @@
 {
-  "usingComponents": {},
   "navigationBarTitleText": "确认订单",
-  "softinputNavBar": "none"
+  "softinputNavBar": "none",
+  "usingComponents": {}
 }

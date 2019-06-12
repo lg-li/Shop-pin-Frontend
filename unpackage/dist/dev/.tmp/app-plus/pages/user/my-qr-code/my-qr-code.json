@@ -1,5 +1,5 @@
 {
-  "usingComponents": {},
   "navigationBarTitleText": "我的二维码",
-  "bounce": "none"
+  "bounce": "none",
+  "usingComponents": {}
 }

@@ -1,5 +1,7 @@
 {
-  "usingComponents": {},
   "navigationBarTitleText": "商品列表",
-  "enablePullDownRefresh": true
+  "enablePullDownRefresh": true,
+  "usingComponents": {
+    "pageable-product-list": "/components/pageable-product-list"
+  }
 }
