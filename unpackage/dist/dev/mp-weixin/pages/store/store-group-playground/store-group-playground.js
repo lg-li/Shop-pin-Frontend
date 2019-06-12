@@ -206,8 +206,6 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-
-
 {
   components: {
     "full-page-empty-state": FullPageEmptyState,
@@ -260,6 +258,45 @@ __webpack_require__.r(__webpack_exports__);
     this.intervalId = null;
   },
   methods: {
+    tick: function tick() {
+      if (this.availableOrderGroups == null) {
+        return;
+      }
+      var that = this;
+      for (var i = 0; i < this.availableOrderGroups.length; i++) {
+        if (this.availableOrderGroups[i].closeTime == null) {
+          return;
+        }
+        var closeTime = new Date(this.availableOrderGroups[i].closeTime + 8 * 3600 * 1000);
+        if (closeTime == NaN || closeTime == null) {
+          // let temp = this.data.orderGroup.groupCloseTime.replace(/-/g, '/')
+          closeTime = Date.parse(temp);
+        }
+        var nowTime = new Date().getTime();
+        var diff = closeTime - nowTime;
+        var countTime = (diff / 1000).toFixed(0);
+        if (countTime <= 0) {
+          // 重定向到订单页面
+          this.availableOrderGroups[i].tickString = "已收团";
+          continue;
+        }
+        // 截取时分秒数量
+        var hour = Math.floor(countTime / 3600);
+        var minute = Math.floor(Math.floor(countTime % 3600) / 60);
+        var second = Math.floor(countTime % 60);
+        // 添加前导0
+        var tickString = "";
+        if (0 <= hour && hour <= 9) tickString += '0';
+        tickString += hour + ':';
+        if (0 <= minute && minute <= 9) tickString += '0';
+        tickString += minute + ':';
+        if (0 <= second && second <= 9) tickString += '0';
+        tickString += second;
+        this.availableOrderGroups[i].tickString = tickString;
+        console.log(tickString);
+      }
+      this.$forceUpdate();
+    },
     loadStoreInfo: function loadStoreInfo(storeId) {
       var that = this;
       this.$pin.request('GET', '/commons/store/' + storeId, null,
@@ -315,6 +352,7 @@ __webpack_require__.r(__webpack_exports__);
       this.paymentModalIcon = "library_add";
       // 设置支付成功和失败的回调函数
       this.paymentSuccessCallback = function () {
+        console.log("创团时支付成功。");
         that.switchPaymentModal(false);
         // 执行创团操作
         that.finalCreateGroup(that.storeId, that.orderIndividualId);
@@ -325,6 +363,12 @@ __webpack_require__.r(__webpack_exports__);
       };
       that.switchPaymentModal(true);
     },
+    paymentSuccess: function paymentSuccess() {
+      this.paymentSuccessCallback();
+    },
+    paymentFail: function paymentFail() {
+      this.paymentFailCallback();
+    },
     // 唤起支付并加团操作
     joinOrderGroup: function joinOrderGroup(orderGroupToAdd) {
       var that = this;
@@ -333,6 +377,7 @@ __webpack_require__.r(__webpack_exports__);
       this.paymentModalIcon = "group_add";
       // 设置支付成功和失败的回调函数
       this.paymentSuccessCallback = function () {
+        console.log("加团时支付成功。");
         that.switchPaymentModal(false);
         // 执行加团操作
         that.finalJoinGroup(that.storeId, orderGroupToAdd.id, that.orderIndividualId);

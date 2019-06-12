@@ -218,6 +218,9 @@
 						uni.showToast({
 							title: '创建订单完成'
 						})
+						uni.navigateTo({
+							url: '../user/order/order-list?tbIndex=' + 0
+						})
 					},
 					failData => {
 						uni.hideLoading()

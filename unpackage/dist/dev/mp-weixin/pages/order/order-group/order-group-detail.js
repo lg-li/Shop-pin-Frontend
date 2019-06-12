@@ -188,11 +188,7 @@ var _default =
       }
       var nowTime = new Date().getTime();
       var diff = closeTime - nowTime;
-      if (diff <= -3600000) {
-        // 大于一个小时时差太大，可能时区有误
-        // 转为 中国标准时间 GMT+8
-        diff = closeTime + 8 * 3600000 - nowTime;
-      }
+
       var countTime = (diff / 1000).toFixed(0);
       if (countTime <= 0) {
         // 重定向到订单页面
@@ -226,20 +222,21 @@ var _default =
       connectedStompClient.subscribe('/user/' + this.userId + '/update', function (frame, headers) {
         var body = JSON.parse(frame.body);
         that.orderGroup = body;
-        that.parseOrderGroup();
+        that.parseOrderGroup(body);
       });
       // 向服务端发送消息
       connectedStompClient.send("/server/customer/hello", null, JSON.stringify({
         'msg': 'Konnichiwa!' }));
 
     },
-    parseOrderGroup: function parseOrderGroup() {
-      var orderIndividuals = this.orderGroup.orderIndividuals;
-      var ownerUserId = this.orderGroup.ownerUserId;
+    parseOrderGroup: function parseOrderGroup(orderGroup) {
+      var orderIndividuals = orderGroup.orderIndividuals;
+      var ownerUserId = orderGroup.ownerUserId;
       // 提取团长信息
+      console.log('parse owner' + ownerUserId);
       for (var i = 0; i < orderIndividuals.length; i++) {
         console.log(orderIndividuals[i]);
-        if (orderIndividuals[i].user.id == ownerUserId) {
+        if (orderIndividuals[i].userId == ownerUserId) {
           this.ownerUser = orderIndividuals[i].user;
           this.amIOwner = orderIndividuals[i].user.id == this.userId;
           break;

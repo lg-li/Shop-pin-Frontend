@@ -20,7 +20,7 @@
 					</view>
 				</view>
 			</view>
-			
+
 			<!--购买商品列表-->
 			<view class="pin-order-item-list">
 				<view class="row" v-for="(row,index) in orderIndividual.orderItems" :key="index">
@@ -78,17 +78,15 @@
 					<image mode="aspectFill" :src="orderGroup.ownerUser.avatarUrl"></image>
 					<view class="count-on-avatar">
 						<view class="count-on-avatar-text">
-							<view>{{orderGroup.orderIndividuals.length}}/10</view>
-							<view>距离收团还有 00:00:00</view>
+							<view>{{orderGroup.orderIndividuals.length}}/{{store.peopleLimit}}</view>
+							<view>距离收团还有 {{orderGroup.tickString}}</view>
 						</view>
-
 					</view>
 				</view>
 
-				<view class="name">{{ orderGroup.ownerUser.nickname }}的团</view>
-				<view class="name"> </view>
+				<view class="name"><i class="pin-icon">group</i>{{orderGroup.ownerUser.nickname}}的团 ({{!(orderGroup.orderIndividuals.length >= store.peopleLimit)?'可加入':'已满'}})</view>
 				<view class="info">
-					<view class="pin-button pin-bg-primary">加入此团</view>
+					<view class="pin-button pin-bg-primary"><i class="pin-icon">group_add</i> 加入</view>
 					<view class="slogan">{{ orderGroup.createTime }}</view>
 				</view>
 			</view>
@@ -99,8 +97,8 @@
 		</view>
 
 		<order-individual-payment :showPayment="showPayment" :order-individual="orderIndividual" :description="paymentModalDescription"
-		 :title="paymentModalTitle" :icon="paymentModalIcon" :payment-success-callback="paymentSuccessCallback"
-		 :payment-fail-callback="paymentFailCallback" v-on:hideModal="switchPaymentModal(false)" />
+		 :title="paymentModalTitle" :icon="paymentModalIcon" @paymentSuccess="paymentSuccess"
+		 @paymentFail="paymentFail" v-on:hideModal="switchPaymentModal(false)" />
 
 	</view>
 </template>
@@ -160,6 +158,45 @@
 			this.intervalId = null
 		},
 		methods: {
+			tick() {
+				if (this.availableOrderGroups == null) {
+					return
+				}
+				let that = this
+				for (let i = 0; i < this.availableOrderGroups.length; i++) {
+					if (this.availableOrderGroups[i].closeTime == null) {
+						return;
+					}
+					let closeTime = new Date(this.availableOrderGroups[i].closeTime + 8*3600*1000)
+					if (closeTime == NaN || closeTime == null) {
+						// let temp = this.data.orderGroup.groupCloseTime.replace(/-/g, '/')
+						closeTime = Date.parse(temp)
+					}
+					let nowTime = new Date().getTime()
+					let diff = closeTime - nowTime
+					let countTime = (diff / 1000).toFixed(0)
+					if (countTime <= 0) {
+						// 重定向到订单页面
+						this.availableOrderGroups[i].tickString = "已收团"
+						continue
+					}
+					// 截取时分秒数量
+					let hour = Math.floor(countTime / 3600)
+					let minute = Math.floor(Math.floor(countTime % 3600) / 60)
+					let second = Math.floor(countTime % 60)
+					// 添加前导0
+					let tickString = "";
+					if (0 <= hour && hour <= 9) tickString += '0';
+					tickString += hour + ':';
+					if (0 <= minute && minute <= 9) tickString += '0';
+					tickString += minute + ':';
+					if (0 <= second && second <= 9) tickString += '0';
+					tickString += second;
+					this.availableOrderGroups[i].tickString = tickString
+					console.log(tickString)
+				}
+				this.$forceUpdate()
+			},
 			loadStoreInfo(storeId) {
 				let that = this
 				this.$pin.request('GET', '/commons/store/' + storeId, null,
@@ -215,6 +252,7 @@
 				this.paymentModalIcon = "library_add"
 				// 设置支付成功和失败的回调函数
 				this.paymentSuccessCallback = () => {
+					console.log("创团时支付成功。")
 					that.switchPaymentModal(false)
 					// 执行创团操作
 					that.finalCreateGroup(that.storeId, that.orderIndividualId)
@@ -225,6 +263,12 @@
 				}
 				that.switchPaymentModal(true)
 			},
+			paymentSuccess() {
+				this.paymentSuccessCallback()
+			},
+			paymentFail() {
+				this.paymentFailCallback()
+			},
 			// 唤起支付并加团操作
 			joinOrderGroup(orderGroupToAdd) {
 				let that = this
@@ -233,14 +277,15 @@
 				this.paymentModalIcon = "group_add"
 				// 设置支付成功和失败的回调函数
 				this.paymentSuccessCallback = () => {
+					console.log("加团时支付成功。")
 					that.switchPaymentModal(false)
 					// 执行加团操作
 					that.finalJoinGroup(that.storeId, orderGroupToAdd.id, that.orderIndividualId)
 				}
-				this.paymentFailCallback = () => {
+				this.paymentFailCallback = (() => {
 					console.log("加团时支付失败。")
 					that.switchPaymentModal(false)
-				}
+				})
 				that.switchPaymentModal(true)
 			},
 			// 最终创团操作

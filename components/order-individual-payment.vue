@@ -63,14 +63,6 @@
 			orderIndividual: {
 				type: Object,
 				value: null
-			},
-			paymentSuccessCallback: {
-				type: Function,
-				value: null
-			},
-			paymentFailCallback: {
-				type: Function,
-				value: null
 			}
 		},
 		data() {
@@ -95,25 +87,19 @@
 							uni.showToast({
 								title: '支付成功'
 							})
-							if (that.paymentSuccessCallback) {
-								that.paymentSuccessCallback()
-							}
+							this.$emit("paymentSuccess")
 						} else if (successData.code == that.$pin.code.repeatPayment) {
 							// 重复支付
 							uni.showToast({
 								title: '您已支付过此订单',
 								icon: 'none'
 							})
-							if (that.paymentSuccessCallback) {
-								that.paymentSuccessCallback()
-							}
+							this.$emit("paymentSuccess")
 						} else if (successData.code == that.$pin.code.insufficientBalance) {
 							// 余额不足
 							that.icon = 'error'
 							that.isBalanceInsufficient = true
-							if (that.paymentFailCallback) {
-								that.paymentFailCallback()
-							}
+							this.$emit("paymentFail")
 						}
 					},
 					failData => {
